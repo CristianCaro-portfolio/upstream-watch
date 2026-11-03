@@ -207,6 +207,36 @@ def brief(
     typer.echo(f"status: {final['status']}")
 
 
+@app.command("llm-check")
+def llm_check(
+    per_type: int = typer.Option(5, help="Generated questions per type, plus the hand written set."),
+    seed: int = typer.Option(11),
+    sample: bool = typer.Option(False),
+    out_dir: Path = typer.Option(None, help="Defaults to reports/."),
+) -> None:
+    """Graph mode evaluation with whatever UPW_LLM_PROVIDER is set, to see what a model changes."""
+    import random
+
+    settings = _setup(True)
+    out = out_dir or settings.reports_dir
+    out.mkdir(parents=True, exist_ok=True)
+    agent, kit, model, (gauges, edges, _) = pipeline.agent_from_settings(settings, sample)
+    lags = {(e.upstream, e.downstream): round(model.edge_lag(e), 1) for e in edges}
+    generated = evaluate.build_questions(gauges, edges, config.OUTLET_LID)
+    rng = random.Random(seed)
+    questions = []
+    for intent in ("impact", "stages", "travel", "downstream", "upstream"):
+        pool = [q for q in generated if q.intent == intent]
+        questions += rng.sample(pool, min(per_type, len(pool)))
+    questions += evaluate.handwritten_questions(gauges, edges, config.OUTLET_LID)
+    t0 = time.perf_counter()
+    result = evaluate.run_eval(agent, questions, ["graph"], lags)["modes"]["graph"]
+    result["provider"] = kit.provider.name
+    result["wall_s"] = round(time.perf_counter() - t0, 1)
+    (out / f"llm_check_{kit.provider.name}.json").write_text(json.dumps(result, indent=1))
+    typer.echo(json.dumps(result, indent=1))
+
+
 @app.command()
 def mcp() -> None:
     """Serve the gauge graph over MCP (stdio)."""
