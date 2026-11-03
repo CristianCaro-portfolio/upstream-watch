@@ -53,7 +53,8 @@ def ingest(
 def load_curated(data_dir: Path) -> tuple[list[network.Gauge], list[network.Edge], pl.DataFrame]:
     gauges = [network.Gauge.from_dict(d) for d in json.loads((data_dir / "gauges.json").read_text())]
     edges = [network.Edge(**d) for d in json.loads((data_dir / "edges.json").read_text())]
-    stage = ts.read_partitioned(data_dir / "stage_hourly")
+    single = data_dir / "stage_hourly.parquet"
+    stage = pl.read_parquet(single) if single.exists() else ts.read_partitioned(data_dir / "stage_hourly")
     return gauges, edges, stage
 
 
