@@ -1,0 +1,3957 @@
+[
+ {
+  "lid": "BDGM2",
+  "usgs_id": "01639000",
+  "name": "Monocacy River at Bridgeport",
+  "river": "Monocacy River",
+  "state": "MD",
+  "county": "Frederick",
+  "lat": 39.67905556,
+  "lon": -77.23452778,
+  "comid": 8448416,
+  "measure": 22.234,
+  "thresholds": {
+   "action": 11.0,
+   "minor": 13.0,
+   "moderate": 21.0,
+   "major": 25.0
+  },
+  "impacts": [
+   {
+    "lid": "BDGM2",
+    "stage_ft": 11.0,
+    "statement": "Water begins to overflow downstream areas, but is not affecting any property."
+   },
+   {
+    "lid": "BDGM2",
+    "stage_ft": 13.0,
+    "statement": "Baptist Road near Bridgeport begins to flood."
+   },
+   {
+    "lid": "BDGM2",
+    "stage_ft": 16.0,
+    "statement": "Flooding of fields and yards begins near Bridgeport."
+   },
+   {
+    "lid": "BDGM2",
+    "stage_ft": 20.0,
+    "statement": "Taneytown Pike begins to flood on both sides of the river."
+   },
+   {
+    "lid": "BDGM2",
+    "stage_ft": 21.0,
+    "statement": "Water approaches homes on the Frederick County side near Bridgeport."
+   },
+   {
+    "lid": "BDGM2",
+    "stage_ft": 23.5,
+    "statement": "Water covers the Taneytown Pike bridge over the Monocacy. The road on each side will already be underwater."
+   },
+   {
+    "lid": "BDGM2",
+    "stage_ft": 25.0,
+    "statement": "Significant flooding is occurring on both sides of the river with homes and roads flooded."
+   }
+  ],
+  "record_stage_ft": 25.42,
+  "record_date": "1996-06-19"
+ },
+ {
+  "lid": "BDWV2",
+  "usgs_id": "01632082",
+  "name": "Linville Creek at Broadway",
+  "river": "Linville Creek",
+  "state": "VA",
+  "county": "Rockingham",
+  "lat": 38.60678588,
+  "lon": -78.803357,
+  "comid": 8441047,
+  "measure": 85.649,
+  "thresholds": {
+   "action": 8.0,
+   "minor": 14.0,
+   "moderate": 16.0,
+   "major": 20.0
+  },
+  "impacts": [
+   {
+    "lid": "BDWV2",
+    "stage_ft": 8.0,
+    "statement": "Water begins to overflow the banks but nothing outside the undeveloped floodplain is affected. Some residents may need to move lawn furniture to higher ground."
+   },
+   {
+    "lid": "BDWV2",
+    "stage_ft": 14.0,
+    "statement": "Turner Avenue begins to flood, and a nearby park is flooded. Water approaches the railroad tracks."
+   },
+   {
+    "lid": "BDWV2",
+    "stage_ft": 16.0,
+    "statement": "A portion of Springbrook Road is flooded, including the bridge."
+   },
+   {
+    "lid": "BDWV2",
+    "stage_ft": 17.0,
+    "statement": "Old Mill Lane is flooded."
+   }
+  ],
+  "record_stage_ft": 13.23,
+  "record_date": "1996-09-06"
+ },
+ {
+  "lid": "BELM2",
+  "usgs_id": "01610155",
+  "name": "Sideling Hill Creek near Bellegrove",
+  "river": "Sideling Hill Creek",
+  "state": "MD",
+  "county": "Washington",
+  "lat": 39.64952778,
+  "lon": -78.34413889,
+  "comid": 8431622,
+  "measure": 37.734,
+  "thresholds": {
+   "action": 6.5,
+   "minor": 7.5,
+   "moderate": 13.0,
+   "major": 17.0
+  },
+  "impacts": [
+   {
+    "lid": "BELM2",
+    "stage_ft": 7.5,
+    "statement": "Lowlands near the creek begin to flood. A low spot on Allegany Line Road may also be flooded."
+   },
+   {
+    "lid": "BELM2",
+    "stage_ft": 13.0,
+    "statement": "Water approaches the westbound lanes of Interstate 68 just west of the creek."
+   },
+   {
+    "lid": "BELM2",
+    "stage_ft": 17.0,
+    "statement": "Water approaches the intersection of Swain Hollow Road and Harry Norris Road."
+   },
+   {
+    "lid": "BELM2",
+    "stage_ft": 23.0,
+    "statement": "Water covers the bridge on Zeigler Road."
+   }
+  ],
+  "record_stage_ft": 12.44,
+  "record_date": "1972-06-22"
+ },
+ {
+  "lid": "BERV2",
+  "usgs_id": "01616100",
+  "name": "Dry Marsh Run near Berryville",
+  "river": "Dry Marsh Run",
+  "state": "VA",
+  "county": "Clarke",
+  "lat": 39.19259167,
+  "lon": -78.0686306,
+  "comid": 5895892,
+  "measure": 8.5534,
+  "thresholds": {
+   "action": 6.0,
+   "minor": 8.0,
+   "moderate": 10.0,
+   "major": 12.0
+  },
+  "impacts": [
+   {
+    "lid": "BERV2",
+    "stage_ft": 6.0,
+    "statement": "Water begins to overflow the banks into adjacent fields."
+   },
+   {
+    "lid": "BERV2",
+    "stage_ft": 8.0,
+    "statement": "Fields near the stream are flooded, and water covers State Route 645."
+   },
+   {
+    "lid": "BERV2",
+    "stage_ft": 10.0,
+    "statement": "Homes near the stream are threatened."
+   },
+   {
+    "lid": "BERV2",
+    "stage_ft": 12.0,
+    "statement": "Widespread flooding is occurring near the stream with homes and roads flooded."
+   }
+  ],
+  "record_stage_ft": 4.94,
+  "record_date": "2014-05-16"
+ },
+ {
+  "lid": "BHMW2",
+  "usgs_id": "01616400",
+  "name": "Mill Creek (WV) at Bunker Hill",
+  "river": "Mill Creek (WV)",
+  "state": "WV",
+  "county": "Berkeley",
+  "lat": 39.334625,
+  "lon": -78.0534361,
+  "comid": 5895480,
+  "measure": 94.599,
+  "thresholds": {
+   "action": 3.75,
+   "minor": 4.25,
+   "moderate": 9.0,
+   "major": 13.0
+  },
+  "impacts": [
+   {
+    "lid": "BHMW2",
+    "stage_ft": 3.75,
+    "statement": "Water begins coming through the drainage holes on Henshaw Road under Interstate 81. The road will likely not be impassible, but the stream will be out of its bank."
+   },
+   {
+    "lid": "BHMW2",
+    "stage_ft": 4.25,
+    "statement": "Henshaw Road is flooded under Interstate 81."
+   },
+   {
+    "lid": "BHMW2",
+    "stage_ft": 5.25,
+    "statement": "Mish Road is flooded at Mill Creek."
+   },
+   {
+    "lid": "BHMW2",
+    "stage_ft": 9.0,
+    "statement": "Water approaches structures near the creek. Several roads are flooded in the area, some by several feet of water."
+   },
+   {
+    "lid": "BHMW2",
+    "stage_ft": 13.0,
+    "statement": "Significant flooding is occurring throughout the basin, with roads and structures flooded by several feet of water."
+   }
+  ],
+  "record_stage_ft": 6.25,
+  "record_date": "2014-05-16"
+ },
+ {
+  "lid": "BKTV2",
+  "usgs_id": "01622000",
+  "name": "North River near Burketown",
+  "river": "North River",
+  "state": "VA",
+  "county": "Rockingham",
+  "lat": 38.3404051,
+  "lon": -78.9136385,
+  "comid": 5908733,
+  "measure": 84.604,
+  "thresholds": {
+   "action": 9.0,
+   "minor": 11.0,
+   "moderate": 21.0,
+   "major": 24.0
+  },
+  "impacts": [
+   {
+    "lid": "BKTV2",
+    "stage_ft": 11.0,
+    "statement": "Fairview Road begins to flood near the gauge location."
+   },
+   {
+    "lid": "BKTV2",
+    "stage_ft": 21.0,
+    "statement": "Farmland upstream of Port Republic begins to flood. Route 994 also is flooded, and water approaches homes on Pence Lane."
+   },
+   {
+    "lid": "BKTV2",
+    "stage_ft": 23.0,
+    "statement": "The intersection of Fairview Road and Route 867 is flooded."
+   },
+   {
+    "lid": "BKTV2",
+    "stage_ft": 24.0,
+    "statement": "Homes along Route 994 begin to flood. A home at the end of Bealls Ford Road also floods."
+   }
+  ],
+  "record_stage_ft": 36.7,
+  "record_date": "1996-09-06"
+ },
+ {
+  "lid": "BRKM2",
+  "usgs_id": "01646500",
+  "name": "Potomac River near Washington DC (Little Falls)",
+  "river": "Potomac River",
+  "state": "MD",
+  "county": "Montgomery",
+  "lat": 38.94977778,
+  "lon": -77.12763889,
+  "comid": 4512772,
+  "measure": 31.913,
+  "thresholds": {
+   "action": 5.0,
+   "minor": 10.0,
+   "moderate": 12.0,
+   "major": 14.0
+  },
+  "impacts": [
+   {
+    "lid": "BRKM2",
+    "stage_ft": 3.5,
+    "statement": "The river reaches caution level for boaters, as defined by the State of Maryland. Fast moving water and changing currents will be experienced."
+   },
+   {
+    "lid": "BRKM2",
+    "stage_ft": 4.5,
+    "statement": "The river reaches danger level for boaters, as defined by the State of Maryland. Conditions for boating will be extremely hazardous."
+   },
+   {
+    "lid": "BRKM2",
+    "stage_ft": 5.0,
+    "statement": "Portions of the Potomac Heritage Trail begin to flood. Water begins to affect portions of the Billy Goat Trail between Great Falls and Carderock. These trails will be closed."
+   },
+   {
+    "lid": "BRKM2",
+    "stage_ft": 5.5,
+    "statement": "Water reaches the top of the ferry landing for Sycamore Island. Ferry service to the island will likely be suspended."
+   },
+   {
+    "lid": "BRKM2",
+    "stage_ft": 7.0,
+    "statement": "Upper portions of the River Trail at Great Falls National Park begin to flood and will be closed."
+   },
+   {
+    "lid": "BRKM2",
+    "stage_ft": 9.0,
+    "statement": "Several trails on both sides of the river between Great Falls and the Chain Bridge are flooded and will be closed."
+   },
+   {
+    "lid": "BRKM2",
+    "stage_ft": 10.0,
+    "statement": "Water begins to overflow the banks into low lying areas on the Maryland side of the river near Little Falls. Water begins to enter the canoe shed at Sycamore Island."
+   },
+   {
+    "lid": "BRKM2",
+    "stage_ft": 11.0,
+    "statement": "Water covers the towpath between Swains Lock and Pennyfield Lock, mileposts 17 to 19 on the C&O Canal."
+   },
+   {
+    "lid": "BRKM2",
+    "stage_ft": 11.5,
+    "statement": "Water covers the towpath in multiple spots between the Washington Aqueduct Dam and Pennyfield Lock, mileposts 15 to 19 on the C&O Canal."
+   },
+   {
+    "lid": "BRKM2",
+    "stage_ft": 12.0,
+    "statement": "The C&O Canal overflows at the Great Falls Tavern. Water covers the towpath in many areas."
+   },
+   {
+    "lid": "BRKM2",
+    "stage_ft": 14.0,
+    "statement": "Significant portions of the C&O Canal towpath are flooded. The Blockhouse Point Park is flooded. Water reaches the retaining wall at Overlook 1 at Great Falls National Park but does not overtop it."
+   },
+   {
+    "lid": "BRKM2",
+    "stage_ft": 15.0,
+    "statement": "Most of the C&O Canal towpath from Pennyfield downstream is flooded."
+   },
+   {
+    "lid": "BRKM2",
+    "stage_ft": 16.0,
+    "statement": "Water reaches the clubhouse on Sycamore Island."
+   },
+   {
+    "lid": "BRKM2",
+    "stage_ft": 17.0,
+    "statement": "Water overflows the overlooks at Great Falls National Park and approaches the lower level of the visitors center. Most of the C&O Canal towpath downstream of Pennyfield is flooded. There is approximately a foot of water in the clubhouse on Sycamore Island."
+   }
+  ],
+  "record_stage_ft": 22.03,
+  "record_date": "1972-06-24"
+ },
+ {
+  "lid": "BRUM2",
+  "usgs_id": "01639500",
+  "name": "Big Pipe Creek at Bruceville",
+  "river": "Big Pipe Creek",
+  "state": "MD",
+  "county": "Carroll",
+  "lat": 39.6123611,
+  "lon": -77.2374444,
+  "comid": 8449082,
+  "measure": 34.289,
+  "thresholds": {
+   "action": 6.0,
+   "minor": 8.0,
+   "moderate": 16.0,
+   "major": 19.0
+  },
+  "impacts": [
+   {
+    "lid": "BRUM2",
+    "stage_ft": 8.0,
+    "statement": "Keysville-Bruceville Road begins to flood."
+   },
+   {
+    "lid": "BRUM2",
+    "stage_ft": 16.0,
+    "statement": "Significant agricultural flooding is occurring in the area."
+   },
+   {
+    "lid": "BRUM2",
+    "stage_ft": 19.0,
+    "statement": "Numerous roads are flooding with major flooding occurring throughout the basin."
+   }
+  ],
+  "record_stage_ft": 18.98,
+  "record_date": "1975-09-26"
+ },
+ {
+  "lid": "BRYW2",
+  "usgs_id": "01607500",
+  "name": "South Fork South Branch Potomac River at Brandywine",
+  "river": "South Fork South Branch Potomac River",
+  "state": "WV",
+  "county": "Pendleton",
+  "lat": 38.63150665,
+  "lon": -79.2436497,
+  "comid": 8423460,
+  "measure": 22.895,
+  "thresholds": {
+   "action": 5.5,
+   "minor": 10.0,
+   "moderate": 12.0,
+   "major": 20.0
+  },
+  "impacts": [
+   {
+    "lid": "BRYW2",
+    "stage_ft": 5.5,
+    "statement": "Water completely covers the low water crossing on Cassell Run Road."
+   },
+   {
+    "lid": "BRYW2",
+    "stage_ft": 10.0,
+    "statement": "Agricultural flooding is occurring north of Brandywine. Water covers roads paralleling the river near Brandywine."
+   },
+   {
+    "lid": "BRYW2",
+    "stage_ft": 12.0,
+    "statement": "Water approaches structures near Brandywine. Additionally, the bridges at County Road 21/2 and County Road 21/4 are both flooded."
+   },
+   {
+    "lid": "BRYW2",
+    "stage_ft": 16.0,
+    "statement": "Numerous roads are flooded, including county roads 21/2, 21/4, and 21/6."
+   },
+   {
+    "lid": "BRYW2",
+    "stage_ft": 20.0,
+    "statement": "Water reaches the intersection of US route 33 and county route 21."
+   }
+  ],
+  "record_stage_ft": 18.42,
+  "record_date": "1985-11-04"
+ },
+ {
+  "lid": "BTMM2",
+  "usgs_id": "01644390",
+  "name": "Ten Mile Creek near Boyds",
+  "river": "Ten Mile Creek",
+  "state": "MD",
+  "county": "Montgomery",
+  "lat": 39.216,
+  "lon": -77.3164167,
+  "comid": 4505876,
+  "measure": 89.6761,
+  "thresholds": {
+   "action": 5.0,
+   "minor": 7.0,
+   "moderate": 10.0,
+   "major": 15.0
+  },
+  "impacts": [
+   {
+    "lid": "BTMM2",
+    "stage_ft": 7.0,
+    "statement": "Agricultural fields near the creek begin to flood."
+   },
+   {
+    "lid": "BTMM2",
+    "stage_ft": 10.0,
+    "statement": "Outbuildings near the creek begin to flood."
+   }
+  ],
+  "record_stage_ft": 9.68,
+  "record_date": "2011-09-08"
+ },
+ {
+  "lid": "BTNV2",
+  "usgs_id": "01635500",
+  "name": "Passage Creek near Buckton",
+  "river": "Passage Creek",
+  "state": "VA",
+  "county": "Warren",
+  "lat": 38.95816564,
+  "lon": -78.2666685,
+  "comid": 8441257,
+  "measure": 13.32,
+  "thresholds": {
+   "action": 8.0,
+   "minor": 9.0,
+   "moderate": 14.0,
+   "major": 16.0
+  },
+  "impacts": [
+   {
+    "lid": "BTNV2",
+    "stage_ft": 8.0,
+    "statement": "Water overflows the banks, but no impacts are observed."
+   },
+   {
+    "lid": "BTNV2",
+    "stage_ft": 9.0,
+    "statement": "Several driveways, roads, and campsites near Passage Creek between Buckton and Fort Valley begin to flood. This includes Ramsey Road, Spring Mountain Way, and Veach Gap Road."
+   },
+   {
+    "lid": "BTNV2",
+    "stage_ft": 10.5,
+    "statement": "Fort Valley Road begins to flood in spots between Buckton and Fort Valley."
+   },
+   {
+    "lid": "BTNV2",
+    "stage_ft": 11.0,
+    "statement": "Fort Valley Road and several other access roads off Fort Valley Road are all flooded, some with two feet of water or more. Water approaches the bridge at the Elizabeth Furnace area, and a driveway near Route 55."
+   },
+   {
+    "lid": "BTNV2",
+    "stage_ft": 12.0,
+    "statement": "Outbuildings near the creek in Buckton begin to flood. Water also begins to surpass a retaining wall near Route 55, which will allow for additional areas to flood."
+   },
+   {
+    "lid": "BTNV2",
+    "stage_ft": 14.0,
+    "statement": "Water reaches a home near Passage Creek in Buckton. Numerous roads and agricultural areas are flooded."
+   },
+   {
+    "lid": "BTNV2",
+    "stage_ft": 16.0,
+    "statement": "Route 55 is flooded and impassible near Buckton. Homes and fields nearby, and throughout the Passage Creek valley, are also flooded."
+   }
+  ],
+  "record_stage_ft": 15.89,
+  "record_date": "1996-09-06"
+ },
+ {
+  "lid": "BWSW2",
+  "usgs_id": "01613030",
+  "name": "Warm Springs Run near Berkeley Springs",
+  "river": "Warm Springs Run",
+  "state": "WV",
+  "county": "Morgan",
+  "lat": 39.6405833,
+  "lon": -78.2189444,
+  "comid": 5892920,
+  "measure": 83.4642,
+  "thresholds": {
+   "action": 4.0,
+   "minor": 5.0,
+   "moderate": 6.0,
+   "major": 7.0
+  },
+  "impacts": [
+   {
+    "lid": "BWSW2",
+    "stage_ft": 5.0,
+    "statement": "Berkeley Springs State Park begins to flood."
+   },
+   {
+    "lid": "BWSW2",
+    "stage_ft": 6.0,
+    "statement": "Water approaches Washington Street in Berkeley Springs and the parking lot of Berkeley Springs High School."
+   },
+   {
+    "lid": "BWSW2",
+    "stage_ft": 7.0,
+    "statement": "Significant flooding is occurring in Berkeley Springs. Much of Washington Street is flooded between Market Street and Congress Street. Bridge crossings at Fairfax Street, Liberty Street, Whisner Avenue, and the parking lot of Berkeley Springs High School are all covered by water."
+   },
+   {
+    "lid": "BWSW2",
+    "stage_ft": 10.0,
+    "statement": "Extreme flooding is ongoing in Berkeley Springs with numerous blocks flooded, businesses and residences impacted, and almost every stream crossing flooded within a mile of downtown Berkeley Springs."
+   }
+  ],
+  "record_stage_ft": 6.2,
+  "record_date": "2012-09-01"
+ },
+ {
+  "lid": "BYVV2",
+  "usgs_id": "01615000",
+  "name": "Opequon Creek near Berryville",
+  "river": "Opequon Creek",
+  "state": "VA",
+  "county": "Frederick",
+  "lat": 39.1747222,
+  "lon": -78.0783333,
+  "comid": 5895964,
+  "measure": 51.139,
+  "thresholds": {
+   "action": 8.0,
+   "minor": 10.0,
+   "moderate": 12.5,
+   "major": 15.0
+  },
+  "impacts": [
+   {
+    "lid": "BYVV2",
+    "stage_ft": 8.0,
+    "statement": "Water covers the low water bridge on Charles Town Road at the county border."
+   },
+   {
+    "lid": "BYVV2",
+    "stage_ft": 9.0,
+    "statement": "Water begins to overflow the banks near the gauge and covers portions of Old Charles Town Road (Route 761)."
+   },
+   {
+    "lid": "BYVV2",
+    "stage_ft": 10.0,
+    "statement": "Both Old Charles Town Road and Sulphur Springs Road are flooded near the creek."
+   },
+   {
+    "lid": "BYVV2",
+    "stage_ft": 12.5,
+    "statement": "Numerous roads are flooded, along with a fairly large area of farmland. Access to some homes may be restricted."
+   },
+   {
+    "lid": "BYVV2",
+    "stage_ft": 13.0,
+    "statement": "Water approaches the intersection of Brucetown Road and Shady Creek Road. The bridge itself is still well above water."
+   },
+   {
+    "lid": "BYVV2",
+    "stage_ft": 15.0,
+    "statement": "Floodwaters cover numerous roads and a large area of farmland near the creek. Backwater flooding is likely covering even more farmland."
+   }
+  ],
+  "record_stage_ft": 18.4,
+  "record_date": "1942-10-01"
+ },
+ {
+  "lid": "CBEM2",
+  "usgs_id": "01603000",
+  "name": "North Branch Potomac River at Cumberland",
+  "river": "North Branch Potomac River",
+  "state": "MD",
+  "county": "Allegany",
+  "lat": 39.62180556,
+  "lon": -78.7734167,
+  "comid": 14363552,
+  "measure": 48.926,
+  "thresholds": {
+   "action": 12.0,
+   "minor": 17.0,
+   "moderate": 21.0,
+   "major": 23.0
+  },
+  "impacts": [
+   {
+    "lid": "CBEM2",
+    "stage_ft": 12.0,
+    "statement": "Low-lying farmland west of Mexico Farms, West Virginia begins to flood."
+   },
+   {
+    "lid": "CBEM2",
+    "stage_ft": 15.0,
+    "statement": "Water approaches the airstrip at the Mexico Farms, West Virginia airport."
+   },
+   {
+    "lid": "CBEM2",
+    "stage_ft": 17.0,
+    "statement": "A low spot on Airport Road in Wiley Ford, West Virginia is flooded. A livestock field southeast of the Cumberland Regional Airport floods."
+   },
+   {
+    "lid": "CBEM2",
+    "stage_ft": 19.0,
+    "statement": "Water reaches the Gene Mason Sports Complex in Cumberland."
+   },
+   {
+    "lid": "CBEM2",
+    "stage_ft": 20.0,
+    "statement": "Water floods several areas of farmland east and southeast of Cumberland Regional Airport. Water also begins to flow into low lying areas south of Ridgeley, West Virginia that are not protected by the levee. However, no personal property is affected in this area."
+   },
+   {
+    "lid": "CBEM2",
+    "stage_ft": 21.0,
+    "statement": "Much of the Mexico Farms, West Virginia airstrip is flooded, and water approaches nearby structures."
+   },
+   {
+    "lid": "CBEM2",
+    "stage_ft": 22.0,
+    "statement": "Water reaches a substation in Wiley Ford, West Virginia. Water also approaches an outbuilding in Wiley Ford, and portions of Kelly Road in Cumberland and Canal Road in North Branch."
+   },
+   {
+    "lid": "CBEM2",
+    "stage_ft": 23.0,
+    "statement": "Water approaches homes on Canal Road in North Branch."
+   },
+   {
+    "lid": "CBEM2",
+    "stage_ft": 25.0,
+    "statement": "Water begins to flood homes in Wiley Ford, West Virginia."
+   },
+   {
+    "lid": "CBEM2",
+    "stage_ft": 27.0,
+    "statement": "Water covers the C&O Canal towpath south of Cumberland."
+   },
+   {
+    "lid": "CBEM2",
+    "stage_ft": 30.0,
+    "statement": "Levees protect the Cumberland water treatment plant to approximately this level."
+   },
+   {
+    "lid": "CBEM2",
+    "stage_ft": 31.0,
+    "statement": "Levees protect the city of Cumberland to at least this level. Some areas are protected even higher."
+   },
+   {
+    "lid": "CBEM2",
+    "stage_ft": 35.0,
+    "statement": "Levees protect the city of Ridgeley, West Virginia to approximately this level."
+   }
+  ],
+  "record_stage_ft": 29.2,
+  "record_date": "1889-06-01"
+ },
+ {
+  "lid": "COOV2",
+  "usgs_id": "01632000",
+  "name": "North Fork Shenandoah River at Cootes Store",
+  "river": "North Fork Shenandoah River",
+  "state": "VA",
+  "county": "Rockingham",
+  "lat": 38.63706254,
+  "lon": -78.852803,
+  "comid": 8441037,
+  "measure": 34.233,
+  "thresholds": {
+   "action": 10.0,
+   "minor": 15.0,
+   "moderate": 18.0,
+   "major": 21.0
+  },
+  "impacts": [
+   {
+    "lid": "COOV2",
+    "stage_ft": 8.0,
+    "statement": "The river reaches bankfull level and begins to spill over into nearby portions of the floodplain."
+   },
+   {
+    "lid": "COOV2",
+    "stage_ft": 10.0,
+    "statement": "Low-lying areas near the river begin to flood."
+   },
+   {
+    "lid": "COOV2",
+    "stage_ft": 15.0,
+    "statement": "Water reaches fields near Brocks Gap Road and a campground. Low spots on Brocks Gap Road begin to flood."
+   },
+   {
+    "lid": "COOV2",
+    "stage_ft": 18.0,
+    "statement": "Water reaches buildings near Cootes Store."
+   },
+   {
+    "lid": "COOV2",
+    "stage_ft": 19.0,
+    "statement": "Large portions of Brocks Gap Road, and parts of Turleytown Road, begin to flood."
+   },
+   {
+    "lid": "COOV2",
+    "stage_ft": 21.0,
+    "statement": "Homes and businesses near Cootes Store begin to flood."
+   },
+   {
+    "lid": "COOV2",
+    "stage_ft": 28.0,
+    "statement": "Water completely covers the first floor of several buildings near Cootes Store."
+   }
+  ],
+  "record_stage_ft": 27.86,
+  "record_date": "1996-09-06"
+ },
+ {
+  "lid": "CTMM2",
+  "usgs_id": "01644388",
+  "name": "Ten Mile Creek near Clarksburg",
+  "river": "Ten Mile Creek",
+  "state": "MD",
+  "county": "Montgomery",
+  "lat": 39.22338889,
+  "lon": -77.31225,
+  "comid": 4505772,
+  "measure": 40.0523,
+  "thresholds": {
+   "action": 5.0,
+   "minor": 7.0
+  },
+  "impacts": [],
+  "record_stage_ft": 8.27,
+  "record_date": "2016-07-30"
+ },
+ {
+  "lid": "CWCM2",
+  "usgs_id": "01601500",
+  "name": "Wills Creek near Cumberland",
+  "river": "Wills Creek",
+  "state": "MD",
+  "county": "Allegany",
+  "lat": 39.6696111,
+  "lon": -78.7880278,
+  "comid": 14363456,
+  "measure": 93.466,
+  "thresholds": {
+   "action": 9.0,
+   "minor": 10.0,
+   "moderate": 12.0,
+   "major": 14.0
+  },
+  "impacts": [
+   {
+    "lid": "CWCM2",
+    "stage_ft": 9.0,
+    "statement": "The creek floods over its banks but no property is affected."
+   },
+   {
+    "lid": "CWCM2",
+    "stage_ft": 10.0,
+    "statement": "Water reaches a private bridge near Corriganville, and a car wash at Motor City. Water also reaches the parking lots of businesses along route 36 at Motor City. Vehicles may need to be moved to higher ground."
+   },
+   {
+    "lid": "CWCM2",
+    "stage_ft": 11.0,
+    "statement": "Water approaches businesses at Motor City. Vehicles must be moved to higher ground."
+   },
+   {
+    "lid": "CWCM2",
+    "stage_ft": 12.0,
+    "statement": "Water reaches businesses in Motor City along route 36, and begins to approach homes in Locust Grove. Water may be approaching the lowest sections of the railroad tracks on the left bank. The tracks on the right bank will not be affected."
+   },
+   {
+    "lid": "CWCM2",
+    "stage_ft": 14.0,
+    "statement": "Several businesses at Motor City and outside the levee protection north of Cumberland are flooded, along with at least a couple homes in Locust Grove. Water approaches low spots on Route 36, possibly affecting one lane."
+   },
+   {
+    "lid": "CWCM2",
+    "stage_ft": 18.0,
+    "statement": "Portions of the Western Maryland Railroad in The Narrows are underwater. Numerous homes and businesses in Motor City and Locust Grove are flooded."
+   },
+   {
+    "lid": "CWCM2",
+    "stage_ft": 22.0,
+    "statement": "Significant portions of Maryland Route 36 at Motor City and National Highway in The Narrows are flooded, along with many homes and businesses in Motor City and Locust Grove."
+   },
+   {
+    "lid": "CWCM2",
+    "stage_ft": 23.0,
+    "statement": "The levee system on Wills Creek protects the city of Cumberland from flooding to approximately this level."
+   }
+  ],
+  "record_stage_ft": 23.11,
+  "record_date": "1996-01-19"
+ },
+ {
+  "lid": "DAWM2",
+  "usgs_id": "01645000",
+  "name": "Seneca Creek at Dawsonville",
+  "river": "Seneca Creek",
+  "state": "MD",
+  "county": "Montgomery",
+  "lat": 39.1280833,
+  "lon": -77.33577778,
+  "comid": 4506374,
+  "measure": 97.198,
+  "thresholds": {
+   "action": 5.0,
+   "minor": 7.5,
+   "moderate": 11.0,
+   "major": 16.0
+  },
+  "impacts": [
+   {
+    "lid": "DAWM2",
+    "stage_ft": 5.0,
+    "statement": "Water begins to overflow the banks underneath the route 28 bridge. Users of the seneca creek greenway should seek higher ground at these levels."
+   },
+   {
+    "lid": "DAWM2",
+    "stage_ft": 7.5,
+    "statement": "Portions of the Seneca Creek Greenway are flooded. A small portion of Berryville Road west of Darnestown begins to flood."
+   },
+   {
+    "lid": "DAWM2",
+    "stage_ft": 11.0,
+    "statement": "Water from the creek enters the gage house. Reports from this location may become sporadic. Multiple roads are flooded, and water is also reaching the first floor of Old Black Rock Mill."
+   },
+   {
+    "lid": "DAWM2",
+    "stage_ft": 14.0,
+    "statement": "Water reaches the instrumentation inside the gage house. Automated reports from this location will likely be unavailable above this level."
+   },
+   {
+    "lid": "DAWM2",
+    "stage_ft": 16.0,
+    "statement": "Numerous roads are flooded near Seneca Creek. The exact roads affected will depend on which portion of the basin received the heaviest rainfall."
+   },
+   {
+    "lid": "DAWM2",
+    "stage_ft": 21.0,
+    "statement": "Water reaches the parking lot off Route 28 for Seneca Creek State Park."
+   },
+   {
+    "lid": "DAWM2",
+    "stage_ft": 34.0,
+    "statement": "Water covers the Route 28 bridge near Dawsonville."
+   }
+  ],
+  "record_stage_ft": 16.4,
+  "record_date": "1972-06-22"
+ },
+ {
+  "lid": "DOOV2",
+  "usgs_id": "01626850",
+  "name": "South River near Dooms",
+  "river": "South River",
+  "state": "VA",
+  "county": "City of Waynesboro",
+  "lat": 38.08874648,
+  "lon": -78.8769683,
+  "comid": 5908485,
+  "measure": 47.069,
+  "thresholds": {
+   "action": 9.0,
+   "minor": 11.0,
+   "moderate": 13.0,
+   "major": 15.0
+  },
+  "impacts": [
+   {
+    "lid": "DOOV2",
+    "stage_ft": 9.0,
+    "statement": "Fields on the north side of Waynesboro begin to flood."
+   },
+   {
+    "lid": "DOOV2",
+    "stage_ft": 11.0,
+    "statement": "Agricultural flooding is occurring near the river. Livestock should be moved to higher ground. Flooding is occurring in the city of Waynesboro to the south."
+   },
+   {
+    "lid": "DOOV2",
+    "stage_ft": 13.0,
+    "statement": "Widespread flooding is occurring south of this location in the City of Waynesboro. Water is approaching Riverside Drive and an industrial area upstream, and buildings near the creek at Dooms Crossing."
+   },
+   {
+    "lid": "DOOV2",
+    "stage_ft": 15.0,
+    "statement": "A park near the river on the north side of Waynesboro is completely flooded. Widespread lowland flooding is occurring throughout the city and points northward, with buildings and roads flooded."
+   }
+  ],
+  "record_stage_ft": 14.25,
+  "record_date": "1996-09-06"
+ },
+ {
+  "lid": "EDFM2",
+  "usgs_id": "01644148",
+  "name": "Potomac River at Edwards Ferry",
+  "river": "Potomac River",
+  "state": "MD",
+  "county": "Montgomery",
+  "lat": 39.09863889,
+  "lon": -77.47125,
+  "comid": 4507454,
+  "measure": 94.4327,
+  "thresholds": {
+   "action": 12.25,
+   "minor": 15.0,
+   "moderate": 17.0,
+   "major": 24.0
+  },
+  "impacts": [
+   {
+    "lid": "EDFM2",
+    "stage_ft": 12.25,
+    "statement": "Water reaches the Whites Ferry area. Ferry service may be suspended."
+   },
+   {
+    "lid": "EDFM2",
+    "stage_ft": 14.7,
+    "statement": "The Chisel Branch Hiker/Biker Campsite near the C&O Canal trail starts flooding."
+   },
+   {
+    "lid": "EDFM2",
+    "stage_ft": 15.0,
+    "statement": "Water reaches the boat ramp and lower parking area at Edwards Ferry, and begins to inundate areas near Whites Ferry."
+   },
+   {
+    "lid": "EDFM2",
+    "stage_ft": 17.0,
+    "statement": "Floodwaters begin to enter the store at Whites Ferry."
+   },
+   {
+    "lid": "EDFM2",
+    "stage_ft": 18.5,
+    "statement": "The parking lot at Edwards Ferry is completely covered by water. The parking lot at Seneca is partially flooded."
+   },
+   {
+    "lid": "EDFM2",
+    "stage_ft": 20.0,
+    "statement": "The basements of the Edwards Ferry Lockhouse and Rileys Lockhouse are flooded. Backwater flooding may affect homes on the Loudoun County side of the river near Broad Run in Sterling."
+   },
+   {
+    "lid": "EDFM2",
+    "stage_ft": 24.0,
+    "statement": "Water reaches the first floor ceiling at Whites Ferry store. Significant portions of the C&O Canal towpath are flooded. Backwater flooding is affecting homes on the Loudoun County side of the river near Broad Run in Sterling."
+   },
+   {
+    "lid": "EDFM2",
+    "stage_ft": 26.0,
+    "statement": "Water covers the lock at Edwards Ferry. The access road to Violettes Lock is flooded."
+   },
+   {
+    "lid": "EDFM2",
+    "stage_ft": 28.0,
+    "statement": "Tchiffely Mill Road begins to flood due to backwater effects. Most of the C&O Canal towpath is flooded."
+   }
+  ],
+  "record_stage_ft": 22.45,
+  "record_date": "2018-06-05"
+ },
+ {
+  "lid": "FAVM2",
+  "usgs_id": "01614500",
+  "name": "Conococheague Creek at Fairview",
+  "river": "Conococheague Creek",
+  "state": "MD",
+  "county": "Washington",
+  "lat": 39.71638889,
+  "lon": -77.8247778,
+  "comid": 5891232,
+  "measure": 95.446,
+  "thresholds": {
+   "action": 8.0,
+   "minor": 10.0,
+   "moderate": 12.0,
+   "major": 15.0
+  },
+  "impacts": [
+   {
+    "lid": "FAVM2",
+    "stage_ft": 8.0,
+    "statement": "Lowlands near the creek begin to flood. Water approaches Wishard Road and Kemps Mill Road in northern Washington County."
+   },
+   {
+    "lid": "FAVM2",
+    "stage_ft": 9.0,
+    "statement": "Water begins to cover Wishard Road and Kemp Mill Road."
+   },
+   {
+    "lid": "FAVM2",
+    "stage_ft": 10.0,
+    "statement": "Wishard Road and Kemp Mill Road are both flooded."
+   },
+   {
+    "lid": "FAVM2",
+    "stage_ft": 11.0,
+    "statement": "Several roads, including Wishard Road, Kemps Mill Road, Independence Road, Cress Pond Road, and Walnut Point Road, are flooded north of Williamsport."
+   },
+   {
+    "lid": "FAVM2",
+    "stage_ft": 12.0,
+    "statement": "Water approaches homes north of Williamsport. Some homes and a campground will also be cut off from access due to flooded roads, but the homes themselves are not flooded."
+   },
+   {
+    "lid": "FAVM2",
+    "stage_ft": 13.0,
+    "statement": "Water reaches backyards of homes near Wilson's Bridge. Numerous roads are flooded."
+   },
+   {
+    "lid": "FAVM2",
+    "stage_ft": 15.0,
+    "statement": "Water floods several homes north of Williamsport."
+   },
+   {
+    "lid": "FAVM2",
+    "stage_ft": 21.0,
+    "statement": "Water reaches the bridge on Fairview Road."
+   }
+  ],
+  "record_stage_ft": 24.5,
+  "record_date": "1972-06-23"
+ },
+ {
+  "lid": "FDKM2",
+  "usgs_id": "01643000",
+  "name": "Monocacy River near Frederick at Interstate 70",
+  "river": "Monocacy River near Frederick",
+  "state": "MD",
+  "county": "Frederick",
+  "lat": 39.4028333,
+  "lon": -77.3660833,
+  "comid": 8450266,
+  "measure": 79.216,
+  "thresholds": {
+   "action": 13.0,
+   "minor": 15.0,
+   "moderate": 17.0,
+   "major": 20.0
+  },
+  "impacts": [
+   {
+    "lid": "FDKM2",
+    "stage_ft": 5.0,
+    "statement": "After rain events, the river may become hazardous for recreational purposes when stages are over 5 feet."
+   },
+   {
+    "lid": "FDKM2",
+    "stage_ft": 10.0,
+    "statement": "The east side of the Monocacy River, or left bank, begins to flood east of Frederick. Although no structures are affected, water approaches an access road at Pinecliff Park."
+   },
+   {
+    "lid": "FDKM2",
+    "stage_ft": 13.0,
+    "statement": "Water covers portions of Pinecliff Park in southeast Frederick. Water also approaches Rivermist Park in northeast Frederick."
+   },
+   {
+    "lid": "FDKM2",
+    "stage_ft": 14.0,
+    "statement": "Two low-water crossings, one on Michaels Mill Road /State Route 880/ in Buckeystown, and one on Retreat Road north of Frederick, begin to flood."
+   },
+   {
+    "lid": "FDKM2",
+    "stage_ft": 15.0,
+    "statement": "Both banks of the river are flooded. Water begins to flood low-lying fields at Monocacy National Battlefield. Water reaches the access road of the Frederick city wastewater treatment plant. Backwater flooding is occurring on several area creeks, particularly Carroll Creek in Frederick."
+   },
+   {
+    "lid": "FDKM2",
+    "stage_ft": 16.0,
+    "statement": "Much of Pinecliff Park and Rivermist Park in Frederick are flooded. Buckeystown Community Park is also flooded with water approaching the parking lot. Waters are also approaching the Frederick city wastewater treatment plant and the Ballenger Creek wastewater treatment plant. Significant backwater flooding is occurring. Several roads will be closed along the river and adjoining creeks."
+   },
+   {
+    "lid": "FDKM2",
+    "stage_ft": 17.0,
+    "statement": "Significant lowland flooding is occurring along the river, with backwater flooding also occurring. Numerous roads are closed. Water is approaching the parking lot at Gambrill Mill on the Monocacy National Battlefield. Backwater flooding from Carroll Creek is likely approaching the underside of the bridge leading to the Frederick city wastewater treatment plant."
+   },
+   {
+    "lid": "FDKM2",
+    "stage_ft": 20.0,
+    "statement": "Water reaches Gambrill Mill on the Monocacy National Battlefield."
+   },
+   {
+    "lid": "FDKM2",
+    "stage_ft": 21.0,
+    "statement": "Maryland Route 26 is flooded near the Monocacy River bridge."
+   },
+   {
+    "lid": "FDKM2",
+    "stage_ft": 24.0,
+    "statement": "Water approaches Urbana Pike near Monocacy National Battlefield."
+   },
+   {
+    "lid": "FDKM2",
+    "stage_ft": 30.0,
+    "statement": "Water reaches the second floor of Gambrill Mill on the Monocacy National Battlefield."
+   }
+  ],
+  "record_stage_ft": 35.9,
+  "record_date": "1972-06-23"
+ },
+ {
+  "lid": "FKLW2",
+  "usgs_id": "01605500",
+  "name": "South Branch Potomac River at Franklin",
+  "river": "South Branch Potomac River",
+  "state": "WV",
+  "county": "Pendleton",
+  "lat": 38.63567247,
+  "lon": -79.3378199,
+  "comid": 8423458,
+  "measure": 75.068,
+  "thresholds": {
+   "action": 6.0,
+   "minor": 7.0,
+   "moderate": 9.0,
+   "major": 11.0
+  },
+  "impacts": [
+   {
+    "lid": "FKLW2",
+    "stage_ft": 5.0,
+    "statement": "Water begins to overflow the low water crossing on County Route 220/12 at the south end of town."
+   },
+   {
+    "lid": "FKLW2",
+    "stage_ft": 6.5,
+    "statement": "Water begins to cover Taylor Hollow Road in Franklin."
+   },
+   {
+    "lid": "FKLW2",
+    "stage_ft": 7.0,
+    "statement": "A low spot on Dickenson Mountain Road (Route 220/12) 300 feet downstream from the bridge begins to flood."
+   },
+   {
+    "lid": "FKLW2",
+    "stage_ft": 8.0,
+    "statement": "The Franklin city park begins to flood."
+   },
+   {
+    "lid": "FKLW2",
+    "stage_ft": 9.0,
+    "statement": "Several roads in or near Franklin are flooded, including Dickenson Mountain Road (Route 220/12), parts of US Route 220, County Route 220/13, and Taylor Hollow Road."
+   },
+   {
+    "lid": "FKLW2",
+    "stage_ft": 11.0,
+    "statement": "Homes along Dickenson Mountain Road are flooded."
+   },
+   {
+    "lid": "FKLW2",
+    "stage_ft": 13.0,
+    "statement": "The lowest end of the Route 220/12 bridge begins to flood."
+   }
+  ],
+  "record_stage_ft": 22.58,
+  "record_date": "1985-11-04"
+ },
+ {
+  "lid": "FRMM2",
+  "usgs_id": "01642190",
+  "name": "Monocacy River at Monocacy Blvd. in Frederick",
+  "river": "Monocacy River",
+  "state": "MD",
+  "county": "Frederick",
+  "lat": 39.4435833,
+  "lon": -77.38227778,
+  "comid": 8450100,
+  "measure": 39.1298,
+  "thresholds": {
+   "action": 15.5,
+   "minor": 17.8,
+   "moderate": 20.2,
+   "major": 23.5
+  },
+  "impacts": [],
+  "record_stage_ft": 25.86,
+  "record_date": "2021-09-02"
+ },
+ {
+  "lid": "FROV2",
+  "usgs_id": "01631000",
+  "name": "South Fork Shenandoah River at Front Royal",
+  "river": "South Fork Shenandoah River",
+  "state": "VA",
+  "county": "Warren",
+  "lat": 38.91400059,
+  "lon": -78.21083388,
+  "comid": 5907079,
+  "measure": 34.399,
+  "thresholds": {
+   "action": 8.0,
+   "minor": 12.0,
+   "moderate": 14.0,
+   "major": 18.0
+  },
+  "impacts": [
+   {
+    "lid": "FROV2",
+    "stage_ft": 8.0,
+    "statement": "A boat ramp near the end of Luray Avenue south of Front Royal floods. A second boat ramp near Bentonville also floods."
+   },
+   {
+    "lid": "FROV2",
+    "stage_ft": 10.0,
+    "statement": "Hay fields near the gauge begin to flood."
+   },
+   {
+    "lid": "FROV2",
+    "stage_ft": 12.0,
+    "statement": "Backwater begins to creep up Luray Avenue toward the railroad trestle. A riverside parking area at the end of Luray Avenue is flooded."
+   },
+   {
+    "lid": "FROV2",
+    "stage_ft": 14.0,
+    "statement": "Railroad tracks along the river south of Front Royal begin to flood. Water approaches structures in Riverton."
+   },
+   {
+    "lid": "FROV2",
+    "stage_ft": 16.0,
+    "statement": "Floodwaters approach lower portions of Shenandoah Shores Estates."
+   },
+   {
+    "lid": "FROV2",
+    "stage_ft": 17.0,
+    "statement": "Backwater from the river reaches Rivermont Acres Drive. Water also approaches the Shenandoah Farms subdivision and covers a walking trail near the Front Royal boat ramp."
+   },
+   {
+    "lid": "FROV2",
+    "stage_ft": 18.0,
+    "statement": "Significant portions of the railroad tracks running along the southwest side of Front Royal are flooded."
+   },
+   {
+    "lid": "FROV2",
+    "stage_ft": 20.0,
+    "statement": "Backwater from the river reaches South River Road. Floodwaters cover the Indian Hollow Road bridge."
+   },
+   {
+    "lid": "FROV2",
+    "stage_ft": 22.0,
+    "statement": "Water approaches structures on Rivermont Acres Drive."
+   },
+   {
+    "lid": "FROV2",
+    "stage_ft": 24.0,
+    "statement": "Catlett Mountain Road begins to flood."
+   }
+  ],
+  "record_stage_ft": 34.8,
+  "record_date": "1942-10-16"
+ },
+ {
+  "lid": "GCPW2",
+  "usgs_id": "01611500",
+  "name": "Cacapon River near Great Cacapon",
+  "river": "Cacapon River",
+  "state": "WV",
+  "county": "Morgan",
+  "lat": 39.5823158,
+  "lon": -78.3097312,
+  "comid": 8431736,
+  "measure": 16.363,
+  "thresholds": {
+   "action": 7.0,
+   "minor": 9.0,
+   "moderate": 16.0,
+   "major": 20.0
+  },
+  "impacts": [
+   {
+    "lid": "GCPW2",
+    "stage_ft": 9.0,
+    "statement": "Rock Ford Road begins to flood in multiple locations, including flowing completely over the low water bridge. Constant Run Road and a small portion of Kilgore Road also begin to flood."
+   },
+   {
+    "lid": "GCPW2",
+    "stage_ft": 11.0,
+    "statement": "Kilgore Road is flooded in multiple spots."
+   },
+   {
+    "lid": "GCPW2",
+    "stage_ft": 12.0,
+    "statement": "Running Waters Way begins to flood."
+   },
+   {
+    "lid": "GCPW2",
+    "stage_ft": 15.0,
+    "statement": "Floodwaters reach Trailer Park Road near Largent."
+   },
+   {
+    "lid": "GCPW2",
+    "stage_ft": 16.0,
+    "statement": "Route 9 begins to flood near the southern bridge over the Cacapon River in Morgan County."
+   },
+   {
+    "lid": "GCPW2",
+    "stage_ft": 17.0,
+    "statement": "Route 9 is flooded in multiple locations, near the southern bridge over the Cacapon in Morgan County, and near Claybaugh Rocks."
+   },
+   {
+    "lid": "GCPW2",
+    "stage_ft": 20.0,
+    "statement": "Floodwaters approach homes near Largent, as well as near Fisher Bridge Road and Running Waters Way. Widespread flooding is occurring throughout the basin."
+   },
+   {
+    "lid": "GCPW2",
+    "stage_ft": 23.0,
+    "statement": "Floodwaters approach homes near Rock Ford Road."
+   }
+  ],
+  "record_stage_ft": 30.1,
+  "record_date": "1936-03-18"
+ },
+ {
+  "lid": "GFLV2",
+  "usgs_id": "01646000",
+  "name": "Difficult Run near Great Falls",
+  "river": "Difficult Run",
+  "state": "VA",
+  "county": "Fairfax",
+  "lat": 38.97594346,
+  "lon": -77.24581439,
+  "comid": 4509202,
+  "measure": 94.315,
+  "thresholds": {
+   "action": 9.0,
+   "minor": 11.0,
+   "moderate": 13.0,
+   "major": 20.0
+  },
+  "impacts": [
+   {
+    "lid": "GFLV2",
+    "stage_ft": 11.0,
+    "statement": "Leigh Mill Road floods near Difficult Run."
+   },
+   {
+    "lid": "GFLV2",
+    "stage_ft": 13.0,
+    "statement": "Water reaches the intersection of Leigh Mill Road and Kelso Road."
+   },
+   {
+    "lid": "GFLV2",
+    "stage_ft": 20.0,
+    "statement": "Water approaches structures near the stream."
+   }
+  ],
+  "record_stage_ft": 21.4,
+  "record_date": "1972-06-22"
+ },
+ {
+  "lid": "GRMM2",
+  "usgs_id": "01617800",
+  "name": "Marsh Run at Grimes",
+  "river": "Marsh Run",
+  "state": "MD",
+  "county": "Washington",
+  "lat": 39.51455556,
+  "lon": -77.7772222,
+  "comid": 5891846,
+  "measure": 91.073,
+  "thresholds": {
+   "action": 4.0,
+   "minor": 6.0,
+   "moderate": 7.0,
+   "major": 10.0
+  },
+  "impacts": [
+   {
+    "lid": "GRMM2",
+    "stage_ft": 4.0,
+    "statement": "Water begins to overflow the banks downstream of the gage, but there is no impact."
+   },
+   {
+    "lid": "GRMM2",
+    "stage_ft": 6.0,
+    "statement": "Lowlands and fields on both sides of the river flood."
+   },
+   {
+    "lid": "GRMM2",
+    "stage_ft": 7.0,
+    "statement": "Water covers the bridge on Sprecher Road near the camp entrance, and also covers the bridges upstream on Sprecher Road and Bakersville Road."
+   },
+   {
+    "lid": "GRMM2",
+    "stage_ft": 10.0,
+    "statement": "Significant flooding is occurring, with homes, buildings, and roads flooded."
+   }
+  ],
+  "record_stage_ft": 4.45,
+  "record_date": "1985-02-12"
+ },
+ {
+  "lid": "GROV2",
+  "usgs_id": "01625000",
+  "name": "Middle River near Grottoes",
+  "river": "Middle River",
+  "state": "VA",
+  "county": "Augusta",
+  "lat": 38.26179616,
+  "lon": -78.8619703,
+  "comid": 5908355,
+  "measure": 60.559,
+  "thresholds": {
+   "action": 10.0,
+   "minor": 12.0,
+   "moderate": 23.0,
+   "major": 26.0
+  },
+  "impacts": [
+   {
+    "lid": "GROV2",
+    "stage_ft": 12.0,
+    "statement": "Fields along the river begin to flood. Livestock should be moved to higher ground."
+   },
+   {
+    "lid": "GROV2",
+    "stage_ft": 16.0,
+    "statement": "Water approaches a driveway near Route 778, and is approaching Route 774."
+   },
+   {
+    "lid": "GROV2",
+    "stage_ft": 23.0,
+    "statement": "Water covers the bridges on Routes 774, 775, and 778."
+   },
+   {
+    "lid": "GROV2",
+    "stage_ft": 26.0,
+    "statement": "Water approaches homes on Rockfish Road."
+   }
+  ],
+  "record_stage_ft": 35.62,
+  "record_date": "1996-09-07"
+ },
+ {
+  "lid": "HARV2",
+  "usgs_id": "01627500",
+  "name": "South River at Harriston",
+  "river": "South River",
+  "state": "VA",
+  "county": "Augusta",
+  "lat": 38.21874208,
+  "lon": -78.8366915,
+  "comid": 5908375,
+  "measure": 97.938,
+  "thresholds": {
+   "action": 6.0,
+   "minor": 9.5,
+   "moderate": 12.0,
+   "major": 16.0
+  },
+  "impacts": [
+   {
+    "lid": "HARV2",
+    "stage_ft": 9.5,
+    "statement": "Water begins to overflow into fields near the river."
+   },
+   {
+    "lid": "HARV2",
+    "stage_ft": 10.0,
+    "statement": "The very end of Route 770 is flooded, along with nearby fields."
+   },
+   {
+    "lid": "HARV2",
+    "stage_ft": 11.0,
+    "statement": "Water reaches a low spot on Route 625."
+   },
+   {
+    "lid": "HARV2",
+    "stage_ft": 12.0,
+    "statement": "Trixie Lane is flooded. Water approaches homes near the river."
+   },
+   {
+    "lid": "HARV2",
+    "stage_ft": 15.0,
+    "statement": "A large portion of Route 825 is flooded. Several homes are flooded nearby."
+   },
+   {
+    "lid": "HARV2",
+    "stage_ft": 16.0,
+    "statement": "Numerous homes are flooded, along with several roads and significant amounts of farmland."
+   }
+  ],
+  "record_stage_ft": 18.8,
+  "record_date": "1877-11-01"
+ },
+ {
+  "lid": "HDSW2",
+  "usgs_id": "01604500",
+  "name": "Patterson Creek near Headsville",
+  "river": "Patterson Creek",
+  "state": "WV",
+  "county": "Mineral",
+  "lat": 39.44314946,
+  "lon": -78.8219649,
+  "comid": 14364372,
+  "measure": 97.493,
+  "thresholds": {
+   "action": 6.0,
+   "minor": 9.0,
+   "moderate": 11.0,
+   "major": 14.0
+  },
+  "impacts": [
+   {
+    "lid": "HDSW2",
+    "stage_ft": 6.0,
+    "statement": "Several low spots at the end of Shreves Road begin to flood. Lowland flooding begins on the left bank nearby, possibly affecting campsites."
+   },
+   {
+    "lid": "HDSW2",
+    "stage_ft": 8.0,
+    "statement": "Agricultural flooding is occurring in spots between Champwood and Fort Ashby."
+   },
+   {
+    "lid": "HDSW2",
+    "stage_ft": 9.0,
+    "statement": "Water affects basements of homes along the creek. Agricultural flooding is occurring in some locations between Champwood and Fort Ashby. Foreback Road and Georges Run Road both begin to flood just east of the creek."
+   },
+   {
+    "lid": "HDSW2",
+    "stage_ft": 10.0,
+    "statement": "Water approaches several homes along the creek between Champwood and the town of Patterson Creek. Moderate to widespread agricultural flooding is occurring along this same stretch. Both Foreback Road and a portion of Creek View Lane are flooded near the creek."
+   },
+   {
+    "lid": "HDSW2",
+    "stage_ft": 11.0,
+    "statement": "Several homes are flooded along the creek. County Route 11 begins to flood near Reeses Mill. Both Foreback Road and Georges Run Road are flooded."
+   },
+   {
+    "lid": "HDSW2",
+    "stage_ft": 14.0,
+    "statement": "State Route 46 is flooded in several spots between Champwood and Fort Ashby. Several side streets that are near the creek flood as well. Many homes are flooded, and significant agricultural flooding is occurring."
+   }
+  ],
+  "record_stage_ft": 15.7,
+  "record_date": "1937-10-01"
+ },
+ {
+  "lid": "HFDV2",
+  "usgs_id": "01613900",
+  "name": "Hogue Creek near Hayfield",
+  "river": "Hogue Creek",
+  "state": "VA",
+  "county": "Frederick",
+  "lat": 39.2145479,
+  "lon": -78.2880592,
+  "comid": 5895822,
+  "measure": 97.992,
+  "thresholds": {
+   "action": 4.0,
+   "minor": 8.0,
+   "moderate": 10.0,
+   "major": 12.0
+  },
+  "impacts": [
+   {
+    "lid": "HFDV2",
+    "stage_ft": 4.0,
+    "statement": "The low water bridge on Indian Hollow Road floods."
+   },
+   {
+    "lid": "HFDV2",
+    "stage_ft": 6.0,
+    "statement": "Water begins to overflow the banks but there is no impact."
+   },
+   {
+    "lid": "HFDV2",
+    "stage_ft": 8.0,
+    "statement": "Fields and yards near the creek are flooded. Access to some residences may be restricted by high water."
+   },
+   {
+    "lid": "HFDV2",
+    "stage_ft": 10.0,
+    "statement": "Water approaches Route 614 near the creek."
+   },
+   {
+    "lid": "HFDV2",
+    "stage_ft": 12.0,
+    "statement": "Nearly two feet of water covers a portion of Route 614 near the creek. Significant flooding of fields and yards is occurring."
+   }
+  ],
+  "record_stage_ft": 9.71,
+  "record_date": "1996-09-06"
+ },
+ {
+  "lid": "HNKM2",
+  "usgs_id": "01613000",
+  "name": "Potomac River at Hancock",
+  "river": "Potomac River",
+  "state": "MD",
+  "county": "Washington",
+  "lat": 39.69755556,
+  "lon": -78.17788889,
+  "comid": 5893338,
+  "measure": 56.132,
+  "thresholds": {
+   "action": 21.0,
+   "minor": 25.0,
+   "moderate": 33.0,
+   "major": 35.0
+  },
+  "impacts": [
+   {
+    "lid": "HNKM2",
+    "stage_ft": 3.5,
+    "statement": "The river reaches caution level for boaters as defined by the State of Maryland. Fast moving water and changing currents can be expected."
+   },
+   {
+    "lid": "HNKM2",
+    "stage_ft": 7.5,
+    "statement": "The river is at danger level for boaters as defined by the State of Maryland. At these levels, conditions are extremely hazardous."
+   },
+   {
+    "lid": "HNKM2",
+    "stage_ft": 18.5,
+    "statement": "Water enters the canal prism and blocks the towpath at MP 106."
+   },
+   {
+    "lid": "HNKM2",
+    "stage_ft": 21.0,
+    "statement": "The boat ramp at Four Locks is covered by water. Half the parking lot there is also covered."
+   },
+   {
+    "lid": "HNKM2",
+    "stage_ft": 24.0,
+    "statement": "Water begins to overflow into low lying areas."
+   },
+   {
+    "lid": "HNKM2",
+    "stage_ft": 25.0,
+    "statement": "Water may begin to inundate low points of the CSX Railroad tracks on the West Virginia side of the river due to backwater. Additionally, access to Potomac Airpark may be restricted due to backwater. Water reaches the top of the Hancock boat ramp and begins to spill over into the adjacent parking lot."
+   },
+   {
+    "lid": "HNKM2",
+    "stage_ft": 28.0,
+    "statement": "Water begins to inundate some yards on the west end of Hancock. Water also begins to collect on the west end of the CSX Railyard on the West Virginia side."
+   },
+   {
+    "lid": "HNKM2",
+    "stage_ft": 30.0,
+    "statement": "Water begins to inundate homes and business in Hancock. Water covers the road to the maintenance shop for the National Park Service near Hancock. The west end of the Potomac Airpark runway begins to flood."
+   },
+   {
+    "lid": "HNKM2",
+    "stage_ft": 31.0,
+    "statement": "Water begins to flood low spots of West Main Street in Hancock."
+   },
+   {
+    "lid": "HNKM2",
+    "stage_ft": 33.0,
+    "statement": "Water floods low spots on East Main Street in Hancock."
+   },
+   {
+    "lid": "HNKM2",
+    "stage_ft": 35.0,
+    "statement": "Water inundates 20 to 30 homes and 5 or more businesses in the west end of Hancock."
+   },
+   {
+    "lid": "HNKM2",
+    "stage_ft": 40.0,
+    "statement": "Water floods 25 to 30 homes along the West Virginia side of the river just downstream from Hancock, and at least another 20 to 30 in Hancock itself."
+   },
+   {
+    "lid": "HNKM2",
+    "stage_ft": 45.0,
+    "statement": "Floodwater isolates the town of Hancock."
+   },
+   {
+    "lid": "HNKM2",
+    "stage_ft": 46.0,
+    "statement": "Water floods the railroad depot."
+   },
+   {
+    "lid": "HNKM2",
+    "stage_ft": 56.0,
+    "statement": "Water approaches the highest point on Main Street."
+   }
+  ],
+  "record_stage_ft": 47.6,
+  "record_date": "1936-03-18"
+ },
+ {
+  "lid": "JSPW2",
+  "usgs_id": "01614000",
+  "name": "Back Creek near Jones Springs",
+  "river": "Back Creek",
+  "state": "WV",
+  "county": "Berkeley",
+  "lat": 39.51204187,
+  "lon": -78.0372224,
+  "comid": 5893170,
+  "measure": 2.043,
+  "thresholds": {
+   "action": 9.0,
+   "minor": 11.0,
+   "moderate": 15.0,
+   "major": 20.0
+  },
+  "impacts": [
+   {
+    "lid": "JSPW2",
+    "stage_ft": 11.0,
+    "statement": "Dry Run Road begins to flood. Water approaches Daisy Lane."
+   },
+   {
+    "lid": "JSPW2",
+    "stage_ft": 12.0,
+    "statement": "Dry Run Road and Daisy Lane are flooded. Water begins to cover pastureland near the creek."
+   },
+   {
+    "lid": "JSPW2",
+    "stage_ft": 15.0,
+    "statement": "Several roads, including Dry Run Road and Daisy Lane, are significantly flooded and closed."
+   },
+   {
+    "lid": "JSPW2",
+    "stage_ft": 22.0,
+    "statement": "Water approaches farm buildings near the creek."
+   }
+  ],
+  "record_stage_ft": 25.17,
+  "record_date": "1942-10-15"
+ },
+ {
+  "lid": "KBLW2",
+  "usgs_id": "01636464",
+  "name": "Bullskin Run below Kabletown",
+  "river": "Bullskin Run",
+  "state": "WV",
+  "county": "Jefferson",
+  "lat": 39.2115833,
+  "lon": -77.8348611,
+  "comid": 8444776,
+  "measure": 14.8137,
+  "thresholds": {
+   "action": 4.5,
+   "minor": 5.5,
+   "moderate": 7.5,
+   "major": 10.5
+  },
+  "impacts": [
+   {
+    "lid": "KBLW2",
+    "stage_ft": 5.5,
+    "statement": "Water reaches a low water bridge on King Lear Drive and overflows into a nearby farm field."
+   },
+   {
+    "lid": "KBLW2",
+    "stage_ft": 7.5,
+    "statement": "Farm buildings are inundated by water and a few nearby homes are approached."
+   },
+   {
+    "lid": "KBLW2",
+    "stage_ft": 10.5,
+    "statement": "Significant flooding is occurring to farmland and buildings. Much of King Lear Drive is flooded. The Avon Bend Park footbridge and park are flooded. Avon Bend Road is flooded at the bridge. Outbuildings just downstream of Avon Bend Road are flooded."
+   }
+  ],
+  "record_stage_ft": 4.04,
+  "record_date": "2018-05-17"
+ },
+ {
+  "lid": "KITM2",
+  "usgs_id": "01595500",
+  "name": "North Branch Potomac River at Kitzmiller",
+  "river": "North Branch Potomac River",
+  "state": "MD",
+  "county": "Garrett",
+  "lat": 39.39388889,
+  "lon": -79.1816944,
+  "comid": 14365188,
+  "measure": 53.599,
+  "thresholds": {
+   "action": 8.0,
+   "minor": 9.0,
+   "moderate": 12.0,
+   "major": 15.0
+  },
+  "impacts": [
+   {
+    "lid": "KITM2",
+    "stage_ft": 8.0,
+    "statement": "Water begins to overflow the banks near Kitzmiller."
+   },
+   {
+    "lid": "KITM2",
+    "stage_ft": 9.0,
+    "statement": "Low lying areas near the river around Kitzmiller are flooded."
+   },
+   {
+    "lid": "KITM2",
+    "stage_ft": 12.0,
+    "statement": "Portions of Shallmar Road near Shallmar are flooded."
+   },
+   {
+    "lid": "KITM2",
+    "stage_ft": 14.0,
+    "statement": "A portion of East Main Street, outside the area of levee protection, in Kitzmiller begins to flood."
+   },
+   {
+    "lid": "KITM2",
+    "stage_ft": 15.0,
+    "statement": "Water approaches buildings along East Main Street, outside the area of levee protection, in Kitzmiller."
+   },
+   {
+    "lid": "KITM2",
+    "stage_ft": 17.0,
+    "statement": "Several homes outside the area of levee protection are flooded, north of Kitzmiller, between Kitzmiller and Shallmar, and in a low lying area upstream of Blaine."
+   },
+   {
+    "lid": "KITM2",
+    "stage_ft": 19.0,
+    "statement": "Water reaches the railroad tracks north of Blaine."
+   },
+   {
+    "lid": "KITM2",
+    "stage_ft": 20.0,
+    "statement": "Levee systems protect the communities of Kitzmiller and Blaine to approximately this level."
+   },
+   {
+    "lid": "KITM2",
+    "stage_ft": 22.0,
+    "statement": "Water reaches the bridge connecting Kitzmiller and Blaine over the North Branch."
+   }
+  ],
+  "record_stage_ft": 14.85,
+  "record_date": "1985-11-05"
+ },
+ {
+  "lid": "LBUV2",
+  "usgs_id": "01643590",
+  "name": "Limestone Branch near Leesburg",
+  "river": "Limestone Branch",
+  "state": "VA",
+  "county": "Loudoun",
+  "lat": 39.1676111,
+  "lon": -77.5359167,
+  "comid": 4506028,
+  "measure": 93.2668,
+  "thresholds": {
+   "action": 5.0,
+   "minor": 7.0,
+   "moderate": 8.0,
+   "major": 10.0
+  },
+  "impacts": [
+   {
+    "lid": "LBUV2",
+    "stage_ft": 5.0,
+    "statement": "Water begins to overflow into fields near the stream."
+   },
+   {
+    "lid": "LBUV2",
+    "stage_ft": 7.0,
+    "statement": "Greenfield Farm Lane and another access road flood. Field flooding near the stream is widespread."
+   },
+   {
+    "lid": "LBUV2",
+    "stage_ft": 8.0,
+    "statement": "A home near Route 15 along the stream begins to flood."
+   },
+   {
+    "lid": "LBUV2",
+    "stage_ft": 10.0,
+    "statement": "Route 15 floods at Limestone Branch, which is between Leesburg and Lucketts."
+   }
+  ],
+  "record_stage_ft": 11.19,
+  "record_date": "2003-09-23"
+ },
+ {
+  "lid": "LEEV2",
+  "usgs_id": "01644000",
+  "name": "Goose Creek near Leesburg",
+  "river": "Goose Creek",
+  "state": "VA",
+  "county": "Loudoun",
+  "lat": 39.01955309,
+  "lon": -77.5774918,
+  "comid": 4507266,
+  "measure": 7.717,
+  "thresholds": {
+   "action": 10.0,
+   "minor": 12.0,
+   "moderate": 15.0,
+   "major": 18.0
+  },
+  "impacts": [
+   {
+    "lid": "LEEV2",
+    "stage_ft": 10.0,
+    "statement": "Water begins to overflow the banks near Evergreen Mill into nearby fields."
+   },
+   {
+    "lid": "LEEV2",
+    "stage_ft": 11.0,
+    "statement": "The creek reaches bankfull. Some minor overbank flooding is occurring between Middleburg and Oatlands."
+   },
+   {
+    "lid": "LEEV2",
+    "stage_ft": 12.0,
+    "statement": "The creek overflows its banks near Oatlands, south of Leesburg. Backwater flooding begins to affect a low spot on State Route 650, Oatlands Road."
+   },
+   {
+    "lid": "LEEV2",
+    "stage_ft": 13.0,
+    "statement": "Water reaches backyards near Highway 15 south of Leesburg. A low spot on State Route 650, Oatlands Road, is flooded."
+   },
+   {
+    "lid": "LEEV2",
+    "stage_ft": 14.0,
+    "statement": "Water approaches low spots along State Route 733, Lime Kiln Road. Water is in the backyards of homes near Highway 15, and reaches the underside of two low bridges over the creek at Crooked Bridge Lane."
+   },
+   {
+    "lid": "LEEV2",
+    "stage_ft": 15.0,
+    "statement": "Water approaches a home near Highway 15 south of Leesburg."
+   },
+   {
+    "lid": "LEEV2",
+    "stage_ft": 16.0,
+    "statement": "Water reaches Highway 15 near the intersection with Oatlands Mill Road."
+   },
+   {
+    "lid": "LEEV2",
+    "stage_ft": 18.0,
+    "statement": "Water threatens several homes south of Leesburg. Highway 15 will likely have to be closed."
+   },
+   {
+    "lid": "LEEV2",
+    "stage_ft": 20.0,
+    "statement": "Highway 15 is flooded south of Leesburg."
+   },
+   {
+    "lid": "LEEV2",
+    "stage_ft": 23.0,
+    "statement": "Highway 15, Evergreen Mills Road, and Lime Kiln Road are all flooded. Tributary flooding strands residents near Oatlands Mill."
+   }
+  ],
+  "record_stage_ft": 30.59,
+  "record_date": "1972-06-22"
+ },
+ {
+  "lid": "LRGV2",
+  "usgs_id": "01644280",
+  "name": "Broad Run near Sterling",
+  "river": "Broad Run",
+  "state": "VA",
+  "county": "Loudoun",
+  "lat": 39.04641667,
+  "lon": -77.43238889,
+  "comid": 4506736,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 10.0,
+   "minor": 12.0,
+   "moderate": 15.0,
+   "major": 18.0
+  },
+  "impacts": [
+   {
+    "lid": "LRGV2",
+    "stage_ft": 10.0,
+    "statement": "Wooded areas near the river flood."
+   },
+   {
+    "lid": "LRGV2",
+    "stage_ft": 15.0,
+    "statement": "Water approaches buildings off Youngs Cliff Road. This can also happen due to Potomac River backwater and not be reflected at this gauge."
+   },
+   {
+    "lid": "LRGV2",
+    "stage_ft": 16.0,
+    "statement": "Youngs Cliff Road is flooded. This can also happen due to Potomac River backwater and not be reflected at this gauge."
+   }
+  ],
+  "record_stage_ft": 13.29,
+  "record_date": "2008-05-12"
+ },
+ {
+  "lid": "LUKM2",
+  "usgs_id": "01598500",
+  "name": "North Branch Potomac River at Luke",
+  "river": "North Branch Potomac River",
+  "state": "MD",
+  "county": "Allegany",
+  "lat": 39.4789722,
+  "lon": -79.0637778,
+  "comid": 14364980,
+  "measure": 56.652,
+  "thresholds": {
+   "action": 9.0,
+   "minor": 10.5,
+   "moderate": 12.5,
+   "major": 15.0
+  },
+  "impacts": [
+   {
+    "lid": "LUKM2",
+    "stage_ft": 7.0,
+    "statement": "Water begins to flow over the dam near the old paper mill in Luke. No flooding is occurring."
+   },
+   {
+    "lid": "LUKM2",
+    "stage_ft": 10.5,
+    "statement": "If water levels are elevated on Georges Creek, a combination of the creek and backwater from the Potomac will begin to flood the town of Westernport. Portions of Maryland Route 135 may be affected, and water will approach Westernport Elementary School."
+   },
+   {
+    "lid": "LUKM2",
+    "stage_ft": 12.0,
+    "statement": "Floodwaters begin to affect portions of Piedmont, West Virginia."
+   },
+   {
+    "lid": "LUKM2",
+    "stage_ft": 12.5,
+    "statement": "Backwater from the Potomac begins to flood the town of Westernport. Portions of Maryland Route 135 east of downtown may be affected, and water will approach Westernport Elementary School. This flooding will be more severe if Georges Creek is also in flood."
+   },
+   {
+    "lid": "LUKM2",
+    "stage_ft": 13.5,
+    "statement": "Maryland Route 135 begins to flood west of the town of Luke. Water also reaches the underside of railroad bridges near the old paper mill."
+   },
+   {
+    "lid": "LUKM2",
+    "stage_ft": 15.0,
+    "statement": "Significant flooding is occurring in Westernport and Piedmont, with buildings and roads flooded."
+   },
+   {
+    "lid": "LUKM2",
+    "stage_ft": 16.0,
+    "statement": "Water reaches the railroad tracks in the town of Westernport."
+   },
+   {
+    "lid": "LUKM2",
+    "stage_ft": 17.0,
+    "statement": "Levees protect the old paper mill at Luke up to approximately this level. If water reaches the top of the levee, water may affect structures."
+   },
+   {
+    "lid": "LUKM2",
+    "stage_ft": 20.0,
+    "statement": "Water overtops the railroad bridges at the old paper mill."
+   }
+  ],
+  "record_stage_ft": 17.15,
+  "record_date": "1954-10-15"
+ },
+ {
+  "lid": "LVTV2",
+  "usgs_id": "01636690",
+  "name": "Piney Run (VA) near Lovettsville",
+  "river": "Piney Run (VA)",
+  "state": "VA",
+  "county": "Loudoun",
+  "lat": 39.3108333,
+  "lon": -77.7185,
+  "comid": 4505510,
+  "measure": 50.1241,
+  "thresholds": {
+   "action": 6.0,
+   "minor": 9.0,
+   "moderate": 13.0,
+   "major": 17.0
+  },
+  "impacts": [
+   {
+    "lid": "LVTV2",
+    "stage_ft": 9.0,
+    "statement": "Route 833 begins to flood."
+   },
+   {
+    "lid": "LVTV2",
+    "stage_ft": 10.0,
+    "statement": "Branchriver Road begins to flood in the low spots."
+   },
+   {
+    "lid": "LVTV2",
+    "stage_ft": 13.0,
+    "statement": "Water approaches the intersection of Route 833 and Route 671. A couple structures are also approached by floodwaters."
+   },
+   {
+    "lid": "LVTV2",
+    "stage_ft": 17.0,
+    "statement": "The bridge over Harpers Ferry Road floods."
+   }
+  ],
+  "record_stage_ft": 7.8,
+  "record_date": "2011-04-16"
+ },
+ {
+  "lid": "LYWV2",
+  "usgs_id": "01628500",
+  "name": "South Fork Shenandoah River near Lynnwood",
+  "river": "South Fork Shenandoah River",
+  "state": "VA",
+  "county": "Rockingham",
+  "lat": 38.32262796,
+  "lon": -78.7547457,
+  "comid": 5908723,
+  "measure": 93.641,
+  "thresholds": {
+   "action": 14.0,
+   "minor": 16.0,
+   "moderate": 17.0,
+   "major": 20.0
+  },
+  "impacts": [
+   {
+    "lid": "LYWV2",
+    "stage_ft": 14.0,
+    "statement": "Water begins to overflow the banks but little impact is observed."
+   },
+   {
+    "lid": "LYWV2",
+    "stage_ft": 16.0,
+    "statement": "Lowlands near the river, and low spots of Power Dam Road, begin to flood."
+   },
+   {
+    "lid": "LYWV2",
+    "stage_ft": 17.0,
+    "statement": "Farmland on both banks of the river begin to flood between Lynnwood and Port Republic. Water covers Flank Circle in Lynnwood and approaches homes in that area. Portions of Power Dam Road and Captain Yancey Road between Lynnwood and Berrytown are also flooded."
+   },
+   {
+    "lid": "LYWV2",
+    "stage_ft": 20.0,
+    "statement": "Several homes and other buildings between Lynnwood and Elkton are flooded. Significant agricultural flooding is occurring on both sides of the river."
+   },
+   {
+    "lid": "LYWV2",
+    "stage_ft": 22.0,
+    "statement": "Numerous homes are flooded between Lynnwood and Elkton, including in Berrytown. Numerous roads along and crossing the river are also flooded. Water is also approaching railroad tracks south of Elkton."
+   },
+   {
+    "lid": "LYWV2",
+    "stage_ft": 25.0,
+    "statement": "Water reaches homes in Elkton off Old Spottswood Trail. Water also approaches the Island Ford Road bridge near Berrytown. Numerous other structures and roads are inundated by this major flood."
+   }
+  ],
+  "record_stage_ft": 30.84,
+  "record_date": "1996-09-07"
+ },
+ {
+  "lid": "MBGW2",
+  "usgs_id": "01616500",
+  "name": "Opequon Creek near Martinsburg",
+  "river": "Opequon Creek",
+  "state": "WV",
+  "county": "Berkeley",
+  "lat": 39.42371047,
+  "lon": -77.9386084,
+  "comid": 5894384,
+  "measure": 11.948,
+  "thresholds": {
+   "action": 9.0,
+   "minor": 10.0,
+   "moderate": 12.5,
+   "major": 15.0
+  },
+  "impacts": [
+   {
+    "lid": "MBGW2",
+    "stage_ft": 9.0,
+    "statement": "The creek begins to overflow its banks in a few spots. Water approaches Bowers Road at the low spot near the creek."
+   },
+   {
+    "lid": "MBGW2",
+    "stage_ft": 10.0,
+    "statement": "Floodwaters begin to cover Douglas Grove Road (County Road 9/16) east of Martinsburg. A portion of Bowers Road is also flooded. Low lying areas near the creek begin to flood. Water also begins to cover the stream access point at the Van Metre Ford Pedestrian Bridge."
+   },
+   {
+    "lid": "MBGW2",
+    "stage_ft": 11.0,
+    "statement": "Water begins to cover backyards of homes on Bowers Road (County Road 1/1). Douglas Grove Road (County Road 9/16) is flooded and impassible. Water also approaches Golf Course Road (County Road 36) and Grapevine Road (County Road 9/14)."
+   },
+   {
+    "lid": "MBGW2",
+    "stage_ft": 12.5,
+    "statement": "The creek is well out of its banks with lowlands nearby flooded. Golf Course Road /County Road 36/ is flooded near the Van Metre Ford Pedestrian Bridge. Fields and backyards near the creek are flooded and some residents may need to move items to higher ground. Several other roads are flooded, including Grapevine Road, Douglas Grove Road, and Paynes Ford Road. Backwater flooding is occurring on small tributaries, including Tuscarora Creek."
+   },
+   {
+    "lid": "MBGW2",
+    "stage_ft": 15.0,
+    "statement": "Water reaches homes on Douglas Grove Road, and may be near a home on Abbie Lane. Hundreds of acres of fields are flooded near the creek. Blairton Road begins to flood, and numerous other roads are already flooded and closed."
+   },
+   {
+    "lid": "MBGW2",
+    "stage_ft": 20.0,
+    "statement": "A significant flood is occurring. Numerous homes are flooded east of Martinsburg. The worst flooding is south of the railroad bridge. To the north of that railroad bridge, flooding is causing less of an impact due to the regulation of flow caused by the railroad line."
+   }
+  ],
+  "record_stage_ft": 18.76,
+  "record_date": "1996-01-20"
+ },
+ {
+  "lid": "MDLM2",
+  "usgs_id": "01637500",
+  "name": "Catoctin Creek Near Middletown",
+  "river": "Catoctin Creek",
+  "state": "MD",
+  "county": "Frederick",
+  "lat": 39.42725,
+  "lon": -77.5561667,
+  "comid": 4505256,
+  "measure": 49.521,
+  "thresholds": {
+   "action": 10.0,
+   "minor": 15.0,
+   "moderate": 20.0,
+   "major": 25.0
+  },
+  "impacts": [
+   {
+    "lid": "MDLM2",
+    "stage_ft": 15.0,
+    "statement": "Agricultural flooding begins south of Middletown."
+   },
+   {
+    "lid": "MDLM2",
+    "stage_ft": 20.0,
+    "statement": "Water approaches Route 17 well south of Middletown."
+   },
+   {
+    "lid": "MDLM2",
+    "stage_ft": 25.0,
+    "statement": "Floodwaters cover the Route 17 bridge over Catoctin Creek."
+   }
+  ],
+  "record_stage_ft": 14.13,
+  "record_date": "1976-10-09"
+ },
+ {
+  "lid": "MDLV2",
+  "usgs_id": "01643700",
+  "name": "Goose Creek near Middleburg",
+  "river": "Goose Creek",
+  "state": "VA",
+  "county": "Loudoun",
+  "lat": 38.98649818,
+  "lon": -77.7966614,
+  "comid": 4508450,
+  "measure": 28.936,
+  "thresholds": {
+   "action": 11.0,
+   "minor": 13.0,
+   "moderate": 16.0,
+   "major": 18.0
+  },
+  "impacts": [
+   {
+    "lid": "MDLV2",
+    "stage_ft": 11.0,
+    "statement": "Water begins to overflow the banks into fields near the creek."
+   },
+   {
+    "lid": "MDLV2",
+    "stage_ft": 13.0,
+    "statement": "Notre Dame Lane begins to flood at the creek."
+   },
+   {
+    "lid": "MDLV2",
+    "stage_ft": 16.0,
+    "statement": "Whistletree Lane is flooded at the creek."
+   },
+   {
+    "lid": "MDLV2",
+    "stage_ft": 18.0,
+    "statement": "Water approaches Route 611 /Saint Louis Road/ at the creek."
+   }
+  ],
+  "record_stage_ft": 27.46,
+  "record_date": "1972-06-22"
+ },
+ {
+  "lid": "MDRV2",
+  "usgs_id": "01646305",
+  "name": "Dead Run near McLean",
+  "river": "Dead Run",
+  "state": "VA",
+  "county": "Fairfax",
+  "lat": 38.95977716,
+  "lon": -77.1756743,
+  "comid": 4508904,
+  "measure": 24.7972,
+  "thresholds": {
+   "action": 8.0,
+   "minor": 9.0,
+   "moderate": 10.0,
+   "major": 11.0
+  },
+  "impacts": [
+   {
+    "lid": "MDRV2",
+    "stage_ft": 9.0,
+    "statement": "Water approaches yards near the stream."
+   },
+   {
+    "lid": "MDRV2",
+    "stage_ft": 10.0,
+    "statement": "Numerous side streets and footbridges are flooded near Dead Run. Water approaches Georgetown Pike."
+   },
+   {
+    "lid": "MDRV2",
+    "stage_ft": 11.0,
+    "statement": "Significant flooding is occurring, with numerous roads flooded."
+   }
+  ],
+  "record_stage_ft": 10.54,
+  "record_date": "2022-12-25"
+ },
+ {
+  "lid": "MILW2",
+  "usgs_id": "01636500",
+  "name": "Shenandoah River at Millville",
+  "river": "Shenandoah River",
+  "state": "WV",
+  "county": "Jefferson",
+  "lat": 39.28204576,
+  "lon": -77.7891606,
+  "comid": 8445070,
+  "measure": 17.146,
+  "thresholds": {
+   "action": 8.0,
+   "minor": 10.0,
+   "moderate": 14.0,
+   "major": 17.0
+  },
+  "impacts": [
+   {
+    "lid": "MILW2",
+    "stage_ft": 8.0,
+    "statement": "Water begins to approach Bloomery Road /County Road 27/ near Bloomery, West Virginia, and a couple roads alongside the river in Clarke County, Virginia. Campers should move away from the river."
+   },
+   {
+    "lid": "MILW2",
+    "stage_ft": 9.0,
+    "statement": "Water covers yards near the stream in Bloomery, West Virginia. Campers should move away from the river."
+   },
+   {
+    "lid": "MILW2",
+    "stage_ft": 10.0,
+    "statement": "Parts of Bloomery Road and John Rissler Road are flooded near Bloomery, West Virginia. Once these roads flood, access to homes is impaired but the homes themselves are not in any danger of flooding. Moulton Park and the Millville boat launch are also flooded."
+   },
+   {
+    "lid": "MILW2",
+    "stage_ft": 11.0,
+    "statement": "A small portion of Wilt Road (County Road 9/8) begins to flood. Water also begins to flow over Millville Dam."
+   },
+   {
+    "lid": "MILW2",
+    "stage_ft": 12.0,
+    "statement": "Water reaches the river access at Wagon Trail Place near Harpers Ferry, and completely covers the parking lot of the lower boat ramp at Millville Dam. Portions of the Cool Spring Battlefield begin to flood."
+   },
+   {
+    "lid": "MILW2",
+    "stage_ft": 14.0,
+    "statement": "Several roads along the river in Jefferson and Clarke Counties are flooded and closed. Most of Watermelon Park is flooded, along with a significant portion of the Cool Spring Battlefield property."
+   },
+   {
+    "lid": "MILW2",
+    "stage_ft": 15.0,
+    "statement": "Significant flooding of fields and the Cool Spring Battlefield near the river is occurring."
+   },
+   {
+    "lid": "MILW2",
+    "stage_ft": 16.0,
+    "statement": "Significant portions of Bloomery Road /County Road 27/ are flooded between Millville Dam and Millville, and near Bloomery. Several other roads in Jefferson and Clarke Counties are flooded and closed. Water approaches a garage on Bloomery Road. Flooding begins at docks and backyards on the river side of Avon Bend Road."
+   },
+   {
+    "lid": "MILW2",
+    "stage_ft": 17.0,
+    "statement": "Water reaches the railroad tracks along the river in Millville. Many roads and fields are flooded."
+   },
+   {
+    "lid": "MILW2",
+    "stage_ft": 19.0,
+    "statement": "Water approaches the lower portion of a power substation near Millville Dam."
+   },
+   {
+    "lid": "MILW2",
+    "stage_ft": 20.0,
+    "statement": "The railroad tracks between Millville and Harpers Ferry are flooded. Water reaches homes in Bloomery, and covers most backyards along the river in the Avon Bend community."
+   },
+   {
+    "lid": "MILW2",
+    "stage_ft": 25.0,
+    "statement": "Water covers the Route 115 bridge over the Shenandoah River."
+   },
+   {
+    "lid": "MILW2",
+    "stage_ft": 28.0,
+    "statement": "Some homes along the river in the Avon Bend neighborhood are flooded."
+   },
+   {
+    "lid": "MILW2",
+    "stage_ft": 42.0,
+    "statement": "A dike protects the Millville Quarry to approximately this level."
+   }
+  ],
+  "record_stage_ft": 32.4,
+  "record_date": "1942-10-16"
+ },
+ {
+  "lid": "MLWV2",
+  "usgs_id": "01636316",
+  "name": "Spout Run near Millwood",
+  "river": "Spout Run",
+  "state": "VA",
+  "county": "Clarke",
+  "lat": 39.067025,
+  "lon": -78.0037528,
+  "comid": 8445436,
+  "measure": 30.5038,
+  "thresholds": {
+   "action": 10.0,
+   "minor": 12.5,
+   "moderate": 15.0,
+   "major": 17.0
+  },
+  "impacts": [
+   {
+    "lid": "MLWV2",
+    "stage_ft": 10.0,
+    "statement": "Water begins to overflow the banks but no impacts are observed."
+   },
+   {
+    "lid": "MLWV2",
+    "stage_ft": 12.5,
+    "statement": "Tilthammer Mill Road begins to flood near the gage. Some low areas of Millwood also begin to flood."
+   },
+   {
+    "lid": "MLWV2",
+    "stage_ft": 15.0,
+    "statement": "Flooding is ongoing in Millwood, with multiple roads flooded."
+   },
+   {
+    "lid": "MLWV2",
+    "stage_ft": 17.0,
+    "statement": "Significant flooding is occurring in the basin, with roads and fields and homes all flooded."
+   }
+  ],
+  "record_stage_ft": 4.86,
+  "record_date": "2018-06-03"
+ },
+ {
+  "lid": "MOFW2",
+  "usgs_id": "01608000",
+  "name": "South Fork South Branch Potomac River near SF Moorefield",
+  "river": "South Fork South Branch Potomac River",
+  "state": "WV",
+  "county": "Hardy",
+  "lat": 39.0123313,
+  "lon": -78.9561387,
+  "comid": 8420098,
+  "measure": 80.17,
+  "thresholds": {
+   "action": 8.0,
+   "minor": 10.0,
+   "moderate": 12.0,
+   "major": 14.0
+  },
+  "impacts": [
+   {
+    "lid": "MOFW2",
+    "stage_ft": 8.0,
+    "statement": "The river overflows mainly low lying areas."
+   },
+   {
+    "lid": "MOFW2",
+    "stage_ft": 10.0,
+    "statement": "Water begins to flood pastureland south of town."
+   },
+   {
+    "lid": "MOFW2",
+    "stage_ft": 12.0,
+    "statement": "Water will begin to inundate the sewage treatment plant. Water begins to flood Town Run Road and areas from the high school northward begin to flood. On the south end of town, Rohrbaugh Street south of the railroad tracks will begin to flood."
+   },
+   {
+    "lid": "MOFW2",
+    "stage_ft": 14.0,
+    "statement": "Water will be approaching the northern boundary of the business district."
+   },
+   {
+    "lid": "MOFW2",
+    "stage_ft": 14.5,
+    "statement": "Water reaches the railroad bridge just south of town."
+   },
+   {
+    "lid": "MOFW2",
+    "stage_ft": 16.0,
+    "statement": "Narly half of the town will be inundated. Maple Avenue will be flooded north of Jackson to the intersection with Spring Avenue. Kuyendall Lane and Main Street will be under water and a large part of Main Street and adjacent roads will be inundated. Water will be approaching the main floor of the chicken processing plant."
+   },
+   {
+    "lid": "MOFW2",
+    "stage_ft": 20.0,
+    "statement": "Near record flooding expected. The entire town on the left bank of the South Fork will be flooded. Water will begin to inundate Washington and Elm, Winchester and North Main, and Ashley and Spring Streets."
+   }
+  ],
+  "record_stage_ft": 19.99,
+  "record_date": "1985-11-05"
+ },
+ {
+  "lid": "MOJV2",
+  "usgs_id": "01633000",
+  "name": "North Fork Shenandoah River near Mount Jackson",
+  "river": "North Fork Shenandoah River",
+  "state": "VA",
+  "county": "Shenandoah",
+  "lat": 38.74567048,
+  "lon": -78.6389042,
+  "comid": 8441291,
+  "measure": 96.7751,
+  "thresholds": {
+   "action": 6.0,
+   "minor": 13.0,
+   "moderate": 18.0,
+   "major": 22.0
+  },
+  "impacts": [
+   {
+    "lid": "MOJV2",
+    "stage_ft": 9.0,
+    "statement": "The river begins to overflow its banks but no impacts are observed."
+   },
+   {
+    "lid": "MOJV2",
+    "stage_ft": 13.0,
+    "statement": "Agricultural flooding begins along the river. Water approaches a road near the river in Mount Jackson. Downstream, several low water crossings will be flooded between Woodstock and Strasburg."
+   },
+   {
+    "lid": "MOJV2",
+    "stage_ft": 18.0,
+    "statement": "Water approaches a structure on Medical Arts Street in Mount Jackson."
+   },
+   {
+    "lid": "MOJV2",
+    "stage_ft": 22.0,
+    "statement": "Route 698 begins to flood near Massanutten Park."
+   },
+   {
+    "lid": "MOJV2",
+    "stage_ft": 26.0,
+    "statement": "The bridge over the river on Route 698 is flooded. Significant agricultural flooding is occurring. Several buildings close to the river are flooded."
+   }
+  ],
+  "record_stage_ft": 22.17,
+  "record_date": "1996-09-06"
+ },
+ {
+  "lid": "MUDV2",
+  "usgs_id": "01621050",
+  "name": "Muddy Creek at Mount Clinton",
+  "river": "Muddy Creek",
+  "state": "VA",
+  "county": "Rockingham",
+  "lat": 38.48679008,
+  "lon": -78.96030749,
+  "comid": 5908085,
+  "measure": 28.453,
+  "thresholds": {
+   "action": 6.0,
+   "minor": 8.0,
+   "moderate": 10.0,
+   "major": 12.0
+  },
+  "impacts": [
+   {
+    "lid": "MUDV2",
+    "stage_ft": 7.0,
+    "statement": "Water begins to encroach on livestock fields in Mount Clinton. Livestock should be moved to higher ground."
+   },
+   {
+    "lid": "MUDV2",
+    "stage_ft": 8.0,
+    "statement": "Livestock fields are flooded in Mount Clinton."
+   },
+   {
+    "lid": "MUDV2",
+    "stage_ft": 9.0,
+    "statement": "A barn near Mount Clinton is flooded."
+   },
+   {
+    "lid": "MUDV2",
+    "stage_ft": 10.0,
+    "statement": "Muddy Creek Road begins to flood in multiple places."
+   },
+   {
+    "lid": "MUDV2",
+    "stage_ft": 13.0,
+    "statement": "Water reaches the bridge over Muddy Creek in Mount Clinton."
+   }
+  ],
+  "record_stage_ft": 10.37,
+  "record_date": "1996-09-06"
+ },
+ {
+  "lid": "MUVV2",
+  "usgs_id": "01643880",
+  "name": "Beaverdam Creek near Mountville",
+  "river": "Beaverdam Creek",
+  "state": "VA",
+  "county": "Loudoun",
+  "lat": 39.0377222,
+  "lon": -77.72225,
+  "comid": 4506770,
+  "measure": 96.7513,
+  "thresholds": {
+   "action": 7.0,
+   "minor": 10.0,
+   "moderate": 12.0,
+   "major": 18.0
+  },
+  "impacts": [
+   {
+    "lid": "MUVV2",
+    "stage_ft": 10.0,
+    "statement": "Water approaches both Snickersville Turnpike /Route 734/ and Watermill Road near the gauge."
+   },
+   {
+    "lid": "MUVV2",
+    "stage_ft": 12.0,
+    "statement": "Water begins to cover Hibbs Bridge Road."
+   },
+   {
+    "lid": "MUVV2",
+    "stage_ft": 16.0,
+    "statement": "An access road just upstream of Snickersville Turnpike is flooded."
+   },
+   {
+    "lid": "MUVV2",
+    "stage_ft": 17.0,
+    "statement": "Water approaches a building on Hibbs Bridge Road."
+   },
+   {
+    "lid": "MUVV2",
+    "stage_ft": 18.0,
+    "statement": "Water covers most of the bridge over the creek on Route 734 /Snickersville Turnpike/."
+   }
+  ],
+  "record_stage_ft": 17.0,
+  "record_date": "2003-09-23"
+ },
+ {
+  "lid": "NFGV2",
+  "usgs_id": "01643805",
+  "name": "North Fork Goose Creek near Lincoln",
+  "river": "North Fork Goose Creek",
+  "state": "VA",
+  "county": "Loudoun",
+  "lat": 39.07230556,
+  "lon": -77.6839444,
+  "comid": 4506604,
+  "measure": 63.2819,
+  "thresholds": {
+   "action": 8.0,
+   "minor": 10.0,
+   "moderate": 13.0,
+   "major": 18.0
+  },
+  "impacts": [
+   {
+    "lid": "NFGV2",
+    "stage_ft": 10.0,
+    "statement": "Water overflows the banks downstream of the gauge."
+   },
+   {
+    "lid": "NFGV2",
+    "stage_ft": 11.0,
+    "statement": "Water overflows the banks upstream of the gauge."
+   },
+   {
+    "lid": "NFGV2",
+    "stage_ft": 13.0,
+    "statement": "Water overflows into the low spots of Shelburne Glebe Road."
+   },
+   {
+    "lid": "NFGV2",
+    "stage_ft": 18.0,
+    "statement": "Water covers the bridge over the creek at Shelburne Glebe Road."
+   }
+  ],
+  "record_stage_ft": 13.45,
+  "record_date": "2003-09-23"
+ },
+ {
+  "lid": "NWMV2",
+  "usgs_id": "01632900",
+  "name": "Smith Creek near New Market",
+  "river": "Smith Creek",
+  "state": "VA",
+  "county": "Shenandoah",
+  "lat": 38.69345016,
+  "lon": -78.6427935,
+  "comid": 8441303,
+  "measure": 9.645,
+  "thresholds": {
+   "action": 7.0,
+   "minor": 8.0,
+   "moderate": 11.0,
+   "major": 15.0
+  },
+  "impacts": [
+   {
+    "lid": "NWMV2",
+    "stage_ft": 8.0,
+    "statement": "Fields near the creek are flooded. Water also reaches Route 826."
+   },
+   {
+    "lid": "NWMV2",
+    "stage_ft": 9.0,
+    "statement": "Mount Airy Lane begins to flood. Route 826 is also flooded, and agricultural flooding is becoming widespread."
+   }
+  ],
+  "record_stage_ft": 17.62,
+  "record_date": "1996-09-06"
+ },
+ {
+  "lid": "OKMW2",
+  "usgs_id": "01595300",
+  "name": "Abram Creek at Oakmont",
+  "river": "Abram Creek",
+  "state": "WV",
+  "county": "Mineral",
+  "lat": 39.36676569,
+  "lon": -79.17892449,
+  "comid": 14365236,
+  "measure": 99.38,
+  "thresholds": {
+   "action": 8.0,
+   "minor": 10.0,
+   "moderate": 13.0,
+   "major": 15.0
+  },
+  "impacts": [
+   {
+    "lid": "OKMW2",
+    "stage_ft": 10.0,
+    "statement": "Oakmont Road begins to flood near Oakmont."
+   },
+   {
+    "lid": "OKMW2",
+    "stage_ft": 13.0,
+    "statement": "Water approaches the Route 2 bridge over Abram Creek. Nearby areas are flooded."
+   },
+   {
+    "lid": "OKMW2",
+    "stage_ft": 15.0,
+    "statement": "Significant flooding is ongoing near Oakmont, with roads and buildings flooded."
+   }
+  ],
+  "record_stage_ft": 9.82,
+  "record_date": "1955-08-18"
+ },
+ {
+  "lid": "OLTM2",
+  "usgs_id": "01609000",
+  "name": "Town Creek (MD) near Oldtown",
+  "river": "Town Creek (MD)",
+  "state": "MD",
+  "county": "Allegany",
+  "lat": 39.5532222,
+  "lon": -78.555,
+  "comid": 8431428,
+  "measure": 29.297,
+  "thresholds": {
+   "action": 10.0,
+   "minor": 14.0,
+   "moderate": 17.0,
+   "major": 20.0
+  },
+  "impacts": [
+   {
+    "lid": "OLTM2",
+    "stage_ft": 12.0,
+    "statement": "Water may affect a campground near the creek."
+   },
+   {
+    "lid": "OLTM2",
+    "stage_ft": 14.0,
+    "statement": "Water overflows the banks just downstream of the Pack Horse Road bridge."
+   },
+   {
+    "lid": "OLTM2",
+    "stage_ft": 17.0,
+    "statement": "Water covers Maryland State Route 51."
+   },
+   {
+    "lid": "OLTM2",
+    "stage_ft": 24.0,
+    "statement": "Water covers the bridge on Pack Horse Road."
+   }
+  ],
+  "record_stage_ft": 19.0,
+  "record_date": "1936-03-17"
+ },
+ {
+  "lid": "PAWW2",
+  "usgs_id": "01610000",
+  "name": "Potomac River at Paw Paw",
+  "river": "Potomac River",
+  "state": "MD",
+  "county": "Allegany",
+  "lat": 39.5388611,
+  "lon": -78.4556111,
+  "comid": 8431820,
+  "measure": 81.1199,
+  "thresholds": {
+   "action": 22.5,
+   "minor": 25.0,
+   "moderate": 30.0,
+   "major": 37.0
+  },
+  "impacts": [
+   {
+    "lid": "PAWW2",
+    "stage_ft": 5.0,
+    "statement": "The river reaches caution level for boaters as defined by the State of Maryland. Fast moving water and current changes can be expected."
+   },
+   {
+    "lid": "PAWW2",
+    "stage_ft": 11.0,
+    "statement": "The river reaches danger level for boaters as defined by the State of Maryland. At danger level, conditions are considered extremely hazardous."
+   },
+   {
+    "lid": "PAWW2",
+    "stage_ft": 22.5,
+    "statement": "Water reaches the top of the boat ramp in Paw Paw Festival Park."
+   },
+   {
+    "lid": "PAWW2",
+    "stage_ft": 25.0,
+    "statement": "A parking area adjacent to the highway bridge begins to flood. The roadway to the C&O Canal parking area floods, as does the lowest end of the Purslane Run hiker/biker area."
+   },
+   {
+    "lid": "PAWW2",
+    "stage_ft": 26.0,
+    "statement": "Water covers an access road on the West Virginia side."
+   },
+   {
+    "lid": "PAWW2",
+    "stage_ft": 30.0,
+    "statement": "Paw Paw Tunnel Campground begins to flood."
+   },
+   {
+    "lid": "PAWW2",
+    "stage_ft": 34.0,
+    "statement": "Water reaches the settling pond next to Paw Paw Park."
+   },
+   {
+    "lid": "PAWW2",
+    "stage_ft": 37.0,
+    "statement": "Floodwaters cover both West Virginia Route 9 and Maryland Route 51. Businesses in the town of Paw Paw begin to flood."
+   },
+   {
+    "lid": "PAWW2",
+    "stage_ft": 40.0,
+    "statement": "The right bank of the river floods extensive sections of the town of Paw Paw, north of the B&O Railroad. The towpath of the C&O Canal also begins to flood."
+   },
+   {
+    "lid": "PAWW2",
+    "stage_ft": 46.0,
+    "statement": "Water approaches the intersection of West Virginia Route 9 and Winchester Street in Paw Paw."
+   },
+   {
+    "lid": "PAWW2",
+    "stage_ft": 50.0,
+    "statement": "Homes in Paw Paw begin to flood."
+   },
+   {
+    "lid": "PAWW2",
+    "stage_ft": 62.0,
+    "statement": "Water covers the bridge over the Potomac at the state line in Paw Paw."
+   }
+  ],
+  "record_stage_ft": 54.0,
+  "record_date": "1936-03-18"
+ },
+ {
+  "lid": "PECM2",
+  "usgs_id": "01613525",
+  "name": "Licking Creek at Pecktonville",
+  "river": "Licking Creek",
+  "state": "MD",
+  "county": "Washington",
+  "lat": 39.67627778,
+  "lon": -78.0425278,
+  "comid": 5892862,
+  "measure": 52.6039,
+  "thresholds": {
+   "action": 9.0,
+   "minor": 10.0,
+   "moderate": 14.0,
+   "major": 18.0
+  },
+  "impacts": [
+   {
+    "lid": "PECM2",
+    "stage_ft": 9.0,
+    "statement": "Water begins to overflow the banks near the creek."
+   },
+   {
+    "lid": "PECM2",
+    "stage_ft": 10.0,
+    "statement": "The access road to the river gauge off Pectonville Road floods, along with portions of Camp Harding Park, and low spots along Licking Creek Road."
+   },
+   {
+    "lid": "PECM2",
+    "stage_ft": 14.0,
+    "statement": "Water begins to cover the bridge over the creek at Pectonville Road."
+   }
+  ],
+  "record_stage_ft": 11.5,
+  "record_date": "2025-05-14"
+ },
+ {
+  "lid": "PETW2",
+  "usgs_id": "01606500",
+  "name": "South Branch Potomac River near Petersburg",
+  "river": "South Branch Potomac River",
+  "state": "WV",
+  "county": "Grant",
+  "lat": 38.99122107,
+  "lon": -79.17587059,
+  "comid": 8423278,
+  "measure": 67.894,
+  "thresholds": {
+   "action": 12.0,
+   "minor": 14.0,
+   "moderate": 15.0,
+   "major": 17.0
+  },
+  "impacts": [
+   {
+    "lid": "PETW2",
+    "stage_ft": 12.0,
+    "statement": "Water overflows the natural banks into nearby lowlands. River Road alongside the river begins to flood in its lowest spots."
+   },
+   {
+    "lid": "PETW2",
+    "stage_ft": 14.0,
+    "statement": "Water approaches structures upstream of Petersburg. Water also begins to cover Fish Hatchery Road near the river."
+   },
+   {
+    "lid": "PETW2",
+    "stage_ft": 15.0,
+    "statement": "Two structures are flooded upstream of Petersburg. Water also approaches the runway at the Petersburg Airport."
+   },
+   {
+    "lid": "PETW2",
+    "stage_ft": 17.0,
+    "statement": "Water reaches structures at the Grant County Airport. Flooding also begins south of the river on the south side of Petersburg."
+   },
+   {
+    "lid": "PETW2",
+    "stage_ft": 18.0,
+    "statement": "Water covers the entire runway at Grant County Airport and is in nearby structures. Hundreds of acres of lowlands are flooded. Water approaches homes on the north side of the river in Petersburg."
+   },
+   {
+    "lid": "PETW2",
+    "stage_ft": 20.0,
+    "statement": "Several city blocks on the south side of Petersburg are flooded. Backwater may also flood portions of the eastern sections of the city."
+   },
+   {
+    "lid": "PETW2",
+    "stage_ft": 22.5,
+    "statement": "Significant flooding is occurring. More than a hundred buildings in Petersburg are flooded."
+   }
+  ],
+  "record_stage_ft": 22.83,
+  "record_date": "1949-06-17"
+ },
+ {
+  "lid": "PMBM2",
+  "usgs_id": "01643500",
+  "name": "Bennett Creek at Park Mills",
+  "river": "Bennett Creek",
+  "state": "MD",
+  "county": "Frederick",
+  "lat": 39.29413889,
+  "lon": -77.4070833,
+  "comid": 8450600,
+  "measure": 68.305,
+  "thresholds": {
+   "action": 6.0,
+   "minor": 11.0,
+   "moderate": 17.0,
+   "major": 20.0
+  },
+  "impacts": [
+   {
+    "lid": "PMBM2",
+    "stage_ft": 11.0,
+    "statement": "An Access Road near mount Ephraim Road begins to flood. Upstream, Peters Road also floods."
+   },
+   {
+    "lid": "PMBM2",
+    "stage_ft": 17.0,
+    "statement": "Water covers the bridge at Mount Ephraim Road."
+   }
+  ],
+  "record_stage_ft": 22.1,
+  "record_date": "1972-06-21"
+ },
+ {
+  "lid": "PORM2",
+  "usgs_id": "01638500",
+  "name": "Potomac River at Point of Rocks",
+  "river": "Potomac River",
+  "state": "MD",
+  "county": "Frederick",
+  "lat": 39.2735833,
+  "lon": -77.5431111,
+  "comid": 4507348,
+  "measure": 40.0,
+  "thresholds": {
+   "action": 11.0,
+   "minor": 16.0,
+   "moderate": 20.0,
+   "major": 27.0
+  },
+  "impacts": [
+   {
+    "lid": "PORM2",
+    "stage_ft": 2.0,
+    "statement": "The river reaches caution level for boaters, as defined by the State of Maryland. Fast moving water and changing currents can be expected."
+   },
+   {
+    "lid": "PORM2",
+    "stage_ft": 5.5,
+    "statement": "The river reaches danger level for boaters, as defined by the State of Maryland. Conditions are extremely hazardous."
+   },
+   {
+    "lid": "PORM2",
+    "stage_ft": 11.0,
+    "statement": "Water covers the parking lot of the Lander boat ramp. Campers and other recreational interests should begin to move away from the river."
+   },
+   {
+    "lid": "PORM2",
+    "stage_ft": 12.5,
+    "statement": "The Point of Rocks boat ramp is completely covered by water, and water begins to affect the lower parking lot nearby."
+   },
+   {
+    "lid": "PORM2",
+    "stage_ft": 13.0,
+    "statement": "Water begins to cover low lying areas within the Brunswick campground."
+   },
+   {
+    "lid": "PORM2",
+    "stage_ft": 14.0,
+    "statement": "Water completely covers the Nolands Ferry boat ramp and begins to flood the parking lot nearby."
+   },
+   {
+    "lid": "PORM2",
+    "stage_ft": 15.0,
+    "statement": "Several lowland forested areas, mainly on islands, begin to flood."
+   },
+   {
+    "lid": "PORM2",
+    "stage_ft": 16.0,
+    "statement": "The parking lots at both the McKimmey and Brunswick boat ramps begin to flood. Flooding of an agricultural field adjacent to the McKimmey boat ramp is occurring. About half the lower parking lot of the Point of Rocks boat ramp is also flooded."
+   },
+   {
+    "lid": "PORM2",
+    "stage_ft": 17.0,
+    "statement": "Water enters the comfort station at the Brunswick boat ramp parking area."
+   },
+   {
+    "lid": "PORM2",
+    "stage_ft": 18.0,
+    "statement": "Water approaches structures at the Brunswick campground."
+   },
+   {
+    "lid": "PORM2",
+    "stage_ft": 20.0,
+    "statement": "The boat ramp and lower parking lot at Point of Rocks are flooded. Water approaches the water treatment plant in Brunswick. Farmland behind the Tarara Vineyard is flooded."
+   },
+   {
+    "lid": "PORM2",
+    "stage_ft": 22.0,
+    "statement": "Water begins to cover the C&O Canal towpath near Point of Rocks and Brunswick."
+   },
+   {
+    "lid": "PORM2",
+    "stage_ft": 23.0,
+    "statement": "Floodwaters completely cover the comfort station at the Brunswick boat ramp, and reach the comfort station at the Point of Rocks boat ramp. The upper parking lot at the Point of Rocks boat ramp begins to flood."
+   },
+   {
+    "lid": "PORM2",
+    "stage_ft": 25.0,
+    "statement": "Water reaches outbuildings on the Loudoun County side of the river near Point of Rocks."
+   },
+   {
+    "lid": "PORM2",
+    "stage_ft": 27.0,
+    "statement": "Water covers a large section of the C&O Canal towpath in Frederick County, Maryland. Water also reaches the railroad tracks at Point of Rocks."
+   },
+   {
+    "lid": "PORM2",
+    "stage_ft": 29.0,
+    "statement": "Water completely covers the comfort station at the Point of Rocks boat ramp."
+   },
+   {
+    "lid": "PORM2",
+    "stage_ft": 30.0,
+    "statement": "Water reaches a home on the Loudoun County side of the river near Point of Rocks. Water also reaches the Brunswick train yard and covers portions of the MARC parking lot at Point of Rocks, and covers Old Commerce Street in Point of Rocks."
+   },
+   {
+    "lid": "PORM2",
+    "stage_ft": 31.0,
+    "statement": "Water reaches the MARC parking lot at Brunswick."
+   },
+   {
+    "lid": "PORM2",
+    "stage_ft": 32.0,
+    "statement": "Water covers Maryland State Route 28 in Point of Rocks near the MARC station."
+   },
+   {
+    "lid": "PORM2",
+    "stage_ft": 35.0,
+    "statement": "The MARC station in Point of Rocks is flooded. At least two feet of water covers much of Maryland State Route 28 in the city. Water begins to enter homes and businesses in Point of Rocks along Route 28."
+   },
+   {
+    "lid": "PORM2",
+    "stage_ft": 40.0,
+    "statement": "Water reaches the lowest portion of the city of Brunswick, above the railroad tracks."
+   }
+  ],
+  "record_stage_ft": 41.03,
+  "record_date": "1936-03-19"
+ },
+ {
+  "lid": "SCRW2",
+  "usgs_id": "01618100",
+  "name": "Rockymarsh Run at Scrabble",
+  "river": "Rockymarsh Run",
+  "state": "WV",
+  "county": "Jefferson",
+  "lat": 39.4830833,
+  "lon": -77.8318333,
+  "comid": 5894272,
+  "measure": 44.4012,
+  "thresholds": {
+   "action": 3.0,
+   "minor": 3.5,
+   "moderate": 7.0,
+   "major": 8.0
+  },
+  "impacts": [
+   {
+    "lid": "SCRW2",
+    "stage_ft": 3.5,
+    "statement": "Turner Road begins to flood at the northern crossing of Rockymarsh Run."
+   },
+   {
+    "lid": "SCRW2",
+    "stage_ft": 4.0,
+    "statement": "Agricultural fields near the stream begin to flood."
+   },
+   {
+    "lid": "SCRW2",
+    "stage_ft": 4.5,
+    "statement": "Turner Road is flooded in two places where Rockymarsh Run crosses it."
+   },
+   {
+    "lid": "SCRW2",
+    "stage_ft": 7.0,
+    "statement": "Water is in yards on the upstream side of Scrabble Road, and begins to cover the bridge."
+   },
+   {
+    "lid": "SCRW2",
+    "stage_ft": 8.0,
+    "statement": "The bridge over Scrabble Road is completely flooded. Water is approaching homes nearby."
+   }
+  ],
+  "record_stage_ft": 2.61,
+  "record_date": "2019-05-06"
+ },
+ {
+  "lid": "SFSV2",
+  "usgs_id": "01629500",
+  "name": "South Fork Shenandoah River at Luray",
+  "river": "South Fork Shenandoah River",
+  "state": "VA",
+  "county": "Page",
+  "lat": 38.6462305,
+  "lon": -78.5347329,
+  "comid": 5907167,
+  "measure": 64.003,
+  "thresholds": {
+   "action": 13.0,
+   "minor": 14.0,
+   "moderate": 20.0,
+   "major": 25.0
+  },
+  "impacts": [
+   {
+    "lid": "SFSV2",
+    "stage_ft": 11.0,
+    "statement": "Water reaches the top of the boat ramp at Bixlers Ferry."
+   },
+   {
+    "lid": "SFSV2",
+    "stage_ft": 13.0,
+    "statement": "Water reaches the top of the boat ramp under the Route 211 bridge."
+   },
+   {
+    "lid": "SFSV2",
+    "stage_ft": 14.0,
+    "statement": "Water covers yards and fields near the river southwest of Luray."
+   },
+   {
+    "lid": "SFSV2",
+    "stage_ft": 16.0,
+    "statement": "Portions of Kaufmann Mill Road, Ganders Drive, and Egypt Bend Road begin to flood."
+   },
+   {
+    "lid": "SFSV2",
+    "stage_ft": 17.0,
+    "statement": "Water covers the entire parking area at the Bixlers Ferry boat launch."
+   },
+   {
+    "lid": "SFSV2",
+    "stage_ft": 20.0,
+    "statement": "Water approaches homes and buildings south of Luray. Backyards of homes at the lower end of Egypt Bend Estates are flooded, and much of Ganders Drive and Kaufmann Mill Road are flooded."
+   },
+   {
+    "lid": "SFSV2",
+    "stage_ft": 25.0,
+    "statement": "Numerous homes, buildings, and roads are flooded along the river west and southwest of Luray, along with many acres of farmland."
+   }
+  ],
+  "record_stage_ft": 26.95,
+  "record_date": "1996-09-07"
+ },
+ {
+  "lid": "SHEW2",
+  "usgs_id": "01618000",
+  "name": "Potomac River at Shepherdstown",
+  "river": "Potomac River",
+  "state": "WV",
+  "county": "Jefferson",
+  "lat": 39.4347222,
+  "lon": -77.80138889,
+  "comid": 5894792,
+  "measure": 66.333,
+  "thresholds": {
+   "action": 8.0,
+   "minor": 15.0,
+   "moderate": 22.0,
+   "major": 25.0
+  },
+  "impacts": [
+   {
+    "lid": "SHEW2",
+    "stage_ft": 8.0,
+    "statement": "Water covers the lower parking area of the boat ramp adjacent to Dam Number Four on the West Virginia side of the river."
+   },
+   {
+    "lid": "SHEW2",
+    "stage_ft": 10.0,
+    "statement": "Water begins to cover the C&O Canal towpath upstream and downstream of McMahons Mill."
+   },
+   {
+    "lid": "SHEW2",
+    "stage_ft": 12.0,
+    "statement": "Water reaches the lowest part of the parking areas at Big Slackwater and Taylors Landing on the Maryland side of the river."
+   },
+   {
+    "lid": "SHEW2",
+    "stage_ft": 13.0,
+    "statement": "River Road near Shepherdstown begins to flood. Water completely covers the boat ramp at Shepherdstown."
+   },
+   {
+    "lid": "SHEW2",
+    "stage_ft": 15.0,
+    "statement": "River Road is completely flooded in low spots between Shepherdstown and Harpers Ferry. Significant portions of the C&O Canal towpath are flooded between McMahons Mill and Dam Number Four."
+   },
+   {
+    "lid": "SHEW2",
+    "stage_ft": 16.0,
+    "statement": "Water goes over the banks of the Potomac near the mouth of the Opequon River."
+   },
+   {
+    "lid": "SHEW2",
+    "stage_ft": 19.0,
+    "statement": "Water covers the pedestrian bridge adjacent to the Shepherdstown boat ramp. Significant portions of the C&O Canal towpath are flooded."
+   },
+   {
+    "lid": "SHEW2",
+    "stage_ft": 22.0,
+    "statement": "Water approaches homes on the West Virginia side of the river near Shepherdstown, and impacts are also observed on the Maryland side, not just to the C&O Canal towpath, but also to roads and structures."
+   },
+   {
+    "lid": "SHEW2",
+    "stage_ft": 24.0,
+    "statement": "Water begins to cover the parking lot adjacent to the Shepherdstown boat ramp, and approaches the lowest point of an adjacent building. Water also reaches the upper parking area of the boat ramp adjacent to Dam Number Four on the West Virginia side of the river."
+   },
+   {
+    "lid": "SHEW2",
+    "stage_ft": 25.0,
+    "statement": "Significant flooding is occurring throughout this stretch of the Potomac, with numerous buildings and roads inundated, and a few homes. Major impacts are occurring on C&O Canal property."
+   }
+  ],
+  "record_stage_ft": 42.07,
+  "record_date": "1936-03-19"
+ },
+ {
+  "lid": "SPRW2",
+  "usgs_id": "01608500",
+  "name": "South Branch Potomac River near Springfield",
+  "river": "South Branch Potomac River",
+  "state": "WV",
+  "county": "Hampshire",
+  "lat": 39.44703879,
+  "lon": -78.6541817,
+  "comid": 8420360,
+  "measure": 53.401,
+  "thresholds": {
+   "action": 12.0,
+   "minor": 15.0,
+   "moderate": 19.0,
+   "major": 25.0
+  },
+  "impacts": [
+   {
+    "lid": "SPRW2",
+    "stage_ft": 5.0,
+    "statement": "Hazardous conditions for recreation may exist."
+   },
+   {
+    "lid": "SPRW2",
+    "stage_ft": 11.0,
+    "statement": "The river begins to overflow the banks in a few low lying areas. Campers should move away from the river."
+   },
+   {
+    "lid": "SPRW2",
+    "stage_ft": 15.0,
+    "statement": "Milleson Mill Road (County Route 28/5) and Clarence Taylor Road (Route 3/7) begin to flood. Water covers a significant portion of meadowlands near the river. The boat launch ramp on the upstream right abutment of the bridge also floods."
+   },
+   {
+    "lid": "SPRW2",
+    "stage_ft": 17.0,
+    "statement": "Water approaches camphouses downstream from the gage."
+   },
+   {
+    "lid": "SPRW2",
+    "stage_ft": 19.0,
+    "statement": "Houses on the right downstream side of the river are flooded."
+   },
+   {
+    "lid": "SPRW2",
+    "stage_ft": 25.0,
+    "statement": "Most camphouses and a large portion of fields in the area are flooded."
+   }
+  ],
+  "record_stage_ft": 44.22,
+  "record_date": "1985-11-05"
+ },
+ {
+  "lid": "STGV2",
+  "usgs_id": "01634000",
+  "name": "North Fork Shenandoah River near Strasburg",
+  "river": "North Fork Shenandoah River",
+  "state": "VA",
+  "county": "Warren",
+  "lat": 38.9767759,
+  "lon": -78.3361152,
+  "comid": 8441253,
+  "measure": 56.544,
+  "thresholds": {
+   "action": 10.0,
+   "minor": 17.0,
+   "moderate": 20.0,
+   "major": 25.0
+  },
+  "impacts": [
+   {
+    "lid": "STGV2",
+    "stage_ft": 7.0,
+    "statement": "Several low water bridges over the North Fork of the Shenandoah River are covered by water. This will cut off access to homes and businesses. Residents should never attempt to drive across water-covered low water bridges!"
+   },
+   {
+    "lid": "STGV2",
+    "stage_ft": 10.0,
+    "statement": "Livestock fields east of Strasburg begin to flood. The livestock should be moved to higher ground. Water approaches Deer Rapids Road south of Strasburg."
+   },
+   {
+    "lid": "STGV2",
+    "stage_ft": 13.0,
+    "statement": "Agricultural flooding occurs near the river. Several low spots of Deer Rapids Road are flooded."
+   },
+   {
+    "lid": "STGV2",
+    "stage_ft": 17.0,
+    "statement": "Significant flooding of fields is occurring. The Strasburg River Walk is flooded."
+   },
+   {
+    "lid": "STGV2",
+    "stage_ft": 20.0,
+    "statement": "Several roads are flooded near the river, especially south of Strasburg. Downstream, water begins to inundate the North Fork Campground. Campers and trailers will need to seek higher ground."
+   },
+   {
+    "lid": "STGV2",
+    "stage_ft": 25.0,
+    "statement": "Floodwaters reach the track and tennis courts at Strasburg High School."
+   }
+  ],
+  "record_stage_ft": 32.27,
+  "record_date": "1996-09-07"
+ },
+ {
+  "lid": "STYM2",
+  "usgs_id": "01595000",
+  "name": "North Branch Potomac River at Steyer",
+  "river": "North Branch Potomac River",
+  "state": "MD",
+  "county": "Garrett",
+  "lat": 39.30188889,
+  "lon": -79.30688889,
+  "comid": 14365432,
+  "measure": 69.922,
+  "thresholds": {
+   "action": 8.0,
+   "minor": 9.0,
+   "moderate": 12.0,
+   "major": 13.0
+  },
+  "impacts": [
+   {
+    "lid": "STYM2",
+    "stage_ft": 9.0,
+    "statement": "Water begins to cover a portion of Althouse Mill Road near Bayard."
+   },
+   {
+    "lid": "STYM2",
+    "stage_ft": 12.0,
+    "statement": "Water approaches homes near Bayard. Yards and outbuildings are flooded near Wilson, WV and between Gorman and Steyer, MD."
+   },
+   {
+    "lid": "STYM2",
+    "stage_ft": 13.0,
+    "statement": "Several homes are flooded near the river. Althouse Mill Road is flooded near Bayard."
+   }
+  ],
+  "record_stage_ft": 13.14,
+  "record_date": "1985-11-05"
+ },
+ {
+  "lid": "TAYV2",
+  "usgs_id": "01638480",
+  "name": "Catoctin Creek at Taylorstown",
+  "river": "Catoctin Creek",
+  "state": "VA",
+  "county": "Loudoun",
+  "lat": 39.25510206,
+  "lon": -77.5763778,
+  "comid": 4505612,
+  "measure": 84.669,
+  "thresholds": {
+   "action": 10.0,
+   "minor": 12.0,
+   "moderate": 17.0,
+   "major": 22.0
+  },
+  "impacts": [
+   {
+    "lid": "TAYV2",
+    "stage_ft": 12.0,
+    "statement": "Downey Mill Road begins to flood in several places."
+   },
+   {
+    "lid": "TAYV2",
+    "stage_ft": 13.0,
+    "statement": "Water approaches a field on the downstream right bank and a driveway on the downstream left bank."
+   },
+   {
+    "lid": "TAYV2",
+    "stage_ft": 17.0,
+    "statement": "Water approaches a home upstream of Taylorstown."
+   },
+   {
+    "lid": "TAYV2",
+    "stage_ft": 22.0,
+    "statement": "Homes near Taylorstown are flooded, along with roads and fields."
+   }
+  ],
+  "record_stage_ft": 25.61,
+  "record_date": "1972-06-22"
+ },
+ {
+  "lid": "TUSW2",
+  "usgs_id": "01617000",
+  "name": "Tuscarora Creek above Martinsburg",
+  "river": "Tuscarora Creek",
+  "state": "WV",
+  "county": "Berkeley",
+  "lat": 39.46954296,
+  "lon": -77.9713871,
+  "comid": 5894280,
+  "measure": 38.928,
+  "thresholds": {
+   "action": 4.5,
+   "minor": 5.5,
+   "moderate": 7.0,
+   "major": 9.0
+  },
+  "impacts": [
+   {
+    "lid": "TUSW2",
+    "stage_ft": 4.5,
+    "statement": "Water begins to overflow the right bank near Tennessee Avenue."
+   },
+   {
+    "lid": "TUSW2",
+    "stage_ft": 5.5,
+    "statement": "Widespread overflow of the banks of the creek is occurring. Water reaches the north parking lot of War Memorial Park."
+   },
+   {
+    "lid": "TUSW2",
+    "stage_ft": 6.0,
+    "statement": "Water covers much of the field behind Rock Cliff Pizza."
+   },
+   {
+    "lid": "TUSW2",
+    "stage_ft": 7.0,
+    "statement": "Water approaches the yard and driveway of a private road off Rock Cliff Drive."
+   },
+   {
+    "lid": "TUSW2",
+    "stage_ft": 8.0,
+    "statement": "Water approaches homes and businesses in Martinsburg near the creek. Tennessee Avenue is flooded."
+   },
+   {
+    "lid": "TUSW2",
+    "stage_ft": 9.0,
+    "statement": "Significant flooding is occurring in Martinsburg. Homes, businesses, and roads are all flooded."
+   }
+  ],
+  "record_stage_ft": 7.47,
+  "record_date": "2018-08-21"
+ },
+ {
+  "lid": "WANP1",
+  "usgs_id": "01619000",
+  "name": "Antietam Creek near Waynesboro",
+  "river": "Antietam Creek",
+  "state": "MD",
+  "county": "Washington",
+  "lat": 39.71625,
+  "lon": -77.60663889,
+  "comid": 5891210,
+  "measure": 51.805,
+  "thresholds": {
+   "action": 5.5,
+   "minor": 6.5,
+   "moderate": 10.0,
+   "major": 12.0
+  },
+  "impacts": [
+   {
+    "lid": "WANP1",
+    "stage_ft": 5.0,
+    "statement": "Water begins to overflow the left bank but no impacts are observed."
+   },
+   {
+    "lid": "WANP1",
+    "stage_ft": 6.5,
+    "statement": "Leiters Mill Road is flooded."
+   },
+   {
+    "lid": "WANP1",
+    "stage_ft": 7.0,
+    "statement": "Battletown Road begins to flood."
+   },
+   {
+    "lid": "WANP1",
+    "stage_ft": 7.5,
+    "statement": "A yard and farm access road begin to flood north of Leitersburg."
+   },
+   {
+    "lid": "WANP1",
+    "stage_ft": 8.0,
+    "statement": "Water enters backyards of multiple homes. Several roads are flooded between Leitersburg and the Pennsylvania state border."
+   },
+   {
+    "lid": "WANP1",
+    "stage_ft": 10.0,
+    "statement": "Flooding of homes begins between Leitersburg and Waynesboro."
+   },
+   {
+    "lid": "WANP1",
+    "stage_ft": 12.0,
+    "statement": "Millers Church Road begins to flood."
+   }
+  ],
+  "record_stage_ft": 12.33,
+  "record_date": "1972-06-22"
+ },
+ {
+  "lid": "WATV2",
+  "usgs_id": "01638350",
+  "name": "South Fork Catoctin Creek near Waterford",
+  "river": "South Fork Catoctin Creek",
+  "state": "VA",
+  "county": "Loudoun",
+  "lat": 39.1911111,
+  "lon": -77.6154444,
+  "comid": 4505894,
+  "measure": 47.6539,
+  "thresholds": {
+   "action": 7.0,
+   "minor": 8.0,
+   "moderate": 10.0,
+   "major": 15.0
+  },
+  "impacts": [
+   {
+    "lid": "WATV2",
+    "stage_ft": 8.0,
+    "statement": "Lowland fields near the creek flood."
+   },
+   {
+    "lid": "WATV2",
+    "stage_ft": 9.0,
+    "statement": "Portions of Route 662 begin to flood near the creek."
+   },
+   {
+    "lid": "WATV2",
+    "stage_ft": 10.0,
+    "statement": "Water approaches a building on Main Street in Waterford."
+   },
+   {
+    "lid": "WATV2",
+    "stage_ft": 15.0,
+    "statement": "Floodwaters approach the water treatment plant in Waterford."
+   },
+   {
+    "lid": "WATV2",
+    "stage_ft": 17.0,
+    "statement": "Water approaches Route 9 between Paeonian Springs and Hillsboro."
+   },
+   {
+    "lid": "WATV2",
+    "stage_ft": 18.0,
+    "statement": "Water completely covers the Route 698 bridge and floods residences in Waterford."
+   }
+  ],
+  "record_stage_ft": 12.1,
+  "record_date": "2003-09-23"
+ },
+ {
+  "lid": "WAYV2",
+  "usgs_id": "01626000",
+  "name": "South River at Waynesboro near Lyndhurst Road",
+  "river": "South River",
+  "state": "VA",
+  "county": "City of Waynesboro",
+  "lat": 38.0576362,
+  "lon": -78.90807949,
+  "comid": 5908521,
+  "measure": 14.138,
+  "thresholds": {
+   "action": 7.5,
+   "minor": 9.5,
+   "moderate": 11.0,
+   "major": 13.0
+  },
+  "impacts": [
+   {
+    "lid": "WAYV2",
+    "stage_ft": 6.0,
+    "statement": "Water begins to overflow the banks into low lying areas."
+   },
+   {
+    "lid": "WAYV2",
+    "stage_ft": 9.0,
+    "statement": "Low portions of Meadowbrook Road and Arch Avenue begin to flood."
+   },
+   {
+    "lid": "WAYV2",
+    "stage_ft": 9.5,
+    "statement": "Portions of the Club Court neighborhood begin to flood."
+   },
+   {
+    "lid": "WAYV2",
+    "stage_ft": 10.0,
+    "statement": "Portions of the Club Court neighborhood, Rife Road, and Shore Road, along with nearby homes, are flooded. Water also reaches low lying areas of downtown Waynesboro."
+   },
+   {
+    "lid": "WAYV2",
+    "stage_ft": 11.0,
+    "statement": "Significant portions of downtown Waynesboro are flooded."
+   },
+   {
+    "lid": "WAYV2",
+    "stage_ft": 13.0,
+    "statement": "Numerous homes and businesses in Waynesboro are flooded, along with many roads."
+   },
+   {
+    "lid": "WAYV2",
+    "stage_ft": 18.0,
+    "statement": "A large portion of downtown Waynesboro is flooded, including water over several bridges in town and many feet of water flooding areas between Meadowbrook Road and Fifth Street."
+   }
+  ],
+  "record_stage_ft": 15.3,
+  "record_date": "1985-11-04"
+ },
+ {
+  "lid": "WCCV2",
+  "usgs_id": "01634500",
+  "name": "Cedar Creek (VA) near Winchester",
+  "river": "Cedar Creek (VA)",
+  "state": "VA",
+  "county": "Frederick",
+  "lat": 39.0812176,
+  "lon": -78.3294486,
+  "comid": 8440459,
+  "measure": 17.566,
+  "thresholds": {
+   "action": 7.0,
+   "minor": 16.0
+  },
+  "impacts": [
+   {
+    "lid": "WCCV2",
+    "stage_ft": 7.0,
+    "statement": "The low water bridge on Fromans Road is flooded and will be impassible."
+   },
+   {
+    "lid": "WCCV2",
+    "stage_ft": 11.0,
+    "statement": "Overbank flooding begins but is impacting only fields near the stream."
+   },
+   {
+    "lid": "WCCV2",
+    "stage_ft": 16.0,
+    "statement": "Water approaches an outbuilding near the creek south of Fromans Road. Water also inundates a campground near Route 11 outside of Strasburg."
+   },
+   {
+    "lid": "WCCV2",
+    "stage_ft": 21.0,
+    "statement": "Homes begin to flood north of Strasburg. Water approaches Route 11 at the Cedar Creek crossing."
+   },
+   {
+    "lid": "WCCV2",
+    "stage_ft": 25.0,
+    "statement": "Several homes are flooded north of Strasburg along Cedar Creek. Fromans Road and Route 11 are both flooded. Widespread agricultural flooding is occurring."
+   }
+  ],
+  "record_stage_ft": 27.0,
+  "record_date": "1942-10-15"
+ },
+ {
+  "lid": "WNFV2",
+  "usgs_id": "01638420",
+  "name": "North Fork Catoctin Creek near Waterford",
+  "river": "North Fork Catoctin Creek",
+  "state": "VA",
+  "county": "Loudoun",
+  "lat": 39.205,
+  "lon": -77.62388889,
+  "comid": 4505866,
+  "measure": 8.2449,
+  "thresholds": {
+   "action": 8.0,
+   "minor": 10.0,
+   "moderate": 14.0,
+   "major": 16.0
+  },
+  "impacts": [
+   {
+    "lid": "WNFV2",
+    "stage_ft": 9.0,
+    "statement": "The creek overflows both banks into adjacent fields."
+   },
+   {
+    "lid": "WNFV2",
+    "stage_ft": 11.0,
+    "statement": "Route 752 near Waterford begins to flood. Route 287 may also be flooded."
+   },
+   {
+    "lid": "WNFV2",
+    "stage_ft": 14.0,
+    "statement": "Route 681 near the gage is flooded."
+   },
+   {
+    "lid": "WNFV2",
+    "stage_ft": 15.0,
+    "statement": "Floodwaters approach Route 9 in Wheatland."
+   }
+  ],
+  "record_stage_ft": 10.97,
+  "record_date": "2004-09-28"
+ },
+ {
+  "lid": "WRDW2",
+  "usgs_id": "01610400",
+  "name": "Waites Run near Wardensville",
+  "river": "Waites Run",
+  "state": "WV",
+  "county": "Hardy",
+  "lat": 39.0427222,
+  "lon": -78.5983333,
+  "comid": 8433400,
+  "measure": 39.6016,
+  "thresholds": {
+   "action": 8.0,
+   "minor": 9.5,
+   "moderate": 13.0
+  },
+  "impacts": [
+   {
+    "lid": "WRDW2",
+    "stage_ft": 8.0,
+    "statement": "Water begins to go out of banks in spots along Waites Run, but nothing is impacted."
+   },
+   {
+    "lid": "WRDW2",
+    "stage_ft": 9.5,
+    "statement": "Water begins to cover Waites Run Road in multiple spots as well as some backyards near the stream."
+   },
+   {
+    "lid": "WRDW2",
+    "stage_ft": 11.5,
+    "statement": "Waites Run Road is flooded in multiple locations and impassible. In some cases, more than two feet of water is flowing over the road."
+   },
+   {
+    "lid": "WRDW2",
+    "stage_ft": 12.5,
+    "statement": "Water is approaching or may be in structures near the stream. Waites Run Road is significantly flooded, and is covered by over three feet of flowing water in spots."
+   },
+   {
+    "lid": "WRDW2",
+    "stage_ft": 14.0,
+    "statement": "Much of Waites Run Road near the stream is flooded, and water is in at least two homes. If the Cacapon River is also flooded, backwater flooding may inundate more of the Town of Wardensville."
+   }
+  ],
+  "record_stage_ft": 9.93,
+  "record_date": "2010-02-10"
+ },
+ {
+  "lid": "WSTM2",
+  "usgs_id": "01599000",
+  "name": "Georges Creek near Franklin/Westernport",
+  "river": "Georges Creek",
+  "state": "MD",
+  "county": "Allegany",
+  "lat": 39.49391667,
+  "lon": -79.0446944,
+  "comid": 14364970,
+  "measure": 55.1192,
+  "thresholds": {
+   "action": 7.0,
+   "minor": 9.1,
+   "moderate": 11.1,
+   "major": 13.1
+  },
+  "impacts": [
+   {
+    "lid": "WSTM2",
+    "stage_ft": 7.1,
+    "statement": "Water begins to overflow the banks upstream of Westernport, but is affecting only the floodplain."
+   },
+   {
+    "lid": "WSTM2",
+    "stage_ft": 9.1,
+    "statement": "Water reaches the underside of the railroad bridge at downtown Westernport."
+   },
+   {
+    "lid": "WSTM2",
+    "stage_ft": 10.1,
+    "statement": "Water begins to overflow out of Georges Creek into low-lying areas of the city of Westernport."
+   },
+   {
+    "lid": "WSTM2",
+    "stage_ft": 11.1,
+    "statement": "Water is flowing over the railroad bridge at downtown Westernport, and reaches the underside of the second railroad bridge which parallels Maryland Route 36. Portions of the city of Westernport are also flooded."
+   },
+   {
+    "lid": "WSTM2",
+    "stage_ft": 12.1,
+    "statement": "Floodwaters are moving through the city of Westernport, and approaching Westernport Elementary School. Water is also covering Brodie Road between Midland and Lonaconing."
+   },
+   {
+    "lid": "WSTM2",
+    "stage_ft": 13.1,
+    "statement": "Numerous buildings and roads in the town of Westernport, and points upstream, are flooded. Water reaches both railroad bridges upstream of Westernport, as well as multiple bridges in Westernport."
+   },
+   {
+    "lid": "WSTM2",
+    "stage_ft": 16.1,
+    "statement": "Significant flooding is occurring in Westernport, Midland, and Lonaconing, with roads, buildings, and bridges flooded. Water reaches the bridge on Church Street in downtown Westernport, and is approaching several areas along the railroad tracks which parallel the creek just above the city."
+   }
+  ],
+  "record_stage_ft": 15.2,
+  "record_date": "2025-05-13"
+ }
+]

@@ -1,0 +1,377 @@
+[
+ {
+  "upstream": "BDGM2",
+  "downstream": "FRMM2",
+  "river_km": 48.8
+ },
+ {
+  "upstream": "BDWV2",
+  "downstream": "MOJV2",
+  "river_km": 31.0
+ },
+ {
+  "upstream": "BELM2",
+  "downstream": "HNKM2",
+  "river_km": 22.4
+ },
+ {
+  "upstream": "BERV2",
+  "downstream": "MBGW2",
+  "river_km": 47.9
+ },
+ {
+  "upstream": "BHMW2",
+  "downstream": "MBGW2",
+  "river_km": 34.1
+ },
+ {
+  "upstream": "BKTV2",
+  "downstream": "LYWV2",
+  "river_km": 28.1
+ },
+ {
+  "upstream": "BRUM2",
+  "downstream": "FRMM2",
+  "river_km": 39.4
+ },
+ {
+  "upstream": "BRYW2",
+  "downstream": "MOFW2",
+  "river_km": 63.4
+ },
+ {
+  "upstream": "BTMM2",
+  "downstream": "DAWM2",
+  "river_km": 14.2
+ },
+ {
+  "upstream": "BTNV2",
+  "downstream": "MILW2",
+  "river_km": 92.3
+ },
+ {
+  "upstream": "BWSW2",
+  "downstream": "SHEW2",
+  "river_km": 100.1
+ },
+ {
+  "upstream": "BYVV2",
+  "downstream": "MBGW2",
+  "river_km": 50.7
+ },
+ {
+  "upstream": "CBEM2",
+  "downstream": "PAWW2",
+  "river_km": 45.7
+ },
+ {
+  "upstream": "COOV2",
+  "downstream": "MOJV2",
+  "river_km": 34.8
+ },
+ {
+  "upstream": "CTMM2",
+  "downstream": "BTMM2",
+  "river_km": 0.9
+ },
+ {
+  "upstream": "CWCM2",
+  "downstream": "CBEM2",
+  "river_km": 6.9
+ },
+ {
+  "upstream": "DAWM2",
+  "downstream": "BRKM2",
+  "river_km": 37.2
+ },
+ {
+  "upstream": "DOOV2",
+  "downstream": "HARV2",
+  "river_km": 22.4
+ },
+ {
+  "upstream": "EDFM2",
+  "downstream": "BRKM2",
+  "river_km": 40.8
+ },
+ {
+  "upstream": "FAVM2",
+  "downstream": "SHEW2",
+  "river_km": 74.6
+ },
+ {
+  "upstream": "FDKM2",
+  "downstream": "EDFM2",
+  "river_km": 46.4
+ },
+ {
+  "upstream": "FKLW2",
+  "downstream": "PETW2",
+  "river_km": 60.5
+ },
+ {
+  "upstream": "FRMM2",
+  "downstream": "FDKM2",
+  "river_km": 8.1
+ },
+ {
+  "upstream": "FROV2",
+  "downstream": "MILW2",
+  "river_km": 86.4
+ },
+ {
+  "upstream": "GCPW2",
+  "downstream": "HNKM2",
+  "river_km": 25.2
+ },
+ {
+  "upstream": "GFLV2",
+  "downstream": "BRKM2",
+  "river_km": 12.7
+ },
+ {
+  "upstream": "GRMM2",
+  "downstream": "SHEW2",
+  "river_km": 16.6
+ },
+ {
+  "upstream": "GROV2",
+  "downstream": "LYWV2",
+  "river_km": 16.4
+ },
+ {
+  "upstream": "HARV2",
+  "downstream": "LYWV2",
+  "river_km": 18.2
+ },
+ {
+  "upstream": "HDSW2",
+  "downstream": "PAWW2",
+  "river_km": 48.3
+ },
+ {
+  "upstream": "HFDV2",
+  "downstream": "JSPW2",
+  "river_km": 59.1
+ },
+ {
+  "upstream": "HNKM2",
+  "downstream": "SHEW2",
+  "river_km": 89.4
+ },
+ {
+  "upstream": "JSPW2",
+  "downstream": "SHEW2",
+  "river_km": 89.8
+ },
+ {
+  "upstream": "KBLW2",
+  "downstream": "MILW2",
+  "river_km": 16.0
+ },
+ {
+  "upstream": "KITM2",
+  "downstream": "LUKM2",
+  "river_km": 27.1
+ },
+ {
+  "upstream": "LBUV2",
+  "downstream": "EDFM2",
+  "river_km": 11.2
+ },
+ {
+  "upstream": "LEEV2",
+  "downstream": "EDFM2",
+  "river_km": 18.0
+ },
+ {
+  "upstream": "LRGV2",
+  "downstream": "BRKM2",
+  "river_km": 41.2
+ },
+ {
+  "upstream": "LUKM2",
+  "downstream": "CBEM2",
+  "river_km": 56.5
+ },
+ {
+  "upstream": "LVTV2",
+  "downstream": "PORM2",
+  "river_km": 21.2
+ },
+ {
+  "upstream": "LYWV2",
+  "downstream": "SFSV2",
+  "river_km": 69.1
+ },
+ {
+  "upstream": "MBGW2",
+  "downstream": "SHEW2",
+  "river_km": 48.1
+ },
+ {
+  "upstream": "MDLM2",
+  "downstream": "PORM2",
+  "river_km": 28.6
+ },
+ {
+  "upstream": "MDLV2",
+  "downstream": "LEEV2",
+  "river_km": 30.2
+ },
+ {
+  "upstream": "MDRV2",
+  "downstream": "BRKM2",
+  "river_km": 6.2
+ },
+ {
+  "upstream": "MILW2",
+  "downstream": "PORM2",
+  "river_km": 26.7
+ },
+ {
+  "upstream": "MLWV2",
+  "downstream": "MILW2",
+  "river_km": 47.2
+ },
+ {
+  "upstream": "MOFW2",
+  "downstream": "SPRW2",
+  "river_km": 79.8
+ },
+ {
+  "upstream": "MOJV2",
+  "downstream": "STGV2",
+  "river_km": 93.0
+ },
+ {
+  "upstream": "MUDV2",
+  "downstream": "BKTV2",
+  "river_km": 23.0
+ },
+ {
+  "upstream": "MUVV2",
+  "downstream": "LEEV2",
+  "river_km": 18.5
+ },
+ {
+  "upstream": "NFGV2",
+  "downstream": "LEEV2",
+  "river_km": 14.9
+ },
+ {
+  "upstream": "NWMV2",
+  "downstream": "MOJV2",
+  "river_km": 9.3
+ },
+ {
+  "upstream": "OKMW2",
+  "downstream": "KITM2",
+  "river_km": 5.8
+ },
+ {
+  "upstream": "OLTM2",
+  "downstream": "PAWW2",
+  "river_km": 15.4
+ },
+ {
+  "upstream": "PAWW2",
+  "downstream": "HNKM2",
+  "river_km": 63.0
+ },
+ {
+  "upstream": "PECM2",
+  "downstream": "SHEW2",
+  "river_km": 83.6
+ },
+ {
+  "upstream": "PETW2",
+  "downstream": "SPRW2",
+  "river_km": 97.8
+ },
+ {
+  "upstream": "PMBM2",
+  "downstream": "EDFM2",
+  "river_km": 32.5
+ },
+ {
+  "upstream": "PORM2",
+  "downstream": "EDFM2",
+  "river_km": 28.6
+ },
+ {
+  "upstream": "SCRW2",
+  "downstream": "SHEW2",
+  "river_km": 20.0
+ },
+ {
+  "upstream": "SFSV2",
+  "downstream": "FROV2",
+  "river_km": 78.9
+ },
+ {
+  "upstream": "SHEW2",
+  "downstream": "PORM2",
+  "river_km": 39.2
+ },
+ {
+  "upstream": "SPRW2",
+  "downstream": "PAWW2",
+  "river_km": 34.8
+ },
+ {
+  "upstream": "STGV2",
+  "downstream": "MILW2",
+  "river_km": 98.0
+ },
+ {
+  "upstream": "STYM2",
+  "downstream": "KITM2",
+  "river_km": 19.9
+ },
+ {
+  "upstream": "TAYV2",
+  "downstream": "PORM2",
+  "river_km": 7.4
+ },
+ {
+  "upstream": "TUSW2",
+  "downstream": "SHEW2",
+  "river_km": 49.8
+ },
+ {
+  "upstream": "WANP1",
+  "downstream": "PORM2",
+  "river_km": 97.6
+ },
+ {
+  "upstream": "WATV2",
+  "downstream": "TAYV2",
+  "river_km": 17.9
+ },
+ {
+  "upstream": "WAYV2",
+  "downstream": "DOOV2",
+  "river_km": 7.9
+ },
+ {
+  "upstream": "WCCV2",
+  "downstream": "MILW2",
+  "river_km": 116.3
+ },
+ {
+  "upstream": "WNFV2",
+  "downstream": "TAYV2",
+  "river_km": 15.7
+ },
+ {
+  "upstream": "WRDW2",
+  "downstream": "GCPW2",
+  "river_km": 116.0
+ },
+ {
+  "upstream": "WSTM2",
+  "downstream": "CBEM2",
+  "river_km": 54.6
+ }
+]
