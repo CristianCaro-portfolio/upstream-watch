@@ -1,0 +1,509 @@
+[
+ {
+  "lid": "25027050",
+  "usgs_id": "0025027050",
+  "name": "Margento (Caucasia)",
+  "river": "Bajo Magdalena- Cauca -San Jorge",
+  "state": "Antioquia",
+  "county": "Caucasia",
+  "lat": 8.036472222,
+  "lon": -74.952452778,
+  "comid": 60032453,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 6.49,
+   "minor": 7.1
+  },
+  "impacts": [],
+  "record_stage_ft": 11.44,
+  "record_date": "2026-07-07"
+ },
+ {
+  "lid": "25027200",
+  "usgs_id": "0025027200",
+  "name": "Las Varas (San Jacinto del Cauca)",
+  "river": "Bajo Magdalena- Cauca -San Jorge",
+  "state": "Bolivar",
+  "county": "San Jacinto del Cauca",
+  "lat": 8.387833333,
+  "lon": -74.562952778,
+  "comid": 60026454,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 3.64,
+   "minor": 3.92
+  },
+  "impacts": [],
+  "record_stage_ft": 3.98,
+  "record_date": "2025-11-20"
+ },
+ {
+  "lid": "25027910",
+  "usgs_id": "0025027910",
+  "name": "La Raya (San Jacinto del Cauca)",
+  "river": "Cauca",
+  "state": "Bolivar",
+  "county": "San Jacinto del Cauca",
+  "lat": 8.340939,
+  "lon": -74.557072,
+  "comid": 60027629,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 7.68,
+   "minor": 10.3
+  },
+  "impacts": [],
+  "record_stage_ft": 13.12,
+  "record_date": "2025-10-26"
+ },
+ {
+  "lid": "26017060",
+  "usgs_id": "0026017060",
+  "name": "Puente Aragón (Puracé)",
+  "river": "Cauca",
+  "state": "Cauca",
+  "county": "Puracé",
+  "lat": 2.2,
+  "lon": -76.5,
+  "comid": 60286287,
+  "measure": 50.0,
+  "thresholds": {},
+  "impacts": [],
+  "record_stage_ft": null,
+  "record_date": null
+ },
+ {
+  "lid": "26027200",
+  "usgs_id": "0026027200",
+  "name": "Puente Carretera (Popayán)",
+  "river": "Cauca",
+  "state": "Cauca",
+  "county": "Popayán",
+  "lat": 2.53675,
+  "lon": -76.558444444,
+  "comid": 60271868,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 1.63,
+   "minor": 1.88
+  },
+  "impacts": [],
+  "record_stage_ft": 2.06,
+  "record_date": "2022-11-28"
+ },
+ {
+  "lid": "2611700158",
+  "usgs_id": "2611700158",
+  "name": "Rio Frio (Riofrío)",
+  "river": "Cauca",
+  "state": "Valle Del Cauca",
+  "county": "Riofrío",
+  "lat": 4.152194444,
+  "lon": -76.290080556,
+  "comid": 60191455,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 2.07,
+   "minor": 2.25
+  },
+  "impacts": [],
+  "record_stage_ft": 2.5,
+  "record_date": "2026-10-21"
+ },
+ {
+  "lid": "26127010",
+  "usgs_id": "0026127010",
+  "name": "El Alambrado (La Tebaida)",
+  "river": "Cauca",
+  "state": "Quindío",
+  "county": "La Tebaida",
+  "lat": 4.41025,
+  "lon": -75.875388889,
+  "comid": 60177278,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 2.36,
+   "minor": 2.95
+  },
+  "impacts": [],
+  "record_stage_ft": 10.32,
+  "record_date": "2025-07-03"
+ },
+ {
+  "lid": "26127040",
+  "usgs_id": "0026127040",
+  "name": "Cartago (Pereira)",
+  "river": "Cauca",
+  "state": "Risaralda",
+  "county": "Pereira",
+  "lat": 4.757611111,
+  "lon": -75.89925,
+  "comid": 60158688,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 3.34,
+   "minor": 4.01
+  },
+  "impacts": [],
+  "record_stage_ft": 10.67,
+  "record_date": "2026-08-17"
+ },
+ {
+  "lid": "26137220",
+  "usgs_id": "0026137220",
+  "name": "El Reten (Santa Rosa de Cabal)",
+  "river": "Cauca",
+  "state": "Risaralda",
+  "county": "Santa Rosa de Cabal",
+  "lat": 4.7463611,
+  "lon": -75.603527778,
+  "comid": 60158690,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 3.02,
+   "minor": 3.35
+  },
+  "impacts": [],
+  "record_stage_ft": 4.0,
+  "record_date": "2025-12-17"
+ },
+ {
+  "lid": "26147140",
+  "usgs_id": "0026147140",
+  "name": "Puente Negro (Belalcazar)",
+  "river": "Cauca",
+  "state": "Caldas",
+  "county": "Belalcazar",
+  "lat": 4.987944444,
+  "lon": -75.85891667,
+  "comid": 60147693,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 3.16,
+   "minor": 3.64
+  },
+  "impacts": [],
+  "record_stage_ft": 4.89,
+  "record_date": "2025-11-16"
+ },
+ {
+  "lid": "26167070",
+  "usgs_id": "0026167070",
+  "name": "Irra (Neira)",
+  "river": "Cauca",
+  "state": "Caldas",
+  "county": "Neira",
+  "lat": 5.268305556,
+  "lon": -75.66419444,
+  "comid": 60131250,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 4.38,
+   "minor": 5.12
+  },
+  "impacts": [],
+  "record_stage_ft": 5.97,
+  "record_date": "2025-05-17"
+ },
+ {
+  "lid": "26177030",
+  "usgs_id": "0026177030",
+  "name": "La Virginia",
+  "river": "Cauca",
+  "state": "Risaralda",
+  "county": "La Virginia",
+  "lat": 4.8925,
+  "lon": -75.882694444,
+  "comid": 60152083,
+  "measure": 50.0,
+  "thresholds": {},
+  "impacts": [],
+  "record_stage_ft": null,
+  "record_date": null
+ },
+ {
+  "lid": "26187040",
+  "usgs_id": "0026187040",
+  "name": "Quitasueño (Abejorral)",
+  "river": "Cauca",
+  "state": "Antioquia",
+  "county": "Abejorral",
+  "lat": 5.713611111,
+  "lon": -75.540277778,
+  "comid": 60109287,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 1.17,
+   "minor": 1.55
+  },
+  "impacts": [],
+  "record_stage_ft": 2.23,
+  "record_date": "2026-03-02"
+ },
+ {
+  "lid": "2619700161",
+  "usgs_id": "2619700161",
+  "name": "Salgar (Pueblorrico)",
+  "river": "Cauca",
+  "state": "Antioquia",
+  "county": "Pueblorrico",
+  "lat": 5.8808,
+  "lon": -75.908311111,
+  "comid": 60101776,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 2.23,
+   "minor": 2.77
+  },
+  "impacts": [],
+  "record_stage_ft": 3.27,
+  "record_date": "2026-03-08"
+ },
+ {
+  "lid": "26197020",
+  "usgs_id": "0026197020",
+  "name": "Brasilia (Ciudad Bolívar)",
+  "river": "Cauca",
+  "state": "Antioquia",
+  "county": "Ciudad Bolívar",
+  "lat": 5.825444444,
+  "lon": -75.93533333,
+  "comid": 60104083,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 1.14,
+   "minor": 1.49
+  },
+  "impacts": [],
+  "record_stage_ft": 2.54,
+  "record_date": "2024-10-19"
+ },
+ {
+  "lid": "26207030",
+  "usgs_id": "0026207030",
+  "name": "Puente Iglesias (Fredonia)",
+  "river": "Cauca",
+  "state": "Antioquia",
+  "county": "Fredonia",
+  "lat": 5.829944444,
+  "lon": -75.7055,
+  "comid": 60103904,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 4.32,
+   "minor": 5.67
+  },
+  "impacts": [],
+  "record_stage_ft": 7.69,
+  "record_date": "2025-04-11"
+ },
+ {
+  "lid": "26207080",
+  "usgs_id": "0026207080",
+  "name": "Bolombolo (Venecia)",
+  "river": "Cauca",
+  "state": "Antioquia",
+  "county": "Venecia",
+  "lat": 5.97,
+  "lon": -75.84,
+  "comid": 60097089,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 5.33,
+   "minor": 6.18
+  },
+  "impacts": [],
+  "record_stage_ft": 7.07,
+  "record_date": "2025-05-17"
+ },
+ {
+  "lid": "26217010",
+  "usgs_id": "0026217010",
+  "name": "La Galera (Santa Fe de Antioquia)",
+  "river": "Cauca",
+  "state": "Antioquia",
+  "county": "Santa Fe de Antioquia",
+  "lat": 6.554972222,
+  "lon": -75.86419444,
+  "comid": 60076108,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 1.62,
+   "minor": 1.82
+  },
+  "impacts": [],
+  "record_stage_ft": 2.63,
+  "record_date": "2025-06-07"
+ },
+ {
+  "lid": "26237040",
+  "usgs_id": "0026237040",
+  "name": "Puerto Valdivia (Valdivia)",
+  "river": "Cauca",
+  "state": "Antioquia",
+  "county": "Valdivia",
+  "lat": 7.286994444,
+  "lon": -75.396730556,
+  "comid": 60051824,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 4.87,
+   "minor": 5.76
+  },
+  "impacts": [],
+  "record_stage_ft": 7.22,
+  "record_date": "2025-05-06"
+ },
+ {
+  "lid": "26237100",
+  "usgs_id": "0026237100",
+  "name": "Olaya (Liborina)",
+  "river": "Cauca",
+  "state": "Antioquia",
+  "county": "Liborina",
+  "lat": 6.644944444,
+  "lon": -75.82616667,
+  "comid": 60071578,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 3.89,
+   "minor": 5.45
+  },
+  "impacts": [],
+  "record_stage_ft": 9.8,
+  "record_date": "2025-04-12"
+ },
+ {
+  "lid": "26247010",
+  "usgs_id": "0026247010",
+  "name": "Hacienda Palmira (Cáceres)",
+  "river": "Cauca",
+  "state": "Antioquia",
+  "county": "Cáceres",
+  "lat": 7.796388889,
+  "lon": -75.372777778,
+  "comid": 60037874,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 4.07,
+   "minor": 5.37
+  },
+  "impacts": [],
+  "record_stage_ft": 6.99,
+  "record_date": "2026-09-02"
+ },
+ {
+  "lid": "26247020",
+  "usgs_id": "0026247020",
+  "name": "La Coquera (Caucasia)",
+  "river": "Bajo Magdalena- Cauca -San Jorge",
+  "state": "Antioquia",
+  "county": "Caucasia",
+  "lat": 7.962138889,
+  "lon": -75.195997222,
+  "comid": 60034085,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 6.68,
+   "minor": 7.49
+  },
+  "impacts": [],
+  "record_stage_ft": 9.4,
+  "record_date": "2024-05-20"
+ },
+ {
+  "lid": "2625700231",
+  "usgs_id": "2625700231",
+  "name": "El Bagre",
+  "river": "Nechí",
+  "state": "Antioquia",
+  "county": "El Bagre",
+  "lat": 7.6058417,
+  "lon": -74.809275,
+  "comid": 60042719,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 7.56,
+   "minor": 7.91
+  },
+  "impacts": [],
+  "record_stage_ft": 8.16,
+  "record_date": "2025-10-28"
+ },
+ {
+  "lid": "2633700150",
+  "usgs_id": "2633700150",
+  "name": "Guayabal (Zarzal)",
+  "river": "Cauca",
+  "state": "Valle Del Cauca",
+  "county": "Zarzal",
+  "lat": 4.405278889,
+  "lon": -76.100752778,
+  "comid": 60177498,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 4.25,
+   "minor": 5.25
+  },
+  "impacts": [],
+  "record_stage_ft": 5.87,
+  "record_date": "2026-03-01"
+ },
+ {
+  "lid": "2636700098",
+  "usgs_id": "2636700098",
+  "name": "Hacienda la Graciosa (Bugalagrande)",
+  "river": "Cauca",
+  "state": "Valle Del Cauca",
+  "county": "Bugalagrande",
+  "lat": 4.2398,
+  "lon": -76.049247222,
+  "comid": 60186132,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 0.66,
+   "minor": 1.06
+  },
+  "impacts": [],
+  "record_stage_ft": 1.42,
+  "record_date": "2023-01-14"
+ },
+ {
+  "lid": "27027060",
+  "usgs_id": "0027027060",
+  "name": "Brisas del Nechí (Angostura)",
+  "river": "Nechí",
+  "state": "Antioquia",
+  "county": "Angostura",
+  "lat": 6.939694444,
+  "lon": -75.38083333,
+  "comid": 60062292,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 1.47,
+   "minor": 1.93
+  },
+  "impacts": [],
+  "record_stage_ft": 2.82,
+  "record_date": "2025-09-26"
+ },
+ {
+  "lid": "27037010",
+  "usgs_id": "0027037010",
+  "name": "La Esperanza Nechí (Nechí)",
+  "river": "Nechí",
+  "state": "Antioquia",
+  "county": "Nechí",
+  "lat": 8.030083333,
+  "lon": -74.786119444,
+  "comid": 60033012,
+  "measure": 50.0,
+  "thresholds": {
+   "action": 6.56,
+   "minor": 8.3
+  },
+  "impacts": [],
+  "record_stage_ft": 8.31,
+  "record_date": "2024-03-04"
+ }
+]

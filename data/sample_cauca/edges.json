@@ -1,0 +1,132 @@
+[
+ {
+  "upstream": "25027050",
+  "downstream": "25027910",
+  "river_km": 73.6
+ },
+ {
+  "upstream": "25027910",
+  "downstream": "25027200",
+  "river_km": 10.1
+ },
+ {
+  "upstream": "26017060",
+  "downstream": "2633700150",
+  "river_km": 338.1
+ },
+ {
+  "upstream": "26027200",
+  "downstream": "2633700150",
+  "river_km": 293.4
+ },
+ {
+  "upstream": "2611700158",
+  "downstream": "2633700150",
+  "river_km": 43.7
+ },
+ {
+  "upstream": "26127010",
+  "downstream": "26127040",
+  "river_km": 60.1
+ },
+ {
+  "upstream": "26127040",
+  "downstream": "26177030",
+  "river_km": 22.4
+ },
+ {
+  "upstream": "26137220",
+  "downstream": "26167070",
+  "river_km": 91.5
+ },
+ {
+  "upstream": "26147140",
+  "downstream": "26177030",
+  "river_km": 13.1
+ },
+ {
+  "upstream": "26167070",
+  "downstream": "26207030",
+  "river_km": 78.6
+ },
+ {
+  "upstream": "26177030",
+  "downstream": "26167070",
+  "river_km": 67.9
+ },
+ {
+  "upstream": "26187040",
+  "downstream": "26207030",
+  "river_km": 25.6
+ },
+ {
+  "upstream": "2619700161",
+  "downstream": "26207080",
+  "river_km": 15.6
+ },
+ {
+  "upstream": "26197020",
+  "downstream": "2619700161",
+  "river_km": 6.2
+ },
+ {
+  "upstream": "26207030",
+  "downstream": "26207080",
+  "river_km": 27.4
+ },
+ {
+  "upstream": "26207080",
+  "downstream": "26237100",
+  "river_km": 90.7
+ },
+ {
+  "upstream": "26217010",
+  "downstream": "26237100",
+  "river_km": 23.6
+ },
+ {
+  "upstream": "26237040",
+  "downstream": "26247020",
+  "river_km": 100.8
+ },
+ {
+  "upstream": "26237100",
+  "downstream": "26237040",
+  "river_km": 111.6
+ },
+ {
+  "upstream": "26247010",
+  "downstream": "26247020",
+  "river_km": 33.1
+ },
+ {
+  "upstream": "26247020",
+  "downstream": "25027050",
+  "river_km": 38.2
+ },
+ {
+  "upstream": "2625700231",
+  "downstream": "27037010",
+  "river_km": 57.3
+ },
+ {
+  "upstream": "2633700150",
+  "downstream": "26177030",
+  "river_km": 66.9
+ },
+ {
+  "upstream": "2636700098",
+  "downstream": "2633700150",
+  "river_km": 43.1
+ },
+ {
+  "upstream": "27027060",
+  "downstream": "2625700231",
+  "river_km": 157.9
+ },
+ {
+  "upstream": "27037010",
+  "downstream": "25027910",
+  "river_km": 57.0
+ }
+]
