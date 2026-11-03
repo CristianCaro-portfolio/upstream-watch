@@ -19,7 +19,7 @@ jobs:
       - name: Install
         run: |
           python -m pip install --upgrade pip
-          pip install -e ".[dev]"
+          pip install -e ".[dev,colombia]"
       - name: Lint
         run: ruff check . && ruff format --check .
       - name: Tests
@@ -28,3 +28,7 @@ jobs:
         env:
           UPW_EMBEDDER: hash
         run: python -m upstream_watch run --sample --out-dir /tmp/smoke
+      - name: Smoke run on the bundled Colombia sample
+        env:
+          UPW_EMBEDDER: hash
+        run: python -m upstream_watch --region cauca run --sample --out-dir /tmp/smoke-co
