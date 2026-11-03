@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "upstream-watch"
 version = "0.1.0"
-description = "Upstream river gauges as early warning: a gauge knowledge graph, learned crest travel times and a LangGraph agent that answers with citations"
+description = "Upstream river gauges as early warning for the places downstream, for the Potomac (USGS) and the Cauca in Colombia (IDEAM): a gauge knowledge graph, crest travel times and a LangGraph agent that answers with citations"
 readme = "README.md"
 license = { text = "MIT" }
 authors = [{ name = "Cristian Caro" }]
@@ -28,6 +28,7 @@ dependencies = [
 [project.optional-dependencies]
 dev = ["pytest>=8", "ruff>=0.6"]
 local-llm = ["torch>=2.5", "transformers>=4.50"]
+colombia = ["pyshp>=2.3", "shapely>=2.0"]
 
 [project.scripts]
 upstream-watch = "upstream_watch.cli:app"

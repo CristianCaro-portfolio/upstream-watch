@@ -6,7 +6,9 @@ along each river segment from twelve real flood events, and puts a LangGraph age
 answers duty officer questions with citations and drafts flood watch briefs that a person has to
 approve.
 
-Everything runs on a laptop CPU with public data and no API keys.
+Everything runs on a laptop CPU with public data and no API keys. The same engine also runs on
+the Cauca river in Colombia with IDEAM sensors and answers in Spanish
+([guía en español](docs/COLOMBIA.md)).
 
 ![Architecture](docs/architecture.png)
 
@@ -53,6 +55,8 @@ plain vector search falls apart, so this project measures it.
 | [USGS Water Data OGC API](https://api.waterdata.usgs.gov/ogcapi/v0) | Daily mean discharge at Little Falls (Oct 2023 to Oct 2026) to find events, 15 minute gage height for every gauge in each event window | US public domain | 2026-11-03 |
 | [USGS NLDI](https://api.water.usgs.gov/nldi) | NHDPlus flowlines downstream of each gauge, used to build the river network and distances | US public domain | 2026-11-03 |
 | [NOAA NWPS](https://api.water.noaa.gov/nwps/v1) | Forecast points, flood category stages, record crests and 458 impact statements | US public domain | 2026-11-03 |
+| [IDEAM Nivel Instantáneo del Río](https://www.datos.gov.co/resource/bdmn-sqnh) | Colombia region: river level readings of 27 automatic stations in the Cauca basin, Nov 2022 to Nov 2026 | CC BY-SA 4.0 | 2026-11-03 |
+| [HydroRIVERS v1.0](https://www.hydrosheds.org/products/hydrorivers) | Colombia region: river network to connect the stations (Lehner and Grill, 2013) | HydroSHEDS license | 2026-11-03 |
 
 `python -m upstream_watch ingest` downloads everything (about 1,400 cached requests) into
 `data/raw` and writes the curated set to `data/curated`. The curated set is small, 700 KB, so the
@@ -93,7 +97,8 @@ No people, no personal data: only gauge readings and public infrastructure descr
 Design decisions are in [docs](docs/):
 [ADR 001 LadybugDB](docs/adr-001-ladybugdb-for-the-river-graph.md),
 [ADR 002 graph first retrieval](docs/adr-002-graph-first-retrieval.md),
-[ADR 003 lags, grounding and review](docs/adr-003-learned-lags-grounding-and-review.md).
+[ADR 003 lags, grounding and review](docs/adr-003-learned-lags-grounding-and-review.md),
+[ADR 004 Colombia region](docs/adr-004-colombia-region.md).
 
 ## Results
 
@@ -169,15 +174,43 @@ was not in the context and returned the deterministic draft instead. That is why
 writer is the default and a model is optional: on this task the model adds latency and risk, and
 the value is in retrieval and in the checks around it.
 
+## Colombia: río Cauca
+
+`--region cauca` runs the same graph, agent, review step and evaluation on 27 IDEAM automatic
+stations from Popayán to San Jacinto del Cauca, with answers, briefs and figures in Spanish. The
+full guide, written for disaster risk teams, is in [docs/COLOMBIA.md](docs/COLOMBIA.md).
+
+What had to change, because Colombia publishes the readings but not the rest as open data:
+the river network comes from HydroRIVERS, the levels are statistical (90th and 98th percentile
+of daily maximum, labelled as not official), and quality gates run before any number is computed
+([ADR 004](docs/adr-004-colombia-region.md)).
+
+![Cauca map](docs/mapa_cauca.png)
+
+| Result (3 November 2026 run) | Value |
+|---|---|
+| Graph retrieval, generated / hand written questions in Spanish | 79 of 79 / 12 of 12 |
+| Plain vector search, same questions | 57 / 67 percent |
+| Brief replay, 27 Oct 2025: crest arrival error on 12 downstream crests | 5.0 h mean, 3.4 h median |
+| Crest arrival at La Raya, leave one event out | 23.0 h, same as a constant wave speed (23.2 h) |
+| Upstream trigger, 31 high water cases | 12 warned, 15 h median lead, precision 0.18 |
+
+The honest reading: the network and the reviewed brief are useful now; learned travel times and
+automatic alarms are not, with four years of gappy data and regulated reservoirs. The data
+quality findings are listed in the guide: one station with a 29 m datum shift, one repeating a
+flag value, one with two locations, six with less than a year of history.
+
 ## Run it
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
 make install          # package with dev tools
 make run              # full evaluation on the bundled data, writes reports/
-make test             # 37 tests, under 10 seconds
+make test             # 50 tests, under 10 seconds
 make smoke            # same run with the no download embedder, used in CI
 make data             # optional: download everything again from USGS and NOAA
+make run-co           # Colombia, río Cauca, on the bundled IDEAM data (Spanish)
+make brief-co         # Spanish flood watch brief for the 27 Oct 2025 event
 UPW_LLM_PROVIDER=local python -m upstream_watch llm-check   # same checks with a local model
 ```
 
@@ -198,10 +231,11 @@ instead of the deterministic writer: `UPW_LLM_PROVIDER=local` (transformers on C
 ## Repository layout
 
 ```
-upstream_watch/   package: sources, network, timeseries, hydro, graph, retrieval, llm, answer,
-                  agent, telemetry, evaluate, replay, mcp_server, report, pipeline, cli
+upstream_watch/   package: sources, network, timeseries, colombia, hydro, graph, retrieval, llm, lang,
+                  answer, agent, telemetry, evaluate, replay, mcp_server, report, pipeline, cli
 tests/            unit tests per module, agent and review flow, MCP in process, eval smoke
 data/sample/      curated gauges, edges, events and one hourly stage Parquet file (the full dataset)
+data/sample_cauca/ the same for the Colombia region, with quality.json
 docs/             architecture and results figures, ADRs
 .github/          CI: ruff, pytest, smoke run
 ```
@@ -225,3 +259,4 @@ docs/             architecture and results figures, ADRs
 ## License
 
 MIT, see [LICENSE](LICENSE). USGS and NOAA data are US Government works in the public domain.
+The IDEAM sample in `data/sample_cauca/` keeps its CC BY-SA 4.0 license.

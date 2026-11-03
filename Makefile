@@ -1,7 +1,7 @@
-.PHONY: install data run smoke test lint ask brief mcp
+.PHONY: install data run smoke test lint ask brief mcp data-co run-co brief-co ask-co
 
 install:
-	pip install -e ".[dev]"
+	pip install -e ".[dev,colombia]"
 
 data:
 	python -m upstream_watch ingest
@@ -26,3 +26,17 @@ brief:
 
 mcp:
 	python -m upstream_watch mcp
+
+# Colombia, rio Cauca (IDEAM, datos.gov.co), answers in Spanish
+data-co:
+	pip install -e ".[colombia]"
+	python -m upstream_watch --region cauca ingest
+
+run-co:
+	python -m upstream_watch --region cauca run
+
+brief-co:
+	python -m upstream_watch --region cauca brief
+
+ask-co:
+	python -m upstream_watch --region cauca ask "Puerto Valdivia marca 6 metros, como esta?"
