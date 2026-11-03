@@ -21,6 +21,7 @@ from pydantic import BaseModel, Field
 
 from . import answer as writer
 from .graph import GaugeGraph
+from .lang import EN, Lang
 from .llm import Provider
 from .retrieval import Doc, GaugeLinker, GraphRetriever, HybridIndex
 from .telemetry import traced
@@ -64,6 +65,11 @@ class Toolkit:
     provider: Provider
     names: dict[str, str]
     top_k: int = 8
+    lang: Lang = EN
+
+
+def _thresholds(g: dict) -> dict[str, float]:
+    return {k: g[f"{k}_ft"] for k in ("action", "minor", "moderate", "major") if g[f"{k}_ft"] is not None}
 
 
 def build_agent(kit: Toolkit, checkpointer=None):
@@ -93,7 +99,7 @@ def build_agent(kit: Toolkit, checkpointer=None):
     @traced("compose")
     def compose(state: State) -> State:
         docs = _docs(state)
-        draft = writer.compose(state["intent"], state.get("lids", []), state.get("stage_ft"), docs, kit.names)
+        draft = writer.compose(state["intent"], state.get("lids", []), state.get("stage_ft"), docs, kit.names, kit.lang)
         context = "\n".join(f"[{d.doc_id}] {d.text}" for d in docs)
         return {"draft": draft, "answer": kit.provider.write(state["question"], context, draft)}
 
@@ -131,17 +137,15 @@ def build_agent(kit: Toolkit, checkpointer=None):
                     "lid": lid,
                     "name": g["name"],
                     "stage_ft": round(stage, 2),
-                    "category": writer._cat(
-                        {k: g[f"{k}_ft"] for k in ("action", "minor", "moderate", "major") if g[f"{k}_ft"] is not None},
-                        stage,
-                    ),
+                    "level": (level := writer.reached_category(_thresholds(g), stage)),
+                    "category": kit.lang.phrase(level),
                     "impact": impacts[0] if impacts else None,
                     "downstream": downstream,
                 }
             )
         # Most severe flood category first; feet are not comparable across gauges.
         severity = {"major": 4, "moderate": 3, "minor": 2, "action": 1}
-        rising.sort(key=lambda r: (-max((v for k, v in severity.items() if k in r["category"]), default=0), r["lid"]))
+        rising.sort(key=lambda r: (-severity.get(r["level"], 0), r["lid"]))
         return {"brief": {"as_of": state["as_of"], "gauges_at_or_above_action": rising}}
 
     @traced("review")

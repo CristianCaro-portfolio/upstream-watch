@@ -17,6 +17,47 @@ OUTLET_LID = "BRKM2"
 BASIN_BBOX = (-80.6, 38.0, -76.9, 40.1)
 
 
+@dataclass(frozen=True)
+class Region:
+    """One river basin: where its data lives, its language and its outlet gauge."""
+
+    key: str
+    title: str
+    lang: str
+    outlet_lid: str
+    replay_event: str
+    sample_dir: Path
+    curated_name: str
+    outlet_label: str = "outlet"
+    min_lag_obs: int = 1  # crest pairs an edge needs before its own lag replaces the basin wave speed
+
+
+REGIONS = {
+    "potomac": Region(
+        key="potomac",
+        title="Potomac River above Washington DC (USGS, NOAA NWPS)",
+        lang="en",
+        outlet_lid=OUTLET_LID,
+        replay_event="2025-05-15",  # western Maryland flash flood, minor flood at Little Falls
+        sample_dir=SAMPLE_DIR,
+        curated_name="curated",
+        outlet_label="Little Falls",
+    ),
+    "cauca": Region(
+        key="cauca",
+        title="Río Cauca, Colombia (IDEAM, datos.gov.co)",
+        lang="es",
+        # La Raya: last Cauca gauge with clean data. Las Varas, just below, repeats an 8.0x m flag value.
+        outlet_lid="25027910",
+        replay_event="",  # the event with most stations above 'alto' is used
+        sample_dir=ROOT / "data" / "sample_cauca",
+        curated_name="curated_cauca",
+        outlet_label="La Raya",
+        min_lag_obs=5,  # 4 years with gaps and two dams: few crest pairs per edge, see README
+    ),
+}
+
+
 def _env(name: str, default: str) -> str:
     return os.environ.get(f"UPW_{name}", default)
 
@@ -33,6 +74,13 @@ class Settings:
     http_timeout_s: float = field(default_factory=lambda: float(_env("HTTP_TIMEOUT_S", "60")))
     top_k: int = field(default_factory=lambda: int(_env("TOP_K", "8")))
     otel_console: bool = field(default_factory=lambda: _env("OTEL_CONSOLE", "0") == "1")
+    region_key: str = field(default_factory=lambda: _env("REGION", "potomac"))
+
+    @property
+    def region(self) -> Region:
+        if self.region_key not in REGIONS:
+            raise ValueError(f"unknown region {self.region_key!r}, use one of {sorted(REGIONS)}")
+        return REGIONS[self.region_key]
 
     @property
     def raw_dir(self) -> Path:
@@ -40,7 +88,7 @@ class Settings:
 
     @property
     def curated_dir(self) -> Path:
-        return self.data_dir / "curated"
+        return self.data_dir / self.region.curated_name
 
 
 def get_settings() -> Settings:

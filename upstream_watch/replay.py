@@ -9,6 +9,7 @@ from datetime import datetime
 import polars as pl
 
 from .hydro import crests
+from .lang import EN, Lang
 
 
 def readings_at(stage: pl.DataFrame, event_id: str, as_of: str) -> dict[str, float]:
@@ -26,7 +27,8 @@ def readings_at(stage: pl.DataFrame, event_id: str, as_of: str) -> dict[str, flo
 def busiest_hour(stage: pl.DataFrame, event_id: str, gauges: dict) -> str:
     """Hour with the most gauges at or above action stage, used as the default replay time."""
     levels = pl.DataFrame(
-        [{"lid": lid, "action": g.thresholds.get("action") or g.thresholds.get("minor")} for lid, g in gauges.items()]
+        [{"lid": lid, "action": g.thresholds.get("action") or g.thresholds.get("minor")} for lid, g in gauges.items()],
+        schema={"lid": pl.Utf8, "action": pl.Float64},
     )
     counts = (
         stage.filter(pl.col("event_id") == event_id)
@@ -36,7 +38,23 @@ def busiest_hour(stage: pl.DataFrame, event_id: str, gauges: dict) -> str:
         .len()
         .sort(["len", "time"], descending=[True, False])
     )
+    if counts.height == 0:  # nobody crossed: use the hour with the highest stage anywhere
+        part = stage.filter(pl.col("event_id") == event_id).sort("stage_ft", descending=True)
+        return part["time"][0].isoformat()
     return counts["time"][0].isoformat()
+
+
+def gauges_over(stage: pl.DataFrame, event_id: str, gauges: dict) -> int:
+    """How many gauges were at or above their first level at the busiest hour of an event."""
+    hour = busiest_hour(stage, event_id, gauges)
+    readings = readings_at(stage, event_id, hour)
+    count = 0
+    for lid, value in readings.items():
+        g = gauges.get(lid)
+        level = g and (g.thresholds.get("action") or g.thresholds.get("minor"))
+        if level is not None and value >= level:
+            count += 1
+    return count
 
 
 def score_brief(brief: dict, stage: pl.DataFrame, event_id: str) -> dict:
@@ -67,17 +85,29 @@ def score_brief(brief: dict, stage: pl.DataFrame, event_id: str) -> dict:
     }
 
 
-def render_brief(brief: dict, limit: int = 8) -> str:
-    lines = [f"Flood watch brief as of {brief['as_of']} UTC"]
+def render_brief(brief: dict, limit: int = 8, lang: Lang = EN) -> str:
+    lines = [lang.t("brief_title", as_of=brief["as_of"])]
     rows = brief["gauges_at_or_above_action"]
     if not rows:
-        return lines[0] + "\nNo gauge at or above action stage."
-    lines.append(f"{len(rows)} gauges at or above action stage, most severe first:")
+        return lines[0] + "\n" + lang.text["brief_none"]
+    lines.append(lang.t("brief_count", n=len(rows)))
     for g in rows[:limit]:
-        nxt = ", ".join(f"{d['name']} ~{d['eta_h']:g} h" for d in g["downstream"][:2]) or "none (outlet)"
-        lines.append(f"- {g['name']} ({g['lid']}) {g['stage_ft']:g} ft, {g['category']}. Next: {nxt}.")
+        nxt = ", ".join(lang.t("brief_next", name=d["name"], hours=f"{d['eta_h']:g}") for d in g["downstream"][:2])
+        lines.append(
+            lang.t(
+                "brief_row", name=g["name"], lid=g["lid"], stage=f"{g['stage_ft']:g}", unit=lang.unit,
+                category=g["category"], nxt=nxt or lang.text["brief_outlet"],
+            )
+        )  # fmt: skip
         if g["impact"]:
-            lines.append(f"  NWS impact at {g['impact']['stage_ft']:g} ft: {g['impact']['statement']}")
+            lines.append(
+                lang.t(
+                    "brief_impact",
+                    stage=f"{g['impact']['stage_ft']:g}",
+                    unit=lang.unit,
+                    statement=g["impact"]["statement"],
+                )
+            )
     if len(rows) > limit:
-        lines.append(f"... and {len(rows) - limit} more.")
+        lines.append(lang.t("brief_more", n=len(rows) - limit))
     return "\n".join(lines)

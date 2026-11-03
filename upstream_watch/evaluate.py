@@ -16,6 +16,7 @@ from dataclasses import asdict, dataclass, field
 from .agent import ask
 from .answer import category_phrase
 from .hydro import path_to
+from .lang import EN, Lang
 from .network import Edge, Gauge
 
 
@@ -57,15 +58,40 @@ TEMPLATES = {
 }
 
 
+TEMPLATES_ES = {
+    "impact": [
+        "¿Qué pasa en {name} cuando el río llega a {stage} m?",
+        "{name} marca {stage} m, ¿cómo está?",
+    ],
+    "stages": [
+        "¿Cuáles son los niveles de referencia de {name}?",
+        "¿Cuál es el umbral de nivel alto en {name}?",
+    ],
+    "travel": [
+        "¿Cuánto tarda una creciente en llegar de {a} a {b}?",
+        "¿Cuántas horas hay de {a} a {b}?",
+    ],
+    "downstream": [
+        "{name} está subiendo, ¿qué estaciones siguen aguas abajo?",
+        "¿Hacia dónde va el agua de {name} aguas abajo?",
+    ],
+    "upstream": [
+        "¿Qué estaciones aguas arriba debo vigilar para {name}?",
+        "¿Qué estaciones alimentan a {name}?",
+    ],
+}
+
+
 def build_questions(
-    gauges: list[Gauge], edges: list[Edge], outlet: str, seed: int = 7, per_type: int = 24
+    gauges: list[Gauge], edges: list[Edge], outlet: str, seed: int = 7, per_type: int = 24, lang: Lang = EN
 ) -> list[EvalQuestion]:
     rng = random.Random(seed)
     by_lid = {g.lid: g for g in gauges}
     qs: list[EvalQuestion] = []
+    templates = TEMPLATES_ES if lang.code == "es" else TEMPLATES
 
     def pick(template_key: str) -> str:
-        return rng.choice(TEMPLATES[template_key])
+        return rng.choice(templates[template_key])
 
     with_impacts = [g for g in gauges if len(g.impacts) >= 2]
     for g in rng.sample(with_impacts, min(per_type, len(with_impacts))):
@@ -138,18 +164,20 @@ def build_questions(
     return qs
 
 
-def correct(q: EvalQuestion, answer: str, lags: dict[tuple[str, str], float]) -> bool:
+def correct(q: EvalQuestion, answer: str, lags: dict[tuple[str, str], float], lang: Lang = EN) -> bool:
     if q.intent == "impact":
-        return f"[{q.expect['cite']}]" in answer and category_phrase(q.expect["category"]) in answer
+        return f"[{q.expect['cite']}]" in answer and category_phrase(q.expect["category"], lang) in answer
     if q.intent == "stages":
-        return q.expect["number"] in answer
+        return q.expect["number"].replace(" ft", f" {lang.unit}") in answer
     if q.intent == "travel":
         hours = round(sum(lags[p] for p in map(tuple, q.expect["path"])), 1)
-        return f"about {hours:g} hours" in answer
+        return re.search(rf"(?<![\d.]){re.escape(f'{hours:g}')} (?:hours|horas)", answer) is not None
     return all(name in answer for name in q.expect["names"])
 
 
-def run_eval(agent, questions: list[EvalQuestion], modes: list[str], lags: dict[tuple[str, str], float]) -> dict:
+def run_eval(
+    agent, questions: list[EvalQuestion], modes: list[str], lags: dict[tuple[str, str], float], lang: Lang = EN
+) -> dict:
     results: dict[str, dict] = {}
     rows = []
     for mode in modes:
@@ -163,7 +191,7 @@ def run_eval(agent, questions: list[EvalQuestion], modes: list[str], lags: dict[
             got = sum(1 for d in q.gold_docs if d in hits)
             recalls.append(got / len(q.gold_docs))
             full.append(got == len(q.gold_docs))
-            ok = correct(q, state["answer"], lags)
+            ok = correct(q, state["answer"], lags, lang)
             acc.append(ok)
             grounded.append(bool(state.get("grounded")))
             intent_ok.append(state.get("intent") == q.intent)
@@ -212,21 +240,43 @@ HANDWRITTEN: list[tuple[str, str, dict]] = [
 ]  # fmt: skip
 
 
-def handwritten_questions(gauges: list[Gauge], edges: list[Edge], outlet: str) -> list[EvalQuestion]:
+HANDWRITTEN_ES: list[tuple[str, str, dict]] = [
+    ("impact", "Puerto Valdivia marca 6 metros, ¿cómo está?", {"lid": "26237040"}),
+    ("impact", "Bolombolo está en 5,5 m, ¿qué pasa?", {"lid": "26207080"}),
+    ("stages", "¿Cuáles son los niveles de referencia de Puerto Valdivia?", {"lid": "26237040"}),
+    ("stages", "¿Cuál es el umbral de nivel alto en La Coquera?", {"lid": "26247020"}),
+    ("stages", "Niveles de referencia de la estación 25027910", {"lid": "25027910"}),
+    ("travel", "¿Cuánto tarda una creciente en llegar de Puerto Valdivia a La Raya?", {"a": "26237040", "b": "25027910"}),
+    ("travel", "¿Cuántas horas hay de Bolombolo a Puerto Valdivia?", {"a": "26207080", "b": "26237040"}),
+    ("travel", "¿Cuánto se demora una creciente de Olaya a Las Varas?", {"a": "26237100", "b": "25027200"}),
+    ("downstream", "Olaya está subiendo, ¿hacia dónde va el agua aguas abajo?", {"lid": "26237100"}),
+    ("downstream", "Puente Iglesias está crecido, ¿qué estaciones siguen aguas abajo?", {"lid": "26207030"}),
+    ("upstream", "¿Qué estaciones aguas arriba debo vigilar para La Raya?", {"lid": "25027910"}),
+    ("upstream", "¿Qué estaciones alimentan a Bolombolo?", {"lid": "26207080"}),
+]  # fmt: skip
+
+
+def handwritten_questions(
+    gauges: list[Gauge], edges: list[Edge], outlet: str, region: str = "potomac"
+) -> list[EvalQuestion]:
     by_lid = {g.lid: g for g in gauges}
     feeders: dict[str, list[str]] = {}
     for e in edges:
         feeders.setdefault(e.downstream, []).append(e.upstream)
     out = []
-    for i, (intent, text, spec) in enumerate(HANDWRITTEN):
+    for i, (intent, text, spec) in enumerate(HANDWRITTEN_ES if region == "cauca" else HANDWRITTEN):
         qid = f"hw-{i:02d}-{intent}"
         if intent == "impact":
             g = by_lid[spec["lid"]]
-            stage = float(re.search(r"(\d+(?:\.\d+)?)\s*(?:ft|feet)", text).group(1))
-            gold = f"impact:{g.lid}@{spec['impact']:g}"
+            stage = float(re.search(r"(\d+(?:[.,]\d+)?)\s*(?:ft|feet|m|metros)\b", text).group(1).replace(",", "."))
+            gold = f"impact:{g.lid}@{spec['impact']:g}" if "impact" in spec else f"stages:{g.lid}"
             out.append(
                 EvalQuestion(
-                    qid, intent, text, [gold, f"stages:{g.lid}"], {"cite": gold, "category": g.category_for(stage)}
+                    qid,
+                    intent,
+                    text,
+                    sorted({gold, f"stages:{g.lid}"}),
+                    {"cite": gold, "category": g.category_for(stage)},
                 )
             )
         elif intent == "stages":

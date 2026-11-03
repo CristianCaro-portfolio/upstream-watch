@@ -5,6 +5,7 @@ from __future__ import annotations
 import hashlib
 import math
 import re
+import unicodedata
 from collections import Counter
 from dataclasses import dataclass, field
 from typing import Protocol
@@ -13,12 +14,15 @@ import numpy as np
 from qdrant_client import QdrantClient, models
 
 from .graph import GaugeGraph
+from .lang import EN, Lang
 from .network import Edge, Gauge
 
 TOKEN = re.compile(r"[a-z0-9]+(?:\.[0-9]+)?")
 STOP = {
     "the", "a", "an", "of", "at", "to", "in", "on", "and", "or", "is", "are", "be", "will", "what",
     "when", "which", "how", "does", "do", "for", "from", "with", "near", "it", "its", "this", "that",
+    "el", "la", "los", "las", "de", "del", "en", "y", "que", "cuanto", "cuantas", "cual", "cuales",
+    "por", "para", "con", "se", "es", "un", "una", "hasta", "desde",
 }  # fmt: skip
 
 
@@ -31,19 +35,27 @@ class Doc:
     payload: dict = field(default_factory=dict)
 
 
-def build_corpus(gauges: list[Gauge], edges: list[Edge], lags: dict[tuple[str, str], float]) -> list[Doc]:
+def build_corpus(
+    gauges: list[Gauge], edges: list[Edge], lags: dict[tuple[str, str], float], lang: Lang = EN
+) -> list[Doc]:
     by_lid = {g.lid: g for g in gauges}
     docs: list[Doc] = []
     for g in gauges:
         t = g.thresholds
-        parts = [f"{cat} {t[cat]:g} ft" for cat in ("action", "minor", "moderate", "major") if cat in t]
-        record = f" Record crest {g.record_stage_ft:g} ft on {g.record_date}." if g.record_stage_ft else ""
+        levels = ", ".join(
+            f"{lang.labels[c]} {t[c]:g} {lang.unit}" for c in ("action", "minor", "moderate", "major") if c in t
+        )
+        record = (
+            lang.t("doc_record", stage=f"{g.record_stage_ft:g}", unit=lang.unit, date=g.record_date)
+            if g.record_stage_ft
+            else ""
+        )
         docs.append(
             Doc(
                 doc_id=f"stages:{g.lid}",
                 kind="stages",
                 lid=g.lid,
-                text=f"Flood stages for {g.name} ({g.lid}), {g.state}: {', '.join(parts)}.{record}",
+                text=lang.t("doc_stages", name=g.name, lid=g.lid, state=g.state, levels=levels, record=record),
                 payload={"thresholds": t, "record_ft": g.record_stage_ft},
             )
         )
@@ -53,26 +65,29 @@ def build_corpus(gauges: list[Gauge], edges: list[Edge], lags: dict[tuple[str, s
                     doc_id=f"impact:{imp.doc_id}",
                     kind="impact",
                     lid=g.lid,
-                    text=f"{g.name} ({g.lid}), {g.state}. At {imp.stage_ft:g} ft: {imp.statement}",
+                    text=lang.t(
+                        "doc_impact", name=g.name, lid=g.lid, state=g.state, stage=f"{imp.stage_ft:g}",
+                        unit=lang.unit, statement=imp.statement,
+                    ),
                     payload={"stage_ft": imp.stage_ft, "statement": imp.statement},
                 )
-            )
+            )  # fmt: skip
     for e in edges:
         up, down = by_lid[e.upstream], by_lid[e.downstream]
         lag = lags.get((e.upstream, e.downstream))
-        lag_text = f" Typical crest travel time {lag:g} hours." if lag is not None else ""
+        lag_text = lang.t("doc_lag", lag=f"{lag:g}") if lag is not None else ""
         docs.append(
             Doc(
                 doc_id=f"flow:{e.upstream}->{e.downstream}",
                 kind="flow",
                 lid=e.upstream,
-                text=(
-                    f"{up.name} ({e.upstream}) flows downstream to {down.name} ({e.downstream}), "
-                    f"{e.river_km:g} km of river.{lag_text}"
+                text=lang.t(
+                    "doc_flow", up=up.name, up_lid=e.upstream, down=down.name, down_lid=e.downstream,
+                    km=f"{e.river_km:g}", lag=lag_text,
                 ),
                 payload={"upstream": e.upstream, "downstream": e.downstream, "river_km": e.river_km, "lag_h": lag},
             )
-        )
+        )  # fmt: skip
     return docs
 
 
@@ -120,8 +135,13 @@ def make_embedder(name: str) -> DenseEmbedder:
     return FastEmbedder() if name == "fastembed" else HashingEmbedder()
 
 
+def fold(text: str) -> str:
+    """Lowercase without accents, so 'Popayán' and 'popayan' match."""
+    return "".join(c for c in unicodedata.normalize("NFKD", text.lower()) if not unicodedata.combining(c))
+
+
 def tokens(text: str) -> list[str]:
-    return [t for t in TOKEN.findall(text.lower()) if t not in STOP]
+    return [t for t in TOKEN.findall(fold(text)) if t not in STOP]
 
 
 def sparse_vector(text: str) -> models.SparseVector:
@@ -229,6 +249,9 @@ class GaugeLinker:
             if idx > 0:
                 aliases.append(set(tokens(plain[idx + len(sep) :])))
                 break
+        else:
+            if plain.strip() != name.strip():  # "Puente Carretera (Popayán)": the station name alone
+                aliases.append(set(tokens(plain)))
         return [a for a in aliases if a]
 
     def _weight(self, tok: str) -> float:
@@ -280,11 +303,11 @@ class GaugeLinker:
 
 def _in_text_order(lids: list[str], text: str, names: dict[str, str], aliases: dict[str, list[set[str]]]) -> list[str]:
     """Order mentions as they appear in the text, so 'from A to B' keeps A first."""
-    lower = text.lower()
+    lower = fold(text)
     words = tokens(text)
 
     def pos(lid: str) -> int:
-        for needle in (lid, names[lid].lower()):
+        for needle in (lid, fold(names[lid])):
             idx = (text if needle == lid else lower).find(needle)
             if idx >= 0:
                 return idx

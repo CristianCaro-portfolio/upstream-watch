@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import platform
 import time
 from importlib.metadata import version
@@ -18,6 +19,27 @@ app = typer.Typer(add_completion=False, help="Upstream gauges as early warning f
 log = logging.getLogger("upstream_watch")
 
 REPLAY_EVENT = "2025-05-15"  # Western Maryland flash flood, minor flood at Little Falls
+
+
+@app.callback()
+def main(
+    region: str = typer.Option(
+        None, "--region", "-r", help="potomac (USGS, English) or cauca (IDEAM Colombia, Spanish). Default potomac."
+    ),
+) -> None:
+    """Pick the river basin for every command. Same as setting UPW_REGION."""
+    if region:
+        os.environ["UPW_REGION"] = region
+    _ = config.Settings().region  # fail early on an unknown region
+
+
+def _replay_event(settings: config.Settings, stage, by_lid) -> str:
+    events = sorted(stage["event_id"].unique().to_list())
+    wanted = settings.region.replay_event
+    if wanted in events:
+        return wanted
+    # the event whose busiest hour had the most gauges at or above their first level
+    return max(events, key=lambda e: (replay.gauges_over(stage, e, by_lid), e))
 
 
 def _setup(verbose: bool) -> config.Settings:
@@ -43,16 +65,19 @@ def run(
 ) -> None:
     """Backtest, warning replay, retrieval evaluation, brief replay and figures."""
     settings = _setup(True)
-    out = out_dir or settings.reports_dir
+    out = out_dir or _reports_dir(settings)
     out.mkdir(parents=True, exist_ok=True)
     t0 = time.perf_counter()
     agent, kit, model, (gauges, edges, stage) = pipeline.agent_from_settings(settings, sample, embedder)
     build_s = time.perf_counter() - t0
     by_lid = {g.lid: g for g in gauges}
-    outlet = config.OUTLET_LID
+    outlet = settings.region.outlet_lid
+    lang = kit.lang
 
     crest_map = hydro.crests(stage)
-    backtest = hydro.backtest(edges, crest_map, outlet)
+    backtest = hydro.backtest(edges, crest_map, outlet, min_obs=settings.region.min_lag_obs)
+    if settings.region.min_lag_obs > 1:  # also report what learning every edge would have given
+        backtest["every_edge_learned"] = hydro.backtest(edges, crest_map, outlet, min_obs=1)
     lead_times = [
         hydro.warning_lead_times(stage, by_lid, edges, max_hops=h, trigger=t)
         for t, h in (("action", 1), ("action", 3), ("minor", 1), ("minor", 3))
@@ -61,14 +86,14 @@ def run(
     lags = {(e.upstream, e.downstream): round(model.edge_lag(e), 1) for e in edges}
     telemetry.clear()
     modes = ["dense", "hybrid", "graph"]
-    generated = evaluate.run_eval(agent, evaluate.build_questions(gauges, edges, outlet), modes, lags)
-    handwritten = evaluate.run_eval(agent, evaluate.handwritten_questions(gauges, edges, outlet), modes, lags)
+    generated = evaluate.run_eval(agent, evaluate.build_questions(gauges, edges, outlet, lang=lang), modes, lags, lang)
+    handwritten = evaluate.run_eval(
+        agent, evaluate.handwritten_questions(gauges, edges, outlet, region=settings.region.key), modes, lags, lang
+    )
     spans = telemetry.latency_summary()
     telemetry.dump(out / "traces.jsonl")
 
-    event_id = (
-        REPLAY_EVENT if REPLAY_EVENT in set(stage["event_id"].to_list()) else sorted(stage["event_id"].unique())[-1]
-    )
+    event_id = _replay_event(settings, stage, by_lid)
     as_of = replay.busiest_hour(stage, event_id, by_lid)
     readings = replay.readings_at(stage, event_id, as_of)
     state, pending = start_brief(agent, readings, as_of, thread_id=f"replay-{event_id}")
@@ -105,6 +130,7 @@ def run(
             "edges_with_learned_lag": len(model.lag_h),
             "edges_total": len(edges),
         },
+        "outlet_name": settings.region.outlet_label,
         "backtest": backtest,
         "lead_times": lead_times,
         "eval": {
@@ -124,16 +150,26 @@ def run(
     }
     (out / "metrics.json").write_text(json.dumps(metrics, indent=1, default=str))
     (out / "eval_rows.json").write_text(json.dumps(generated["rows"] + handwritten["rows"], indent=1))
-    (out / "brief.txt").write_text(replay.render_brief(brief))
+    (out / "brief.txt").write_text(replay.render_brief(brief, lang=lang), encoding="utf-8")
     d = metrics["data"]
-    report.architecture(
-        out / "architecture.png",
-        f"upstream-watch: {d['gauges']} Potomac basin gauges, {d['edges']} river edges, "
-        f"{d['impact_statements']} NWS impact statements, {len(d['events'])} flood events (2024 to 2026)",
-    )
-    report.results(metrics, out / "results.png")
+    if settings.region.key == "potomac":
+        report.architecture(
+            out / "architecture.png",
+            f"upstream-watch: {d['gauges']} Potomac basin gauges, {d['edges']} river edges, "
+            f"{d['impact_statements']} NWS impact statements, {len(d['events'])} flood events (2024 to 2026)",
+        )
+    report.results(metrics, out / "results.png", lang=lang.code)
+    if lang.code == "es":
+        report.network_map(
+            gauges, edges, brief, out / "mapa.png",
+            f"Río Cauca: {len(gauges)} estaciones IDEAM, corte {as_of[:16].replace('T', ' ')} UTC",
+        )  # fmt: skip
     typer.echo(_summary(metrics))
-    (out / "summary.txt").write_text(_summary(metrics))
+    (out / "summary.txt").write_text(_summary(metrics), encoding="utf-8")
+
+
+def _reports_dir(settings: config.Settings) -> Path:
+    return settings.reports_dir if settings.region.key == "potomac" else settings.reports_dir / settings.region.key
 
 
 def _summary(m: dict) -> str:
@@ -185,7 +221,7 @@ def ask_cmd(
 
 @app.command()
 def brief(
-    event: str = typer.Option(REPLAY_EVENT, help="Event id, the outlet peak day."),
+    event: str = typer.Option(None, help="Event id. Defaults to the region's replay event."),
     as_of: str = typer.Option(None, help="UTC hour, defaults to the busiest hour of the event."),
     approve: bool = typer.Option(None, "--approve/--reject", help="Answer the review instead of stopping."),
     reviewer: str = typer.Option("duty-officer"),
@@ -195,9 +231,10 @@ def brief(
     settings = _setup(False)
     agent, kit, model, (gauges, _, stage) = pipeline.agent_from_settings(settings, sample)
     by_lid = {g.lid: g for g in gauges}
+    event = event or _replay_event(settings, stage, by_lid)
     hour = as_of or replay.busiest_hour(stage, event, by_lid)
     state, pending = start_brief(agent, replay.readings_at(stage, event, hour), hour, thread_id=f"brief-{event}")
-    typer.echo(replay.render_brief(state["brief"]))
+    typer.echo(replay.render_brief(state["brief"], lang=kit.lang))
     if pending is None:
         return
     typer.echo(f"\npaused for review, expected answer schema: {json.dumps(pending.response_schema)}")
@@ -218,19 +255,20 @@ def llm_check(
     import random
 
     settings = _setup(True)
-    out = out_dir or settings.reports_dir
+    out = out_dir or _reports_dir(settings)
     out.mkdir(parents=True, exist_ok=True)
     agent, kit, model, (gauges, edges, _) = pipeline.agent_from_settings(settings, sample)
     lags = {(e.upstream, e.downstream): round(model.edge_lag(e), 1) for e in edges}
-    generated = evaluate.build_questions(gauges, edges, config.OUTLET_LID)
+    outlet = settings.region.outlet_lid
+    generated = evaluate.build_questions(gauges, edges, outlet, lang=kit.lang)
     rng = random.Random(seed)
     questions = []
     for intent in ("impact", "stages", "travel", "downstream", "upstream"):
         pool = [q for q in generated if q.intent == intent]
         questions += rng.sample(pool, min(per_type, len(pool)))
-    questions += evaluate.handwritten_questions(gauges, edges, config.OUTLET_LID)
+    questions += evaluate.handwritten_questions(gauges, edges, outlet, region=settings.region.key)
     t0 = time.perf_counter()
-    result = evaluate.run_eval(agent, questions, ["graph"], lags)["modes"]["graph"]
+    result = evaluate.run_eval(agent, questions, ["graph"], lags, kit.lang)["modes"]["graph"]
     result["provider"] = kit.provider.name
     result["wall_s"] = round(time.perf_counter() - t0, 1)
     (out / f"llm_check_{kit.provider.name}.json").write_text(json.dumps(result, indent=1))

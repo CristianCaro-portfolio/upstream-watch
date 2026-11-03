@@ -9,66 +9,91 @@ from __future__ import annotations
 
 import re
 
+from .lang import EN, Lang
 from .network import CATEGORIES
 from .retrieval import Doc, GaugeLinker
 
 NUMBER = re.compile(r"(?<![\w.])-?\d+(?:\.\d+)?")
 CITATION = re.compile(r"\[([^\]]+)\]")
-NOT_FOUND = "The retrieved context does not contain"
+NOT_FOUND = EN.not_found
 
 
-def category_phrase(category: str) -> str:
-    if category == "none":
-        return "below flood stage"
-    return "at action stage" if category == "action" else f"in {category} flood"
+def category_phrase(category: str, lang: Lang = EN) -> str:
+    return lang.phrase(category)
 
 
-def _cat(thresholds: dict, stage: float) -> str:
+def reached_category(thresholds: dict, stage: float) -> str:
     reached = "none"
     for cat in CATEGORIES:
         if cat in thresholds and stage >= thresholds[cat]:
             reached = cat
-    return category_phrase(reached)
+    return reached
+
+
+def _cat(thresholds: dict, stage: float, lang: Lang = EN) -> str:
+    return lang.phrase(reached_category(thresholds, stage))
 
 
 def _fmt(x: float) -> str:
     return f"{x:g}"
 
 
-def compose(intent: str, lids: list[str], stage_ft: float | None, docs: list[Doc], names: dict[str, str]) -> str:
+def levels_text(thresholds: dict, lang: Lang = EN) -> str:
+    return ", ".join(f"{lang.labels[c]} {_fmt(thresholds[c])} {lang.unit}" for c in CATEGORIES if c in thresholds)
+
+
+def compose(
+    intent: str,
+    lids: list[str],
+    stage_ft: float | None,
+    docs: list[Doc],
+    names: dict[str, str],
+    lang: Lang = EN,
+) -> str:
+    """Answer from the retrieved documents only. stage_ft is the stage in the region unit."""
+    nf = lang.not_found
     by_id = {d.doc_id: d for d in docs}
     focus = lids[0] if lids else None
     if focus is None:
-        return f"{NOT_FOUND} a gauge I can identify in the question."
+        return lang.t("no_gauge", nf=nf)
     name = names.get(focus, focus)
+    unit = lang.unit
 
     if intent in ("impact", "stages"):
         stages = by_id.get(f"stages:{focus}")
         parts = []
         if stages:
             t = stages.payload["thresholds"]
-            levels = ", ".join(f"{c} {_fmt(t[c])} ft" for c in CATEGORIES if c in t)
+            levels = levels_text(t, lang)
             if stage_ft is not None:
-                parts.append(f"At {_fmt(stage_ft)} ft {name} is {_cat(t, stage_ft)} ({levels}) [{stages.doc_id}].")
+                parts.append(
+                    lang.t(
+                        "at_stage", stage=_fmt(stage_ft), unit=unit, name=name, phrase=_cat(t, stage_ft, lang),
+                        levels=levels, cite=stages.doc_id,
+                    )
+                )  # fmt: skip
             else:
-                parts.append(f"Flood stages for {name}: {levels} [{stages.doc_id}].")
+                parts.append(lang.t("stages", name=name, levels=levels, cite=stages.doc_id))
         if intent == "impact" and stage_ft is not None:
             impacts = [d for d in docs if d.kind == "impact" and d.lid == focus and d.payload["stage_ft"] <= stage_ft]
             if impacts:
                 top = max(impacts, key=lambda d: d.payload["stage_ft"])
                 parts.append(
-                    f"NWS impact at {_fmt(top.payload['stage_ft'])} ft: {top.payload['statement']} [{top.doc_id}]"
-                )
-            else:
-                parts.append(f"{NOT_FOUND} an impact statement for {name} at or below {_fmt(stage_ft)} ft.")
-        return " ".join(parts) if parts else f"{NOT_FOUND} flood stages for {name}."
+                    lang.t(
+                        "impact", stage=_fmt(top.payload["stage_ft"]), unit=unit,
+                        statement=top.payload["statement"], cite=top.doc_id,
+                    )
+                )  # fmt: skip
+            elif lang.code == "en" or any(d.kind == "impact" for d in docs):
+                parts.append(lang.t("no_impact", nf=nf, name=name, stage=_fmt(stage_ft), unit=unit))
+        return " ".join(parts) if parts else lang.t("no_stages", nf=nf, name=name)
 
     flows = [d for d in docs if d.kind == "flow"]
     nxt = {d.payload["upstream"]: d for d in flows}
 
     if intent == "travel":
         if len(lids) < 2:
-            return f"{NOT_FOUND} two gauges to measure travel time between."
+            return lang.t("need_two", nf=nf)
         for src, dst in ((lids[0], lids[1]), (lids[1], lids[0])):
             path, cur = [], src
             while cur in nxt and cur != dst and len(path) < 20:
@@ -78,11 +103,11 @@ def compose(intent: str, lids: list[str], stage_ft: float | None, docs: list[Doc
                 hours = sum(p.payload["lag_h"] for p in path)
                 km = sum(p.payload["river_km"] for p in path)
                 cites = "".join(f"[{p.doc_id}]" for p in path)
-                return (
-                    f"A crest at {names.get(src, src)} typically reaches {names.get(dst, dst)} after about "
-                    f"{_fmt(round(hours, 1))} hours, over {_fmt(round(km, 1))} km of river {cites}."
-                )
-        return f"{NOT_FOUND} the full river path between {names.get(lids[0])} and {names.get(lids[1])}."
+                return lang.t(
+                    "travel", src=names.get(src, src), dst=names.get(dst, dst), hours=_fmt(round(hours, 1)),
+                    km=_fmt(round(km, 1)), cites=cites,
+                )  # fmt: skip
+        return lang.t("no_path", nf=nf, a=names.get(lids[0]), b=names.get(lids[1]))
 
     if intent == "downstream":
         chain, cur, total = [], focus, 0.0
@@ -92,29 +117,31 @@ def compose(intent: str, lids: list[str], stage_ft: float | None, docs: list[Doc
             chain.append((d, total))
             cur = d.payload["downstream"]
         if not chain:
-            return f"{NOT_FOUND} the gauges downstream of {name}."
-        steps = "; then ".join(
-            f"{names.get(d.payload['downstream'])} after about {_fmt(round(t, 1))} hours [{d.doc_id}]" for d, t in chain
+            return lang.t("no_down", nf=nf, name=name)
+        steps = lang.text["down_join"].join(
+            lang.t("down_step", name=names.get(d.payload["downstream"]), hours=_fmt(round(t, 1)), cite=d.doc_id)
+            for d, t in chain
         )
-        return f"Downstream of {name} the crest reaches {steps}."
+        return lang.t("down", name=name, steps=steps)
 
     if intent == "upstream":
         feeders = [d for d in flows if d.payload["downstream"] == focus]
         if not feeders:
-            return f"{NOT_FOUND} the gauges upstream of {name}."
+            return lang.t("no_up", nf=nf, name=name)
         items = "; ".join(
-            f"{names.get(d.payload['upstream'])}, crest lag about {_fmt(d.payload['lag_h'])} hours [{d.doc_id}]"
+            lang.t("up_item", name=names.get(d.payload["upstream"]), hours=_fmt(d.payload["lag_h"]), cite=d.doc_id)
             for d in sorted(feeders, key=lambda d: d.payload["upstream"])
         )
-        return f"Gauges that feed {name} directly: {items}."
+        return lang.t("up", name=name, items=items)
 
-    return f"{NOT_FOUND} an answer I can ground for this question."
+    return lang.t("other", nf=nf)
 
 
 def grounded(answer: str, question: str, docs: list[Doc], linker: GaugeLinker | None = None) -> tuple[bool, list[str]]:
     """Every number in the answer must appear in the context or the question, and every
     citation must be a retrieved document. Returns (ok, problems)."""
     source_numbers = set()
+    question = re.sub(r"(\d),(\d)", r"\1.\2", question)  # "5,5 m" is 5.5 in Spanish
     for text in [question] + [d.text for d in docs] + [str(d.payload) for d in docs]:
         source_numbers.update(float(n) for n in NUMBER.findall(text))
     problems = []

@@ -18,6 +18,7 @@ import json
 import logging
 import os
 import re
+import unicodedata
 from typing import Literal, Protocol
 
 import httpx
@@ -26,7 +27,28 @@ from pydantic import BaseModel, Field, ValidationError
 log = logging.getLogger(__name__)
 
 Intent = Literal["impact", "stages", "travel", "downstream", "upstream", "other"]
-STAGE_RE = re.compile(r"(\d+(?:\.\d+)?)\s*(?:ft|feet|foot)\b", re.I)
+STAGE_RE = re.compile(r"(\d+(?:[.,]\d+)?)\s*(?:ft|feet|foot|m|mt|mts|metro|metros)\b", re.I)
+
+# English and Spanish cues; the text is lowercased and accents are removed before matching.
+CUES: dict[str, tuple[str, ...]] = {
+    "travel": (
+        "how long", "travel time", "how many hours", "take to reach", "get from",
+        "cuanto tarda", "cuantas horas", "tiempo de viaje", "cuanto se demora", "en cuanto tiempo",
+    ),
+    "upstream": (
+        "upstream", "watch for", "early warning", "feeds into", "flow into",
+        "aguas arriba", "alimentan", "alerta temprana", "que estaciones vigilar", "llegan a",
+    ),
+    "downstream": (
+        "downstream", "next gauge", "where does", "which gauges will", "expect it next",
+        "aguas abajo", "hacia donde", "a donde va", "que municipios siguen", "que sigue",
+    ),
+    "stages": (
+        "flood stage", "flood category", "in flood", "minor flood", "action stage",
+        "niveles de referencia", "nivel de vigilancia", "nivel alto", "umbral", "niveles de alerta",
+    ),
+    "impact": ("what happens", "impact", "flooded", "que pasa", "esta en", "como esta"),
+}  # fmt: skip
 
 
 class ParsedQuestion(BaseModel):
@@ -35,18 +57,18 @@ class ParsedQuestion(BaseModel):
 
 
 def rule_parse(question: str) -> ParsedQuestion:
-    q = question.lower()
+    q = "".join(c for c in unicodedata.normalize("NFKD", question.lower()) if not unicodedata.combining(c))
     match = STAGE_RE.search(question)
-    stage = float(match.group(1)) if match else None
-    if any(w in q for w in ("how long", "travel time", "how many hours", "take to reach", "get from")):
+    stage = float(match.group(1).replace(",", ".")) if match else None
+    if any(w in q for w in CUES["travel"]):
         intent: Intent = "travel"
-    elif any(w in q for w in ("upstream", "watch for", "early warning", "feeds into", "flow into")):
+    elif any(w in q for w in CUES["upstream"]):
         intent = "upstream"
-    elif any(w in q for w in ("downstream", "next gauge", "where does", "which gauges will", "expect it next")):
+    elif any(w in q for w in CUES["downstream"]):
         intent = "downstream"
-    elif any(w in q for w in ("flood stage", "flood category", "in flood", "minor flood", "action stage")):
+    elif any(w in q for w in CUES["stages"]):
         intent = "stages" if stage is None else "impact"
-    elif stage is not None or any(w in q for w in ("what happens", "impact", "flooded")):
+    elif stage is not None or any(w in q for w in CUES["impact"]):
         intent = "impact"
     else:
         intent = "other"

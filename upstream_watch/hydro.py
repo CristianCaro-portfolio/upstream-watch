@@ -81,13 +81,16 @@ class TravelTimeModel:
     celerity_kmh: float
 
     @classmethod
-    def fit(cls, lags: pl.DataFrame) -> TravelTimeModel:
+    def fit(cls, lags: pl.DataFrame, min_obs: int = 1) -> TravelTimeModel:
+        """min_obs: an edge needs that many observed crest pairs to use its own lag; with fewer
+        it falls back to the basin wave speed. 1 for the US data, 3 for noisier networks."""
         lag_h: dict[tuple[str, str], float] = {}
         n_obs: dict[tuple[str, str], int] = {}
         for (up, down), part in lags.group_by(["upstream", "downstream"]):
             values = part["lag_h"].to_list()
-            lag_h[(up, down)] = float(statistics.median(values))
             n_obs[(up, down)] = len(values)
+            if len(values) >= min_obs:
+                lag_h[(up, down)] = float(statistics.median(values))
         positive = lags.filter(pl.col("lag_h") > 1)
         celerity = (
             float(statistics.median((positive["river_km"] / positive["lag_h"]).to_list())) if positive.height else 4.0
@@ -114,7 +117,7 @@ def path_to(edges: list[Edge], source: str, target: str) -> list[Edge] | None:
     return path
 
 
-def backtest(edges: list[Edge], crest_map: dict[tuple[str, str], Crest], outlet: str) -> dict:
+def backtest(edges: list[Edge], crest_map: dict[tuple[str, str], Crest], outlet: str, min_obs: int = 1) -> dict:
     """Leave one event out: fit on the other events, predict crest arrival on the held out one.
 
     Two targets: the next gauge downstream (one hop) and the outlet (whole path). Two methods:
@@ -125,7 +128,7 @@ def backtest(edges: list[Edge], crest_map: dict[tuple[str, str], Crest], outlet:
     one_hop = {"learned": [], "celerity": []}
     to_outlet = {"learned": [], "celerity": []}
     for held in events:
-        model = TravelTimeModel.fit(all_lags.filter(pl.col("event_id") != held))
+        model = TravelTimeModel.fit(all_lags.filter(pl.col("event_id") != held), min_obs=min_obs)
         for row in all_lags.filter(pl.col("event_id") == held).iter_rows(named=True):
             edge = Edge(row["upstream"], row["downstream"], row["river_km"])
             one_hop["learned"].append(abs(model.edge_lag(edge) - row["lag_h"]))
@@ -221,7 +224,10 @@ def warning_lead_times(
                     warn_times.append(t)
             warn = min(warn_times) if warn_times else None
             target = by_key.get((lid, event_id))
-            flood_at = first_crossing(target, gauge.thresholds["minor"]) if target is not None else None
+            minor = gauge.thresholds.get("minor")
+            if minor is None:
+                continue
+            flood_at = first_crossing(target, minor) if target is not None else None
             if warn is not None:
                 alarms += 1
             if flood_at is None:
